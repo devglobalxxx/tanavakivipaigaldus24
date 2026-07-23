@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja...</title>
+  <meta name="description" content="Lääne-Eesti ja saarte eripärad: soolane õhk, tuulekoormus, praami logistika materjalile, suvekodude rannaalade kivi valik ja soolakindlad viimistlused.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-haapsalu-kuressaare-saaremaa-hiiumaa/">
+
+  <meta property="og:title" content="Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja...">
+  <meta property="og:description" content="Lääne-Eesti ja saarte eripärad: soolane õhk, tuulekoormus, praami logistika materjalile, suvekodude rannaalade kivi valik ja soolakindlad viimistlused.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-haapsalu-kuressaare-saaremaa-hiiumaa/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja Hiiumaal</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-04.jpg" alt="Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja Hiiumaal" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja Hiiumaal</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span>📅 14. juuli 2026</span>
+  <span>✍️ Keio Soo, Balcon Grupp OÜ</span>
+  <span>⏱️ Lugemisaeg: 8 min</span>
+</div>
+
+<h1>Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja Hiiumaal</h1>
+
+<p class="lead">Lääne-Eesti ranniku ja saarte kliima on kivisillutise jaoks üks Eesti karmimaid keskkondi — soolane merevesi, tugev tuulekoormus, kesktalvine sula-külmatsükkel ja logistika üle Virtsu-Kuivastu või Rohuküla-Heltermaa praami. Selles juhendis selgitame, millist <a href="/tanavakivi/">tänavakivi</a>, aluskihti ja viimistlust valida Haapsalus, Kuressaares ja väiksemates saarekülades, et sillutis peaks vastu 25+ aastat ilma vuukide väljapesuta.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Lääne-Eesti rannikul ja saartel eelistage vibropressitud betoonkivi klassiga <strong>≥50 MPa</strong> (EVS-EN 1338) või graniitkivi, aluskiht killustik fr 0–32 vähemalt <strong>250 mm</strong> koos geotekstiiliga. Vuugid täitke <strong>polümeerliivaga</strong> (mitte tavalise täiteliivaga), sest soolane õhk pesutab liiva vuukidest 3–4 korda kiiremini. Materjali tarne saarele lisab hinnale <strong>8–15 €/m²</strong> praamitasudest ja auto ooteajast tulenevalt.
+</div>
+
+<h2>Miks Lääne-Eesti ja saarte kliima nõuab teistsugust lähenemist</h2>
+
+<p>Mandri-Eestis on <a href="/tanavakivi/">tänavakivi</a> peamine "vaenlane" külmakergitus ja liikluskoormus. Saartel lisandub kolm täiendavat tegurit, mida paljud paigaldajad ignoreerivad — tulemuseks on 5–7 aasta pärast lagunev sillutis, mis oli algselt korralikult paigaldatud.</p>
+
+<h3>1. Soolane õhk (aerosool)</h3>
+<p>Kuressaare kesklinnas ja Haapsalu Promenaadi lähedal on õhu kloriidide sisaldus keskmiselt <strong>3–5 korda kõrgem</strong> kui <a href="/tanavakivi-paigaldus-tallinn/">Tallinnas</a> Nõmmel. Kloriidid tungivad betoonkivi mikropooridesse ja sulfaadid hakkavad reageerima tsemendiga — tekib <em>halliidne pügauk</em>, mis pindmiselt näeb välja nagu heleroheline "kirmet". Lahendus: kasutage kaks korda vibropressitud kivi (mitte vaid pressitud), millel on veeimavus alla 6% (EVS-EN 1338 klass B).</p>
+
+<h3>2. Tuulekoormus ja liiv</h3>
+<p>Sõrve poolsaarel on aastane keskmine tuulekiirus üle 6 m/s. Tuul kannab peenliiva, mis toimib vuukide vahel abrasiivina — igal aastal pestakse 2–4 mm liiva vuukidest välja, kui kasutati tavalist täiteliiva. <a href="/tanavakivi-paigaldus-suvilale-saaremaa-hiiumaa/">Meie Saaremaa ja Hiiumaa suvilate paigaldusjuhend</a> katab detailsemalt tuulepoolsete servade tugevdamist.</p>
+
+<h3>3. Praami logistika</h3>
+<p>Materjali tarne Saaremaale lisab keskmiselt <strong>240–380 €</strong> vaguni (24 t = ~400 m² betoonkivi) kohta, olenevalt aastaajast ja praami järjekorrast. Suvel juuli keskpaigast augusti lõpuni tuleb arvestada 1–2 päevast ooteajaga. Sellepärast broneerime saarekliendid alati juba veebruaris — <a href="/tanavakivi-kevadhooaja-broneering-2026/">2026 kevadhooaja broneering</a> on juba avatud.</p>
+
+<h2>Materjali valik: mis sobib rannikule ja mis mitte</h2>
+
+<p>Kõik betoonkivid ei ole ühesugused. Alljärgnev tabel võrdleb nelja populaarsemat valikut just soolase kliima kontekstis.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kivitüüp</th>
+      <th>Sobivus rannikule</th>
+      <th>Hind (€/m²)</th>
+      <th>Eluiga</th>
+      <th>Peamine risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vibropressitud betoon (Brikers, Aroc)</td>
+      <td>★★★★☆ Väga hea</td>
+      <td>18–28</td>
+      <td>25–30 a</td>
+      <td>Ilma hüdrofoobse töötluseta halliidne pügauk 10 a pärast</td>
+    </tr>
+    <tr>
+      <td>Skandinaavia graniit (must, hall)</td>
+      <td>★★★★★ Ideaalne</td>
+      <td>55–95</td>
+      <td>60+ a</td>
+      <td>Hind ja saare logistika</td>
+    </tr>
+    <tr>
+      <td>Klinkerkivi</td>
+      <td>★★★★☆ Väga hea</td>
+      <td>42–65</td>
+      <td>50+ a</td>
+      <td>Servade pragunemine paksude vuukide korral</td>
+    </tr>
+    <tr>
+      <td>Tavaline pressitud betoon</td>
+      <td>★★☆☆☆ Ei soovita</td>
+      <td>10–15</td>
+      <td>8–12 a</td>
+      <td>Külmakuivumine ja halli tekkimine juba 5 a pärast</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Praktikas soovitame Haapsalu ja Kuressaare kesklinna eramutele <strong>vibropressitud betoonkivi + hüdrofoobne immutus</strong> — see katab 85% klientidest. Kaldapiirkonda (Roomassaare, Nasva, Käina laht, Suuremõisa) läheb tugevam kombo: <a href="/graniitkivi-paigaldus-eesti/">graniitkivi</a> või <a href="/klinkerkivi-vs-tanavakivi-vordlus/">klinkerkivi</a>.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Kas planeerite kivisillutist Saaremaale, Hiiumaale või Haapsallu?</strong><br>
+    Anname täpse hinnapakkumise koos praami logistikaga 48 tunni jooksul.
+  </div>
+  <div style="display:flex; gap:12px;">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Aluskihi ehitamine ranniku pinnasel</h2>
+
+<p>Lääne-Eesti pinnas on üldiselt <strong>hea kandevõimega</strong> (paekivi baas) — see on plussiks võrreldes Tallinna savipinnasega. Kuressaares ja Haapsalu vanalinnas ulatub paetahvel sageli pinnale ligi 0,5–1,2 m sügavusele. See tähendab, et aluskihi paksus võib olla väiksem: <strong>200–250 mm killustikku</strong> (fr 0–32) piisab eramu sissesõiduteele, mida läbivad autod kuni 3,5 t.</p>
+
+<p>Kaljualadel (näiteks Panga pank, Sõrve sääre lähistel) puuduvad aga sageli töömahud, mille on projekteeritud sisemaal töötavad meeskonnad — pinnase kaevamine käib puurpingi ja hüdrovasaraga, mitte kopaga. See kergitab pinnasetööde hinda <strong>15–25%</strong>.</p>
+
+<h3>Standardid, mida jälgida</h3>
+<ul>
+  <li><strong>EVS-EN 1338</strong> — betoonkivi (nõutav klass B pindmise veeimavuse osas rannikul)</li>
+  <li><strong>EVS-EN 1342</strong> — looduskivi</li>
+  <li><strong>EVS-EN 1340</strong> — äärekivid (vaja <a href="/aarekivi/">graniit-äärekivi</a> soolase pinnase korral)</li>
+  <li><strong>EVS 901-3</strong> — asfalt- ja kivisillutise ehitamise reeglid</li>
+</ul>
+
+<h2>Hinnasuunad Haapsalus, Kuressaares ja Hiiumaal (2026)</h2>
+
+<p>Alljärgnevad <a href="/hinnad/">hinnad</a> on suunavad, sisaldavad materjali + töö + logistika, aga <em>ei sisalda</em> pinnaseväljakaevet, kui see peaks vajalik olema (näiteks vana asfaldi lammutus või lisatäite import).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Objekt</th>
+      <th>Haapsalu (€/m²)</th>
+      <th>Kuressaare (€/m²)</th>
+      <th>Hiiumaa (€/m²)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eramu sissesõidutee (betoonkivi)</td>
+      <td>38–52</td>
+      <td>44–58</td>
+      <td>46–62</td>
+    </tr>
+    <tr>
+      <td>Suvekodu terrass (200 m²+)</td>
+      <td>32–48</td>
+      <td>38–54</td>
+      <td>40–58</td>
+    </tr>
+    <tr>
+      <td>Sissesõidutee (graniit)</td>
+      <td>85–125</td>
+      <td>92–140</td>
+      <td>95–150</td>
+    </tr>
+    <tr>
+      <td>Rannaäärne terrass (klinker)</td>
+      <td>62–88</td>
+      <td>68–95</td>
+      <td>72–98</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Hiiumaa <a href="/hinnad/">hinnad</a> on kõrgemad, sest praami sagedus on väiksem ja tagasireiside logistika keerulisem. Vaadake meie <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">2026 hinnakalkulaator</a>, mis arvestab automaatselt saare-lisa.</p>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> Kui odavam pakkumine ütleb "sama hind Saaremaal kui Tallinnas", küsige selgitust logistika kohta. Kas materjal on Saaremaa varutootjalt (mida sisuliselt ei ole — kõik betoonkivi tarnijad on mandril) või pakuvad nad odavamat kivi, mis rannikul ei pea vastu? See on üks põhjustest, miks paljud kliendid pöörduvad meie poole 4–6 aastat pärast eelmist paigaldust.
+</div>
+
+<h2>Millal on kõige parem aeg saarel paigaldada?</h2>
+
+<p>Optimaalne aken on <strong>15. mai kuni 30. september</strong>. Enne 15. maid pole öine temperatuur veel püsivalt üle 5 °C (killustiku niiskus ei tihene korralikult). Peale 30. septembrit muutuvad Väinamere tormid tugevaks — töö saartel katkeb praktikas ka masinate ohutuse tõttu.</p>
+
+<p>Meie broneerime saareklientide projektid <strong>3–5 kuud ette</strong>:</p>
+<ul>
+  <li>Veebruar–märts: broneering ja mõõtmine</li>
+  <li>Aprill: materjali tellimine ja transport</li>
+  <li>Mai–september: paigaldus</li>
+</ul>
+
+<p>Suvekodude puhul, kus omanik käib kohapeal harva, teeme koostööd kohaliku järelvalvega — igal projektil on vähemalt üks kohapealne kontaktisik ja meie brigaadipealik on kättesaadav igas etapis.</p>
+
+<h2>Kohalikud tarnijad ja logistika lahendused</h2>
+
+<p>Balcon Grupp OÜ töötab Lääne-Eestis järgnevate tarnijate ja partneritega:</p>
+
+<ul>
+  <li><strong>Brikers</strong> — vibropressitud betoonkivi (Lätist, kaubik tuleb otse Virtsu terminali)</li>
+  <li><strong>Aroc</strong> — Eesti tootja, laoseisus toodetele lühem tarne (2–5 päeva)</li>
+  <li><strong>Premia</strong> — premium-klassi betoonkivi ajaloolisse miljöösse (Haapsalu vanalinn)</li>
+  <li><strong>Soome ja Skandinaavia graniit</strong> — otsetarne Rootsi laevaliini kaudu</li>
+</ul>
+
+<p>Ajaloolise miljöö puhul (Haapsalu vanalinn, Kuressaare piiskopilinnus, Kärdla vanalinn) sobib eriti <a href="/munakivi-paigaldus-vanalinn-restaureerimine/">munakivi restaureerimislaadi paigaldus</a> või <a href="/graniit-munakivi-paigaldus-vanalinn-restaureerimine/">graniitmunakivi paigaldus</a>, mis säilitab miljöö autentse ilme.</p>
+
+<h2>Suvekodu vs. aastaringne kodu — erinev lähenemine</h2>
+
+<p>Suvekoduks kasutatava sillutise puhul saab lubada mõningaid mööndusi (näiteks väiksem aluskihi paksus, kui teed ei kasutata talvel), aga kaks nõuet on kompromissitud:</p>
+
+<ol>
+  <li><strong>Vuukide polümeerliiv</strong> — kohustuslik, sest suvekodu ei ole omanik pidevalt puhastamas</li>
+  <li><strong>Servade sissepressitud <a href="/aarekivi/">äärekivi</a></strong> — kohustuslik, sest tuul mõjub servadele agressiivselt</li>
+</ol>
+
+<p>Aastaringse eluaseme puhul on lisaks vaja mõelda <a href="/soojendusega-kivisillutis-sissesoidutee-lumesulatus/">soojendusega kivisillutise võimalusele</a> — Saaremaal ja Hiiumaal on kaugkütte ja gaasi puudumise tõttu paljudel majapidamistel õhk-vesi soojuspumbad, millele saab liita ka sissesõidutee lumesulatuse kontuuri.</p>
+
+<h2>Meie tehtud tööd Lääne-Eestis</h2>
+
+<p>Balcon Grupp OÜ (asutatud 2021) on paigaldanud viimastel aastatel Lääne-Eesti maakonnas ja saartel üle 40 objekti kokku ligi 6 500 m² ulatuses. Suurim tehtud projekt oli Kuressaare lähedal 1 850 m² eramu õueala (graniit + betoonkivi kombinatsioon), väikseim 42 m² suvekodu grillnurk Hiiumaal Kõrgessaares. Lisaks kaeti Haapsalu Promenaadi äärse kohviku terrass klinkerkiviga.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Balcon Grupp OÜ annab tehtud tööle kuni 2-aastase garantii.</strong><br>
+    Meie brigaad tuleb saarele koos oma varustusega — teie ei pea muretsema masinate rendi ega tarnete pärast.
+  </div>
+  <div style="display:flex; gap:12px;">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui palju maksab tänavakivi paigaldus Saaremaal võrreldes mandriga?</summary>
+    <p>Saaremaal on hind keskmiselt 8–15 €/m² kõrgem kui <a href="/tanavakivi-paigaldus-tallinn/">Tallinnas</a> samast materjalist paigaldusel. Peamised põhjused: praami logistika (240–380 € vaguni kohta), meeskonna majutus 5–10 tööpäeva jooksul ja materjali ooteaeg praami järjekorras. Broneeringu tegemine veebruaris-märtsis vähendab lisakulusid ~30%, sest saame materjali tuua vaikseima praamiliikluse ajal.</p>
+  </details>
+  <details>
+    <summary>Kas tavaline betoonkivi peab vastu Haapsalu või Kuressaare kliimas?</summary>
+    <p>Ei soovita. Tavaline pressitud betoonkivi (odavam kui 15 €/m² materjalihinnas) hakkab soolases õhus tekitama halliidset pügaukut juba 4–5 aasta pärast ja külmakuivumise järel praguneb servadest 8–12 aasta jooksul. Rannikupiirkonnas kasutage kindlasti vibropressitud kivi (klass B, EVS-EN 1338), mille veeimavus on alla 6%. Hinnavahe on 5–10 €/m², aga eluiga on 2–3 korda pikem.</p>
+  </details>
+  <details>
+    <summary>Millal on parim aeg saartele paigaldust broneerida?</summary>
+    <p>Optimaalne aeg on veebruar–märts. Sel ajal on meie kalendris veel vabu slotte mai–septembri paigaldushooajaks ja materjal jõuab saartele ilma suvise praamijärjekorrata. Kui broneerite juuni või juuli alguses, on tõenäoline, et paigaldus jääb järgmisele aastale — hooaeg on lühike ja Lääne-Eesti brigaadidel juba täidetud kalender.</p>
+  </details>
+  <details>
+    <summary>Kas Balcon Grupp OÜ tuleb ka väiksema (alla 50 m²) tööga saarele?</summary>
+    <p>Jah, aga sel juhul soovitame kombineerida projekti mitme lähedase objekti vahel, et jagada logistikakulusid. Näiteks kui teie naaber Kuressaares plaanib samuti sissesõiduteed — saame tulla ühe brigaadiga ja hind langeb mõlemale ~15–20%. Väikseim eraldi projekt, mille eeltulusalt teha saame, on ~42 m² koos 12 m äärekiviga.</p>
+  </details>
+  <details>
+    <summary>Mis on paigalduse garantii Balcon Grupp OÜ-lt?</summary>
+    <p>Anname tehtud tööle kuni 2-aastase garantii (materjal + töö). Garantii katab vuukide taastuvuse, servade stabiilsuse ja aluskihi vajumise (kui vajumine ületab 5 mm ruutmeetri kohta). Garantii ei kata mehaanilisi vigastusi (tugeva löögi tagajärjed) ega omavolilist ümberistutust. Suuremate objektide (200 000 € ja/või 2 500 m² piires) puhul lepime tingimused üksikasjalikult kokku enne tööde algust.</p>
+  </details>
+</div>
+
+<h2>Seotud artiklid</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-paigaldus-vaikelinn-vandra-elva-otepaa/">Tänavakivi paigaldus väikelinnades: Vändra, Elva, Otepää eripärad</a>
+  <a href="/blog/tanavakivi-hind-2026-ruutmeetri-hinnakalkulaator/">Tänavakivi hind 2026: ruutmeetri hinnakalkulaator</a>
+  <a href="/tanavakivi-paigaldus-suvilale-saaremaa-hiiumaa/">Tänavakivi paigaldus suvilale Saaremaal ja Hiiumaal</a>
+  <a href="/tanavakivi-paigaldus-haapsalu/">Tänavakivi paigaldus Haapsalus</a>
+  <a href="/tanavakivi-paigaldus-saaremaa-kuressaare/">Tänavakivi paigaldus Saaremaal ja Kuressaares</a>
+  <a href="/blog/tanavakivi-aariskivi-piirdekivi-paigaldus-viimistlus/">Ääriskivi ja piirdekivi paigaldus: viimistluse detailid</a>
+  <a href="/tanavakivi-kevadhooaja-broneering-2026/">2026 kevadhooaja broneering</a>
+  <a href="/blog/">Kõik blogi artiklid</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja Hiiumaal",
+      "description": "Lääne-Eesti ja saarte tänavakivi paigalduse täisjuhend: soolakindel materjal, tuulekoormus, praami logistika, hinnad 2026. Vibropressitud betoon, graniit, klinker.",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-14",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://tänavakivipaigaldus24.ee/",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-haapsalu-kuressaare-saaremaa-hiiumaa/"
+      },
+      "inLanguage": "et"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui palju maksab tänavakivi paigaldus Saaremaal võrreldes mandriga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Saaremaal on hind keskmiselt 8–15 €/m² kõrgem kui Tallinnas samast materjalist paigaldusel. Peamised põhjused: praami logistika (240–380 € vaguni kohta), meeskonna majutus 5–10 tööpäeva jooksul ja materjali ooteaeg praami järjekorras."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas tavaline betoonkivi peab vastu Haapsalu või Kuressaare kliimas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ei soovita. Tavaline pressitud betoonkivi hakkab soolases õhus tekitama halliidset pügaukut juba 4–5 aasta pärast ja praguneb servadest 8–12 aasta jooksul. Kasutage vibropressitud kivi klassiga B (EVS-EN 1338), mille veeimavus on alla 6%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Millal on parim aeg saartele paigaldust broneerida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Optimaalne aeg on veebruar–märts. Sel ajal on veel vabu slotte mai–septembri paigaldushooajaks ja materjal jõuab saartele ilma suvise praamijärjekorrata."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas Balcon Grupp OÜ tuleb ka väiksema tööga saarele?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, aga soovitame kombineerida projekti mitme lähedase objekti vahel. Väikseim eraldi projekt, mille tulusalt teha saame, on ~42 m² koos 12 m äärekiviga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mis on paigalduse garantii Balcon Grupp OÜ-lt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anname tehtud tööle kuni 2-aastase garantii (materjal + töö). Garantii katab vuukide taastuvuse, servade stabiilsuse ja aluskihi vajumise (kui vajumine ületab 5 mm ruutmeetri kohta)."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://tänavakivipaigaldus24.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tänavakivipaigaldus24.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi paigaldus Haapsalu, Kuressaare, Saaremaal ja Hiiumaal",
+          "item": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-haapsalu-kuressaare-saaremaa-hiiumaa/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

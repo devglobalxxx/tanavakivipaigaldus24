@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi vanalinnas: muinsuskaitse, load ja autentne...</title>
+  <meta name="description" content="Regulatsioonid muinsuskaitsealadel Tallinnas, Tartus, Pärnus, Haapsalus. Munakivi vs maakivi paigaldus, lubade taotlemine ja kooskõlastused.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-historiseerival-vanalinnas-muinsuskaitse/">
+
+  <meta property="og:title" content="Tänavakivi vanalinnas: muinsuskaitse, load ja autentne...">
+  <meta property="og:description" content="Regulatsioonid muinsuskaitsealadel Tallinnas, Tartus, Pärnus, Haapsalus. Munakivi vs maakivi paigaldus, lubade taotlemine ja kooskõlastused.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-historiseerival-vanalinnas-muinsuskaitse/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi vanalinnas: muinsuskaitse, load ja autentne paigaldus</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-06.jpg" alt="Tänavakivi vanalinnas: muinsuskaitse, load ja autentne paigaldus" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi vanalinnas: muinsuskaitse, load ja autentne paigaldus</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-date">Avaldatud: 3. juuli 2026</span>
+  <span class="meta-sep">•</span>
+  <span class="meta-author">Autor: Keio Soo</span>
+  <span class="meta-sep">•</span>
+  <span class="meta-read">Lugemisaeg: 8 min</span>
+</div>
+
+<h1>Tänavakivi vanalinnas: muinsuskaitse, load ja autentne paigaldus</h1>
+
+<p class="lead"><a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a> muinsuskaitsealal <a href="/tanavakivi-paigaldus-tallinn/">Tallinnas</a>, Tartus, Pärnus või Haapsalus algab alati Muinsuskaitseameti kooskõlastusest — mitte kaevetööst. Vale kivi valik või kooskõlastamata töö võib tähendada trahvi 1 200–3 200 € (KarS § 258) ja kohustust taastada algne katend omal kulul. Balcon Grupp OÜ töötab kõigil neljal ajaloolisel muinsuskaitsealal ning võtame lubade taotlemise ja projekteerija koostöö ise üle.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Muinsuskaitsealal (Tallinna, Tartu, Pärnu, Haapsalu vanalinn) on tänavakivi paigaldus <strong>lubade kohustusega töö</strong>. Vaja on: (1) Muinsuskaitseameti eritingimused, (2) muinsuskaitse-eriala tegevusluba omava spetsialisti projekt, (3) kohaliku omavalitsuse kaeveluba. Autentne materjal on <strong>graniitmunakivi 8/10 või 10/12 cm</strong> (Soome/Skandinaavia päritolu) või <strong>lõhutud graniitpaas</strong> — betoonkivi on vanalinnas keelatud. Menetlusaeg <strong>4–10 nädalat</strong>, projekteerimine + kooskõlastus <strong>500–2 500 €</strong> lisaks paigaldushinnale.
+</div>
+
+<h2>Mis on muinsuskaitseala ja millal kehtib rangem režiim</h2>
+
+<p>Eestis on <strong>12 ajaloolist muinsuskaitseala</strong> (Muinsuskaitseseadus § 12), millest tänavakatendi seisukohalt kõige olulisemad on Tallinna vanalinn (UNESCO nimekirjas alates 1997), Tartu vanalinn, Pärnu vanalinn ja Haapsalu vanalinn. Neil aladel kehtib <strong>Muinsuskaitseseadus (RT I, 2019, 05)</strong> ning tänav, hoov ja isegi eramaja siseõu võivad olla kaitse all — ka siis, kui hoone ise ei ole eraldi mälestis.</p>
+
+<p>Praktiline erinevus tavapaigaldusest:</p>
+
+<ul>
+  <li><strong>Iga kaevetöö</strong> sügavusega üle 30 cm nõuab Muinsuskaitseameti eelnevat kooskõlastust</li>
+  <li><strong>Materjali vahetus</strong> (nt betoonkivi asemel graniitmunakivi taastamine) on lubatud ainult kooskõlastatud projekti alusel</li>
+  <li><strong>Arheoloogiline järelevalve</strong> on kohustuslik enamikul juhtudel — see lisab tööpäevadeks 3–7 päeva ja maksab 45–75 €/tund</li>
+  <li><strong>Vuugimaterjal</strong> peab järgima ajaloolist retsepti (lubjamört või liiv), tavaline tsementvuuk on keelatud</li>
+</ul>
+
+<p>Kui olete ostnud eramaja Tallinna vanalinnas, Pärnu Kesklinna kvartalites või Haapsalu Promenaadi lähedal, siis ka <strong>eraõues</strong> teostatav sillutustöö kuulub kooskõlastuskohustuse alla. Rohkem taustinfot leiate meie eraldi juhendist <a href="/munakivi-paigaldus-vanalinn-restaureerimine/">munakivi paigaldus vanalinn restaureerimine</a> ja <a href="/munakivi-paigaldus-ajaloolisele-sillutisele/">munakivi paigaldus ajaloolisele sillutisele</a>.</p>
+
+<h2>Munakivi vs maakivi vs lõhutud graniitpaas — mis kus sobib</h2>
+
+<p>Autentse vanalinna katendi puhul on kolm põhilist materjalikategooriat. Vale valik = kooskõlastuse tagasilükkamine.</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Materjal</th>
+      <th>Kirjeldus</th>
+      <th>Kus sobib</th>
+      <th>Hind €/m² (paigaldusega)</th>
+      <th>Eluiga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Graniitmunakivi 8/10 cm</strong></td>
+      <td>Ümardatud looduskivi, Soome/Skandinaavia päritolu</td>
+      <td>Tallinna vanalinn, Pärnu ajalooline kesklinn</td>
+      <td>145–210 €/m²</td>
+      <td>100+ aastat</td>
+    </tr>
+    <tr>
+      <td><strong>Graniitmunakivi 10/12 cm</strong></td>
+      <td>Suurem ümarkivi, autoteedele sõidukoormusele</td>
+      <td>Sissesõiduteed, sõidutee-osad vanalinnas</td>
+      <td>175–240 €/m²</td>
+      <td>100+ aastat</td>
+    </tr>
+    <tr>
+      <td><strong>Maakivi (kohalik)</strong></td>
+      <td>Eesti kohalik rändkivi, kohati vabakujuline</td>
+      <td>Talu- ja mõisaõued, aiad, Haapsalu miljöö</td>
+      <td>95–160 €/m²</td>
+      <td>80+ aastat</td>
+    </tr>
+    <tr>
+      <td><strong>Lõhutud graniitpaas 10×10 cm</strong></td>
+      <td>Kuubikuline, tahutud graniit</td>
+      <td>Tartu vanalinn, esinduslikud sisenemised</td>
+      <td>135–195 €/m²</td>
+      <td>100+ aastat</td>
+    </tr>
+    <tr>
+      <td><strong>Betoonkivi</strong></td>
+      <td>Brikers/Aroc/Premia toodang</td>
+      <td>❌ EI OLE lubatud vanalinnas</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Materjali valikut mõjutab piirkonna <strong>ajalooline eeskuju</strong>. Näiteks Tallinna vanalinnas oli 19. sajandi lõpul valdav 10/12 cm graniitmunakivi Soome saartelt (Vaindloo, Suursaari), Tartu ülikooli kvartalites aga lõhutud graniitpaas 10×10 cm. Muinsuskaitseamet lähtub kooskõlastamisel enamasti sellest, mis oli piirkonnas ajalooliselt kasutusel.</p>
+
+<div class="warning">
+  <strong>Sagedane viga:</strong> tellija ostab odavama Hiina graniitmunakivi 6/8 cm suvenirituru näol. Muinsuskaitseamet lükkab sellise projekti tagasi — nõutav on minimaalselt 8/10 cm, Skandinaavia või Soome päritolu, dokumenteeritud materjalisertifikaadiga (EVS-EN 1342 vastavus).
+</div>
+
+<h2>Lubade taotlemine — samm-sammult</h2>
+
+<p>Menetlusprotsess on standardne, aga võtab aega. Realistlik ajakava algusest lõpetamiseni on <strong>4–10 nädalat</strong>. Balcon Grupp OÜ töötab kohaliku muinsuskaitse-eriala projekteerija Ain Tuulikuga ning võtame kogu menetluse üle.</p>
+
+<h3>1. samm — Muinsuskaitseameti eritingimused (2–3 nädalat)</h3>
+
+<p>Enne projekteerimist tuleb esitada Muinsuskaitseametile taotlus eritingimuste väljastamiseks. Vorm on tasuta ja seda saab esitada läbi <strong>register.muinas.ee</strong>. Eritingimused määravad, milline materjal ja paigaldusviis on lubatud. Tähtaeg on ametil 30 kalendripäeva, praktikas vastus 12–18 päeva jooksul.</p>
+
+<h3>2. samm — Muinsuskaitse-eriala tegevusloaga projekteerija (1–2 nädalat)</h3>
+
+<p>Projekti võib koostada ainult isik, kellel on Muinsuskaitseameti väljastatud <strong>muinsuskaitse-eriala tegevusluba</strong> (kategooria „restaureerimine — kivi"). Projekt sisaldab: olemasoleva katendi mõõdistus, uue katendi tehniline lahendus, aluskihtide skeem, materjali spetsifikatsioon, vuugimaterjali retsept. Projekteerimise hind 500–2 500 € sõltuvalt objekti suurusest.</p>
+
+<h3>3. samm — Muinsuskaitseameti kooskõlastus (2–4 nädalat)</h3>
+
+<p>Projekteerija esitab valmisprojekti kooskõlastamiseks. Amet võib nõuda parandusi (praktikas ~40% projektidest saab esimese ringiga märkusi). Kooskõlastuse saab elektroonselt läbi register.muinas.ee.</p>
+
+<h3>4. samm — kohaliku omavalitsuse kaeveluba (5–10 tööpäeva)</h3>
+
+<p>Kui tegemist on tänavatasandi tööga (mitte eraõuega), on lisaks vaja kaevetööde luba omavalitsuselt. <a href="/tanavakivi-paigaldus-tallinn/">Tallinnas</a> läbi Tallinna Kommunaalameti, Tartus läbi Tartu Linnavalitsuse Ehitusteenistuse.</p>
+
+<h3>5. samm — arheoloogiline järelevalve tellimine</h3>
+
+<p>Enamikul juhtudel nõuab Muinsuskaitseamet kaevetöödele arheoloogilist järelevalvet. Balcon Grupp OÜ töötab TÜ Ajaloo ja arheoloogia instituudi järelevalvespetsialistidega, kes vabastavad ala järk-järgult töö käigus. Hind 45–75 €/tund.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Alustate vanalinnas katendi taastamist?</strong> Võtame menetluse üle — eritingimustest kuni kooskõlastatud paigalduseni.
+  </div>
+  <div class="cta-buttons">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Aluskihid ja paigaldusviis — miks vanalinnas ei tohi tsementmörti kasutada</h2>
+
+<p>Autentne ajalooline paigaldus järgib <strong>„elava katendi"</strong> põhimõtet — kivi „hingab", vuuk on jäik ainult liiva või lubjamördi näol. Modernne tsementmördi vuuk lõhub kivi külmumis-sulamistsüklites ning ei võimalda kivi tagasi paigaldust remondi käigus.</p>
+
+<p>Balcon Grupp OÜ ehitab vanalinnas katendi järgmise ristlõikega:</p>
+
+<ul>
+  <li><strong>Killustik 0/45 mm</strong> — kandekiht 25–35 cm (EVS 901-3 nõuetele vastav)</li>
+  <li><strong>Killustik 4/16 mm</strong> — tasandav kiht 3–5 cm</li>
+  <li><strong>Paigaldusliiv 0/4 mm</strong> — 4 cm, pestud fraktsioon</li>
+  <li><strong>Graniitmunakivi 8/10 või 10/12 cm</strong> — surutakse käsitsi liiva sisse</li>
+  <li><strong>Vuugimaterjal</strong> — pestud liiv 0/2 mm või ajalooline lubjamört (retsept: sammalseg 1:3)</li>
+</ul>
+
+<p>Tavapaigaldus võrdluseks on kirjeldatud meie <a href="/tanavakivi-paigaldus/">tänavakivi paigalduse põhijuhendis</a>. Vanalinna töö erineb kolme põhimõttelise punkti poolest:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Tavapaigaldus</th>
+      <th>Vanalinna paigaldus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vuuk</td>
+      <td>Kvartsliiv 0/2 mm</td>
+      <td>Pestud liiv 0/2 või lubjamört</td>
+    </tr>
+    <tr>
+      <td>Ääristused</td>
+      <td>Graniit- või betoon-äärekivi</td>
+      <td>Vibreerimata graniit-servakivi 10×20 cm</td>
+    </tr>
+    <tr>
+      <td>Tihendamine</td>
+      <td>Vibroplaat kummikattega</td>
+      <td>Käsitsi pigem koputamine, minimaalne vibratsioon</td>
+    </tr>
+    <tr>
+      <td>Kalle</td>
+      <td>1,5–2%</td>
+      <td>1,0–1,5% (ajalooliselt tasasem)</td>
+    </tr>
+    <tr>
+      <td>Standardid</td>
+      <td>EVS-EN 1338, EVS 901-3</td>
+      <td>EVS-EN 1342, EVS 901-3 + Muinsuskaitseameti eritingimused</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Erinevused linnade lõikes — Tallinn, Tartu, Pärnu, Haapsalu</h2>
+
+<h3>Tallinna vanalinn</h3>
+
+<p>Kõige rangem kooskõlastuspraktika — UNESCO nimekirjas alates 1997. aastast. Muinsuskaitseamet <a href="/tanavakivi-paigaldus-tallinn/">Tallinnas</a> vaatab tavaliselt üle: materjali päritolutunnistus, kivi mõõdud (mitte alla 8 cm sügavuselt), vuugimaterjali proovilaap. Kaeveluba läbi Tallinna Kommunaalameti. Tavaline menetlusaeg 6–10 nädalat. Vaadake ka meie eraldi lehte <a href="/graniit-munakivi-paigaldus-vanalinn-tallinn/">graniit munakivi paigaldus vanalinn Tallinn</a> ja <a href="/munakivi-paigaldus-vanalinn-tallinn/">munakivi paigaldus vanalinn Tallinn</a>.</p>
+
+<h3>Tartu vanalinn</h3>
+
+<p>Tartus on lubatud laiem materjalivalik, sh lõhutud graniitpaas 10×10 cm (kuubik). Ajalooline eeskuju on Toomemägi ja Ülikooli kvartal, kus 19. sajandi lõpul paigaldati graniitkuubikud. Menetlusaeg tavaliselt 4–6 nädalat. Sagedane objekt on <a href="/munakivi-paigaldus-tartu-vanalinnas/">munakivi paigaldus Tartu vanalinnas</a> ja <a href="/munakivi-paigaldus-ajalooline-kesklinn-tartu/">munakivi paigaldus ajalooline kesklinn Tartu</a>.</p>
+
+<h3>Pärnu vanalinn ja Rannapromenaad</h3>
+
+<p>Pärnu vanalinn hõlmab ajaloolisi kvartaleid Rüütli ja Kuninga tänavate ümber. Suvekuurordi ajalooline karakter tähendab, et Muinsuskaitseamet eelistab ümardatud munakivi liivakivipealadega. Rannaäärses kvartalis kehtib lisaks kohalik miljööprotokoll. Vaadake juhendeid <a href="/graniitmunakivi-paigaldus-parnu-ajalooline-kesklinn/">graniitmunakivi paigaldus Pärnu ajalooline kesklinn</a> ja <a href="/munakivi-paigaldus-parnu-ajalooline-kesklinn/">munakivi paigaldus Pärnu ajalooline kesklinn</a>.</p>
+
+<h3>Haapsalu vanalinn</h3>
+
+<p>Haapsalu iseärasus on kohalik <strong>maakivi</strong> — Eesti rändkivi domineerib rohkem kui Skandinaavia graniitmunakivi. Väiksem menetlusala, tavaliselt 3–5 nädalat. Kohaliku maakivi kasutuse tõttu on materjalihind sageli 30–40% odavam kui <a href="/tanavakivi-paigaldus-tallinn/">Tallinnas</a>.</p>
+
+<h2>Kui palju kogu projekt tegelikult maksab</h2>
+
+<p>Ausalt öeldes on vanalinna töö <strong>1,8–3,5 korda kallim</strong> kui sama pindala tavapaigaldus eramaja juures. Miks:</p>
+
+<ul>
+  <li><strong>Materjal</strong> — graniitmunakivi 145–240 €/m² vs betoonkivi 32–48 €/m²</li>
+  <li><strong>Projekteerimine + kooskõlastus</strong> — 500–2 500 € (üks kord kogu objekti kohta)</li>
+  <li><strong>Arheoloogiline järelevalve</strong> — 800–3 000 € sõltuvalt tööpäevade arvust</li>
+  <li><strong>Tööjõud</strong> — käsitöö, ei saa suurt vibroplaati kasutada; tööjõukulu 55–75 €/m² vs 22–35 €/m² tavatöö puhul</li>
+  <li><strong>Ligipääs</strong> — vanalinnas sageli ei mahu ekskavaator, kaeve käib mini-tehnikaga või käsitsi</li>
+</ul>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Objekti suurus</th>
+      <th>Materjal</th>
+      <th>Kokku hind (indikatiivne)</th>
+      <th>Aeg lubadeni + tööd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eramaja hoov 40 m²</td>
+      <td>Graniitmunakivi 8/10 cm</td>
+      <td>9 800 – 14 500 €</td>
+      <td>6–10 nädalat</td>
+    </tr>
+    <tr>
+      <td>Sissesõidutee 80 m²</td>
+      <td>Graniitmunakivi 10/12 cm</td>
+      <td>19 500 – 28 000 €</td>
+      <td>8–12 nädalat</td>
+    </tr>
+    <tr>
+      <td>Ärihoone esiplats 150 m²</td>
+      <td>Lõhutud graniitpaas 10×10</td>
+      <td>32 000 – 48 000 €</td>
+      <td>10–16 nädalat</td>
+    </tr>
+    <tr>
+      <td>Talu-mõisa hoov (Haapsalu) 200 m²</td>
+      <td>Kohalik maakivi</td>
+      <td>28 000 – 42 000 €</td>
+      <td>6–10 nädalat</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Meie <a href="/hinnad/">üldine hinnakiri</a> ei kata muinsuskaitsealasid — iga vanalinna objekt on eritellimus. Kalkulaator meie <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">sillutuskivi hinnakalkulaatori lehel</a> annab võrdluseks tavaobjekti hinna.</p>
+
+<h2>Kes vastutab, kui kooskõlastus jäetakse tegemata</h2>
+
+<p>See on koht, kus paljud tellijad põletavad end. Muinsuskaitseseadus § 78 (halduskaristus) ja Karistusseadustik § 258 näevad ette:</p>
+
+<ul>
+  <li>Kooskõlastamata tööde teostamine — trahv füüsilisele isikule <strong>kuni 1 200 €</strong>, juriidilisele <strong>kuni 3 200 €</strong></li>
+  <li>Muinsuskaitseamet võib nõuda <strong>algse katendi taastamist</strong> tellija kulul — praktikas on see 2–4-kordne originaaltöö maksumus</li>
+  <li>Ehitusfirma, kes teadlikult töötab ilma kooskõlastuseta, kaotab <strong>muinsuskaitse-eriala tegevusloa</strong></li>
+</ul>
+
+<p>Balcon Grupp OÜ ei alusta vanalinnas ühtegi tööd enne kirjaliku Muinsuskaitseameti kooskõlastuse käes olemist. See on ainuke õige praktika ja seetõttu on meie <a href="/tanavakivi-paigalduse-garantii-tingimused-aastad/">2-aastane paigaldusgarantii</a> ka vanalinna objektidel kehtiv.</p>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> kui saate pakkumise firmalt, kes lubab „kooskõlastuse ise ära teha 5 päevaga" või „muinsuskaitse enam ei kontrolli väikeobjekte" — see on kas teadmatus või petmine. Muinsuskaitseamet teostab regulaarselt inspektsioone ja avastatud rikkumine tähendab tellija (mitte firma) kulude taastamiskohustust.
+</div>
+
+<h2>Kevad- ja suveperioodid — millal projekt käivitada</h2>
+
+<p>Realistlik ajakava:</p>
+
+<ul>
+  <li><strong>Talvel (november–veebruar)</strong> — käivitage menetlus. Lubade taotlemine, projekteerimine, arheoloogi lepingu allkirjastamine. Töid vanalinnas ei tehta.</li>
+  <li><strong>Kevadel (märts–aprill)</strong> — võite alustada tööd ainult püsivalt sula pinnasega, temperatuuriga üle +5 °C. Meil on eraldi juhend <a href="/blog/tanavakivi-paigaldus-kevadel-sulapinna-probleemid/">tänavakivi paigaldus kevadel — sulapinna probleemid</a>.</li>
+  <li><strong>Suvel (mai–august)</strong> — põhiline töösesoon. Meie <a href="/tanavakivi-paigaldus-suvel-2026-broneerimine/">suvise broneeringu leht</a> annab hetkeseisu.</li>
+  <li><strong>Sügisel (september–oktoober)</strong> — sobib väiksematele objektidele, kuid arheoloogi kättesaadavus võib olla piiratud.</li>
+</ul>
+
+<p>Kui plaanite vanalinnas tööd 2026. aasta suvel, esitage taotlus <strong>hiljemalt märtsi keskpaigaks</strong>.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Konsulteerime tasuta esimeses etapis.</strong> Kirjeldage objekti, saame teile öelda menetlusrežiimi ja indikatiivse hinna 24 tunni jooksul.
+  </div>
+  <div class="cta-buttons">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui kaua võtab kogu menetlus muinsuskaitsealal?</summary>
+    <p>Realistlikult 4–10 nädalat: eritingimused 2–3 nädalat, projekteerimine 1–2 nädalat, kooskõlastus 2–4 nädalat, kaeveluba 5–10 tööpäeva. Tallinna vanalinnas võib kogu tsükkel kesta 10–12 nädalat, Haapsalus 3–5 nädalat. Meie võtame kogu paberimajanduse üle.</p>
+  </details>
+  <details>
+    <summary>Kas eraõues muinsuskaitsealal on ikka vaja kooskõlastust?</summary>
+    <p>Jah. Kui teie kinnistu asub Tallinna, Tartu, Pärnu või Haapsalu ajaloolisel muinsuskaitsealal, siis ka eraõue sillutustöö nõuab Muinsuskaitseameti kooskõlastust. Erand on vaid katendi remont sama materjaliga sama disainiga — sedagi tuleb ametile teatada.</p>
+  </details>
+  <details>
+    <summary>Miks ei tohi kasutada betoonkivi vanalinnas?</summary>
+    <p>Muinsuskaitseamet lähtub „ajaloolise autentsuse" põhimõttest. Betoonkivi ei olnud vanalinnas ajalooliselt kasutusel — 19. sajandi lõpul ja 20. sajandi alguses paigaldati graniitmunakivi (Skandinaavia päritolu) või lõhutud graniitpaas. Betoonkivi eluiga on ka lühem (25–35 aastat) ja materjal ei ole restaureeritav.</p>
+  </details>
+  <details>
+    <summary>Kui palju maksab arheoloogiline järelevalve tegelikult?</summary>
+    <p>45–75 €/tund. 40 m² hoovil võtab järelevalve tavaliselt 2–4 tööpäeva (16–32 tundi), mis annab kogumaksumuse 800–2 400 €. Suurematel objektidel on tavaliselt fikseeritud päevatasu 400–600 €/päev.</p>
+  </details>
+  <details>
+    <summary>Kas graniitmunakivi tuleb Soomest või Hiinast?</summary>
+    <p>Muinsuskaitsealal on nõutav Soome, Skandinaavia või Eesti päritolu graniit, EVS-EN 1342 sertifikaadiga. Hiina graniit on lubatud ainult siis, kui materjali kivistruktuur ja värv vastavad ajaloolisele originaalile — praktikas Muinsuskaitseamet Hiina päritolu kivi vanalinna ei kooskõlasta.</p>
+  </details>
+</div>
+
+<h2>Seotud lehed</h2>
+
+<div class="related-grid">
+  <a href="/munakivi-paigaldus-vanalinn-restaureerimine/">
+    <strong>Munakivi paigaldus vanalinn — restaureerimine</strong>
+    <span>Ajaloolise katendi taastamise juhend</span>
+  </a>
+  <a href="/graniit-munakivi-paigaldus-vanalinn-tallinn/">
+    <strong>Graniitmunakivi paigaldus Tallinna vanalinnas</strong>
+    <span>Tallinna spetsiifika ja menetlus</span>
+  </a>
+  <a href="/munakivi-paigaldus-tartu-vanalinnas/">
+    <strong>Munakivi paigaldus Tartu vanalinnas</strong>
+    <span>Tartu lõhutud graniitpaas ja munakivi</span>
+  </a>
+  <a href="/graniitmunakivi-paigaldus-parnu-ajalooline-kesklinn/">
+    <strong>Graniitmunakivi paigaldus Pärnu ajaloolises kesklinnas</strong>
+    <span>Pärnu vanalinn ja Rannapromenaad</span>
+  </a>
+  <a href="/munakivi-paigaldus-ajalooline-ouekujundus/">
+    <strong>Munakivi paigaldus ajaloolises õuekujunduses</strong>
+    <span>Mõisa- ja taluhoovide autentne lahendus</span>
+  </a>
+  <a href="/tanavakivi-paigalduse-garantii-tingimused-aastad/">
+    <strong>Tänavakivi paigalduse garantii tingimused</strong>
+    <span>2-aastane paigaldusgarantii, sh vanalinn</span>
+  </a>
+  <a href="/blog/tanavakivi-paigaldus-kevadel-sulapinna-probleemid/">
+    <strong>Tänavakivi paigaldus kevadel — sulapind</strong>
+    <span>Millal alustada muinsuskaitsealal töid</span>
+  </a>
+  <a href="/blog/">
+    <strong>Kõik blogi artiklid</strong>
+    <span>Kivitööde juhendid ja nõuanded</span>
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tänavakivi vanalinnas: muinsuskaitse, load ja autentne paigaldus",
+  "description": "Täielik juhend tänavakivi paigalduseks Tallinna, Tartu, Pärnu ja Haapsalu vanalinnas. Muinsuskaitseameti kooskõlastused, materjalivalik, hinnad ja menetlusaeg.",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "author": {
+    "@type": "Person",
+    "name": "Keio Soo",
+    "jobTitle": "Tegevjuht",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Balcon Grupp OÜ"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Balcon Grupp OÜ",
+    "url": "https://tänavakivipaigaldus24.ee/",
+    "telephone": "+372 58374422",
+    "email": "Balcongrupp@gmail.com",
+    "vatID": "16294742"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-historiseerival-vanalinnas-muinsuskaitse/"
+  },
+  "keywords": "tänavakivi muinsuskaitse vanalinn, munakivi paigaldus vanalinn, graniitmunakivi Tallinn, Muinsuskaitseamet kooskõlastus"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kui kaua võtab kogu menetlus muinsuskaitsealal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Realistlikult 4–10 nädalat: eritingimused 2–3 nädalat, projekteerimine 1–2 nädalat, kooskõlastus 2–4 nädalat, kaeveluba 5–10 tööpäeva. Tallinna vanalinnas võib kogu tsükkel kesta 10–12 nädalat, Haapsalus 3–5 nädalat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas eraõues muinsuskaitsealal on ikka vaja kooskõlastust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jah. Kui teie kinnistu asub Tallinna, Tartu, Pärnu või Haapsalu ajaloolisel muinsuskaitsealal, siis ka eraõue sillutustöö nõuab Muinsuskaitseameti kooskõlastust. Erand on vaid katendi remont sama materjaliga sama disainiga."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Miks ei tohi kasutada betoonkivi vanalinnas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Muinsuskaitseamet lähtub ajaloolise autentsuse põhimõttest. Betoonkivi ei olnud vanalinnas ajalooliselt kasutusel — 19. sajandi lõpul ja 20. sajandi alguses paigaldati graniitmunakivi (Skandinaavia päritolu) või lõhutud graniitpaas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kui palju maksab arheoloogiline järelevalve tegelikult?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "45–75 €/tund. 40 m² hoovil võtab järelevalve tavaliselt 2–4 tööpäeva (16–32 tundi), mis annab kogumaksumuse 800–2 400 €. Suurematel objektidel on tavaliselt fikseeritud päevatasu 400–600 €/päev."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas graniitmunakivi tuleb Soomest või Hiinast?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Muinsuskaitsealal on nõutav Soome, Skandinaavia või Eesti päritolu graniit, EVS-EN 1342 sertifikaadiga. Hiina graniit on lubatud ainult siis, kui materjali kivistruktuur ja värv vastavad ajaloolisele originaalile."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Avaleht",
+      "item": "https://tänavakivipaigaldus24.ee/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://tänavakivipaigaldus24.ee/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tänavakivi vanalinnas: muinsuskaitse, load ja autentne paigaldus",
+      "item": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-historiseerival-vanalinnas-muinsuskaitse/"
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiirpaigaldus: tänavakivi | Tänavakivipaigaldus 24</title>
+  <meta name="description" content="Kuidas korraldada kiireloomulisi paigaldustöid - eelplaneerimine, lisatöölised, lihtsustatud mustrid ja realistlikud ajakavad.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-luhike-tahtaeg/">
+
+  <meta property="og:title" content="Kiirpaigaldus: tänavakivi">
+  <meta property="og:description" content="Kuidas korraldada kiireloomulisi paigaldustöid - eelplaneerimine, lisatöölised, lihtsustatud mustrid ja realistlikud ajakavad.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-luhike-tahtaeg/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Kiirpaigaldus: tänavakivi paigaldus 1-2 nädala jooksul 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-01.jpg" alt="Kiirpaigaldus: tänavakivi paigaldus 1-2 nädala jooksul 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Kiirpaigaldus: tänavakivi paigaldus 1-2 nädala jooksul 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <a href="/">Avaleht</a> › <a href="/blog/">Blog</a> › <span>Kiirpaigaldus 1–2 nädala jooksul</span>
+  </nav>
+  <p class="meta-line">Avaldatud 24. mai 2026 · Autor: Keio Soo · Lugemisaeg ~9 min</p>
+</div>
+
+<h1>Kiirpaigaldus: tänavakivi paigaldus 1-2 nädala jooksul 2026</h1>
+
+<p class="lead">Kiire <a href="/tanavakivi-paigaldus/">tänavakivi paigaldus</a> tähendab töö lõpetamist 7–14 päeva jooksul tellimuse kinnitamisest. See on reaalne, kui pind on alla 300 m², eeltööd algavad enne kivi kohale jõudmist ja brigaad on tugevdatud 4–6 paigaldajani. Pikemate tähtaegadega (alla nädala) kohustusi me ei võta — see lõppeb tavaliselt vajumiste ja ümbertegemisega.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong>
+  <ul>
+    <li><strong>1 nädalas (kuni 100 m²):</strong> sissesõidutee, terrass, väike platsiosa — alus + paigaldus + vuugitäide</li>
+    <li><strong>2 nädalas (kuni 300 m²):</strong> kogu eramaja õueala koos äärekiviga</li>
+    <li><strong>Reaalne ekspresshind:</strong> ~45–70 €/m² (15–25% kallim tavatempo omast)</li>
+    <li><strong>Mida me EI luba kiirelt:</strong> üle 500 m² pinda, keerulisi mustreid, märja pinnasega ehitusi novembris</li>
+    <li><strong>Garantii:</strong> 2 aastat — sama mis tavapärasel paigaldusel, kiirus ei lühenda seda</li>
+  </ul>
+</div>
+
+<h2>Millal kiirpaigaldus on reaalne ja millal mitte</h2>
+
+<p>Ekspresstööd õnnestuvad ainult siis, kui kolm tegurit langevad kokku: <strong>pind on mõõdult väike</strong> (kuni 300 m²), <strong>aluspind on kuiv</strong> (mai–september ideaalne, märts–aprill ja oktoober riskantne) ja <strong>tellija on otsuste valmidusega</strong> (kivi, muster, <a href="/aarekivi/">äärekivi</a> valitud enne tööde algust). Üks puuduv komponent venitab kogu ajakava 3–5 päeva võrra.</p>
+
+<h3>Kiirpaigaldus on reaalne, kui:</h3>
+<ul>
+  <li>Pind ≤ 300 m² ja geomeetria lihtne (ristkülik, L-kuju)</li>
+  <li>Olemasolev alus on stabiilne või täielikult eemaldatav 1 päevaga</li>
+  <li>Kivi on laos (Brikers, Aroc, Premia tavaformaadid) — eritellimusel 2–4 nädalat ootamist</li>
+  <li>Muster on lihtne — paralleel, kalasaba, ploki-muster (mitte ringid, mosaiigid, värvigradient)</li>
+  <li>Kuiv ilm prognoosis — vihm peatab paigalduse 1–2 päevaks</li>
+</ul>
+
+<h3>Kiirpaigaldus EI ole reaalne, kui:</h3>
+<ul>
+  <li>Pind ületab 500 m² (vt <a href="/parkla-sillutuskivi-paigaldus-ariklientidele/">parkla sillutuskivi paigaldus ariklientidele</a>)</li>
+  <li>Vajalik on olulisem maatööde maht (drenaaž, sadeveetorud, kõrguste muutmine)</li>
+  <li>Tellija soovib graniiti eritellimusel (vt <a href="/graniitkivi-paigaldus-eesti/">graniitkivi paigaldus Eestis</a>)</li>
+  <li>Külmunud pinnas (detsember–märts) — alustöid ei saa korrektselt teha</li>
+</ul>
+
+<h2>Ajakava: kuidas 14 päeva päriselt jaotub</h2>
+
+<p>Tüüpilise 200 m² sissesõidutee + parkimisala kiirpaigaldus jaguneb järgmiselt. See on töömahu jaotus, mitte kalendripäevad — vihma korral nihkub kogu ajakava 2–3 päeva edasi.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Päev</th>
+      <th>Tegevus</th>
+      <th>Brigaadi suurus</th>
+      <th>Sõltuvused</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mõõdistus, märgistus, vana kihi lammutus</td>
+      <td>3 + ekskavaator</td>
+      <td>Tellija valikud kinnitatud</td>
+    </tr>
+    <tr>
+      <td>2–3</td>
+      <td>Killustikalus 25–35 cm, tihendamine kihtide kaupa</td>
+      <td>3 + vibroplaat 250 kg</td>
+      <td>Kuiv ilm</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Äärekivi paigaldus betoonialusele</td>
+      <td>2</td>
+      <td>Aluskiht valmis</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Betoon tahkub, paralleelselt sõelliiv 3–5 cm</td>
+      <td>2</td>
+      <td>Äärekivi paigas</td>
+    </tr>
+    <tr>
+      <td>6–9</td>
+      <td>Kivi paigaldus, lõikamine, mustri täpsustamine</td>
+      <td>4–6</td>
+      <td>Kivi kohal, ilm kuiv</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Vuugitäide kvartsliivaga, vibreerimine</td>
+      <td>3 + vibroplaat</td>
+      <td>Pind kuiv</td>
+    </tr>
+    <tr>
+      <td>11–12</td>
+      <td>Järelvuukimine, koristus, ülevaatus tellijaga</td>
+      <td>2</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Mis venitab ajakava kõige sagedamini</h3>
+<p>Reaalsuses pikeneb 14-päevane plaan tavaliselt 17–19 päevani. Peamised põhjused: <strong>vihm</strong> (peatab paigalduse 1–2 päevaks korraga, kuna kuiv aluskiht on hädavajalik), <strong>materjali tarne hilinemine</strong> (kui kivi pole laos, lisandub 1–3 nädalat), <strong>tellija muudatused jooksvalt</strong> ("teeme ka teise terrassi") ja <strong>ootamatu pinnas</strong> (kivihunnik või vana asfalt aluskihis).</p>
+
+<div class="cta-strip">
+  <p><strong>Vajad paigaldust 1–2 nädala jooksul?</strong> Anna ehitusobjekti aadress, soovitav lõpukuupäev ja umbkaudne m². Saadame 24h jooksul kinnituse, kas tähtaeg on reaalne ja millise hinnaga.</p>
+  <p>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </p>
+</div>
+
+<h2>Eelplaneerimine: 5 sammu, mis kiirpaigalduse võimalikuks teevad</h2>
+
+<p>Kiire töö ei alga ekskavaatoriga — see algab 7–10 päeva enne füüsilist tööd otsuste kinnitamisega. Iga otsus, mis tehakse jooksvalt, lisab 1–2 päeva. Vt ka meie <a href="/blog/tanavakivi-paigalduse-maksumus-kalkulaator/">paigalduse maksumuse kalkulaatorit</a> esmase eelarve loomiseks.</p>
+
+<h3>1. Kivi ja muster valitud enne tellimuse kinnitamist</h3>
+<p>Brikersi standardformaadid (Antik, Behaton, Holland) on alati laos. Eritellimuse värvikombinatsioonid — terrakota+antratsiit gradient — võivad lisada 2–4 nädalat. Lihtne <strong>paralleel- või kalasabamuster</strong> paigaldub 30–40% kiiremini kui <strong>ringmuster või veerendiagonaal</strong>.</p>
+
+<h3>2. Äärekivi tüüp ja kõrgused otsustatud</h3>
+<p>Kas paigaldatakse standardne betoonäärekivi või soovid <a href="/graniidist-aarekivi-paigaldus-hind/">graniidist äärekivi</a>? Graniidist <a href="/aarekivi/">äärekivi</a> vajab eritellimust 1–2 nädalat. Vt ka üldist <a href="/aarekivi/">äärekivi infolehte</a>.</p>
+
+<h3>3. Sadeveeplaan kinnitatud</h3>
+<p>Pind peab kalduma vähemalt 1,5–2% sadeveest eemale. Kui veevoolu suund pole selge, lisandub geodeedi mõõdistus (1–2 päeva). Vt <a href="/sillutuskivi-paigaldus-eramaja-ettevalmistus/">eramaja ettevalmistuse juhendit</a>.</p>
+
+<h3>4. Juurdepääs objektile</h3>
+<p>Killustikuveok (10–20 tonni) peab pääsema 20 m raadiuses paigalduskohast. Kitsastes linnaobjektides (vt <a href="/tanavakivi-paigaldus-tallinn/">Tallinn</a>, <a href="/tanavakivi-paigaldus-haabersti/">Haabersti</a>) võib vajada parkimisluba.</p>
+
+<h3>5. Naabrite teavitus</h3>
+<p>Korterelamute ja kitsaste tänavate puhul (Saue, Keila, Viimsi) anna naabritele 3–5 päeva ette teada. Sõidutee blokeerimine 1–2 päeval on tavaline.</p>
+
+<h2>Lisatöölised ja brigaadi struktuur ekspresstööl</h2>
+
+<p>Tavaliselt töötab 200–300 m² objektil 3-liikmeline brigaad ~10 tööpäeva. Ekspressrežiimis tugevdame brigaadi 5–6 inimeseni põhipaigalduse päevadel (päevad 6–9 tabelis), mis surub kivi paigalduse 3–4 tööpäeva sisse.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pind</th>
+      <th>Tavabrigaad</th>
+      <th>Ekspressbrigaad</th>
+      <th>Tavatähtaeg</th>
+      <th>Ekspresstähtaeg</th>
+      <th>Hinnavahe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>kuni 100 m²</td>
+      <td>2 inimest</td>
+      <td>3–4 inimest</td>
+      <td>5–7 päeva</td>
+      <td>3–5 päeva</td>
+      <td>+15–20%</td>
+    </tr>
+    <tr>
+      <td>100–200 m²</td>
+      <td>3 inimest</td>
+      <td>4–5 inimest</td>
+      <td>10–14 päeva</td>
+      <td>7–9 päeva</td>
+      <td>+15–25%</td>
+    </tr>
+    <tr>
+      <td>200–300 m²</td>
+      <td>3 inimest</td>
+      <td>5–6 inimest</td>
+      <td>14–18 päeva</td>
+      <td>10–14 päeva</td>
+      <td>+20–25%</td>
+    </tr>
+    <tr>
+      <td>üle 500 m²</td>
+      <td>3–4 inimest</td>
+      <td><em>Ei mahu kiirpaigaldusse</em></td>
+      <td>3–5 nädalat</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> Kui mõni firma lubab 500 m² kiirpaigaldust 1 nädalaga — tekkima hakkavad probleemid 6–12 kuu pärast. Alustöid (killustikalus, tihendamine, kuivamine) ei saa lühendada ilma kvaliteedi langetamiseta. EVS 901-3 standard nõuab tihendamise kontrollimist kihtide kaupa ja see võtab aega.
+</div>
+
+<h2>Hinna kujunemine ekspresstööl</h2>
+
+<p>Tavatempo paigaldus jääb 38–58 €/m² vahemikku (täielik tööde maksumus koos materjaliga, betoonkivi keskmise hinnaklassi näide). Vt detailset <a href="/hinnad/">hinnakirja</a> ja <a href="/blog/tanavakivi-hind-m2-2026/">tänavakivi 2026 m² hind</a> artiklit.</p>
+
+<p>Ekspresstöö lisandub 15–25% järgmistest teguritest:</p>
+<ul>
+  <li><strong>Lisapaigaldajad:</strong> +5–8 €/m² (brigaadi suurus 2-lt 5-le)</li>
+  <li><strong>Töövoog õhtuti ja nädalavahetustel:</strong> +3–5 €/m² (kui ilmprognoos nõuab)</li>
+  <li><strong>Materjalitarne ekspressilt:</strong> +2–4 €/m² (otse tehasest, mitte vahelaost)</li>
+  <li><strong>Lisamasinad:</strong> +1–2 €/m² (teine vibroplaat, lisakahurakaupr)</li>
+</ul>
+
+<p>Graniittänavakivi puhul on vahe väiksem protsentuaalselt (alusehind on niigi kõrgem 80–130 €/m² vahemikus) — vt <a href="/graniit-tanavakivi-vs-betoonkivi-hind/">graniit vs betoon hinnavõrdlust</a>. <a href="/sissesoidutee-sillutuskivi-paigaldus-hind/">Sissesõidutee paigalduse hind</a> annab täpsema näite tüüpobjektist.</p>
+
+<h2>Lihtsustatud mustrid ekspresspaigalduseks</h2>
+
+<p>Muster mõjutab paigalduskiirust rohkem kui paljud arvavad. Kalasabamuster paigaldatakse umbes 12–15 m² päevas inimese kohta, samas kui keeruline ring- või veerendiagonaalmuster jääb 6–8 m² juurde.</p>
+
+<h3>Kiired mustrid (soovitatud ekspresstööl):</h3>
+<ul>
+  <li><strong>Paralleelmuster (lineaarne):</strong> kiireim, sobib parkimisaladele ja sissesõiduteele</li>
+  <li><strong>Kalasaba 45°:</strong> klassikaline, hea koormustaluvus, paigaldatakse 12–15 m²/päev/inimene</li>
+  <li><strong>Ploki-muster (3×3):</strong> visuaalselt rikas, kuid lihtne lõigata</li>
+</ul>
+
+<h3>Aeglased mustrid (ekspresstööl välditavad):</h3>
+<ul>
+  <li>Ringid ja rosetid (vajab eel-lõikamist ja täppistööd)</li>
+  <li>Värvigradient (mitu paletti, sorteerimine venitab)</li>
+  <li>Mosaiigimuster (eritellimuse kivid)</li>
+</ul>
+
+<h2>Hooaja mõju ekspressile</h2>
+
+<p>Mai–august on parim periood — kuiv ilm, pikad valgusajad, brigaadid sisse töötatud. September–oktoober ja aprill on riskantsemad: vihm pikendab ajakava. Talvel (november–märts) ei tee me kiirpaigaldust üldse, kuna külmunud pinnas ja vihm/lumi rikuvad alustöid. Vt <a href="/blog/tanavakivi-paigaldus-kevadel/">kevadise paigalduse juhendit</a>.</p>
+
+<p>Suvel on ka teine probleem — heade firmade graafik on täis. Päring tasub esitada 2–3 nädalat enne soovitud algust. Vt ka meie <a href="/kivitoo-pakkumine-24h/">24h pakkumise teenust</a>.</p>
+
+<h2>Kvaliteet kiirtööl: 4 kontrollpunkti</h2>
+
+<p>Kiirus ei tohi tähendada vajumisi 6 kuu pärast. Standardid EVS-EN 1338 (betoonkivi), EVS-EN 1340 (<a href="/aarekivi/">äärekivi</a>) ja EVS 901-3 (paigaldustehnika) kehtivad sama rangelt. Meie kontrollpunktid:</p>
+
+<ol>
+  <li><strong>Killustikalus 25–35 cm</strong>, tihendatud kahes kihis (12–15 cm + 12–15 cm), kõvadusmõõt vähemalt EV2 ≥ 80 MPa</li>
+  <li><strong><a href="/aarekivi/">Äärekivi</a> betoonpadjandil</strong> C20/25 kvaliteediga, mitte killustikul</li>
+  <li><strong>Sõelliivakihi paksus</strong> 3–5 cm, ühtlaselt riputatud</li>
+  <li><strong>Vuugitäide kvartsliivaga</strong> 0,5–2 mm, vibreeritud 2 läbimisega</li>
+</ol>
+
+<p>Garantii on 2 aastat — sama kui tavapärasel paigaldusel. Kiirus ei lühenda meie vastutust.</p>
+
+<h2>Ekspresspaigalduse alternatiivid</h2>
+
+<p>Kui ajakava on liiga pingul (alla nädala suurel pinnal), kaalu järgmisi alternatiive:</p>
+
+<ul>
+  <li><strong>Etapiviisiline paigaldus:</strong> sissesõidutee esmalt (3–5 päeva), terrass hiljem — võimaldab maja kasutuselevõttu</li>
+  <li><strong>Ajutine killustikuteekate:</strong> 2 päeva paigaldust, 1 cm killustikku — kasutatav ehituse lõpuni</li>
+  <li><strong>Plaadimaterjali kasutamine:</strong> 60×60 cm betoonplaadid paigalduvad 2–3× kiiremini kui väikekivi</li>
+</ul>
+
+<div class="cta-strip">
+  <p><strong>Tähtaeg pingul? Helista — vastame 24h jooksul.</strong> Vaatame, kas brigaad mahub graafikusse ja saadame eelarvepakkumise.</p>
+  <p>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </p>
+</div>
+
+<h2 id="kkk">Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kas kiirpaigaldus on alati kallim kui tavapärane?</summary>
+    <p>Jah, tüüpiliselt 15–25% kallim. Lisakulud tulevad suuremast brigaadist (5–6 inimest 3 asemel), võimalikust nädalavahetuse tööst ja ekspressmaterjalitarnest. Hinnavahe 200 m² objekti puhul on ~1500–2500 €.</p>
+  </details>
+  <details>
+    <summary>Milline on minimaalne realistlik tähtaeg 200 m² sissesõiduteele?</summary>
+    <p>7–9 tööpäeva kuiva ilmaga ja kui kivi on laos. Lühem aeg tähendab kvaliteedikompromisse alustöödes — me seda ei tee. Vihma korral pikeneb 10–12 päevani.</p>
+  </details>
+  <details>
+    <summary>Kas garantii lüheneb kiirpaigalduse korral?</summary>
+    <p>Ei. Garantii on alati 2 aastat, sõltumata sellest, kas tähtaeg oli 1 nädal või 6 nädalat. Töö kvaliteet ja kontrollpunktid (EVS 901-3, EVS-EN 1338) on samad.</p>
+  </details>
+  <details>
+    <summary>Kas kiirpaigaldust saab teha talvel?</summary>
+    <p>Reeglina ei. Külmunud pinnasel ei õnnestu killustikalust korralikult tihendada ning vuugitäide vajab kuiva pinda. Erandiks võivad olla väikesed (alla 50 m²) sisetiibade paigaldused soojas vahekäigus, kuid see on harvad.</p>
+  </details>
+  <details>
+    <summary>Mida teha, kui konkureeriv firma lubab 500 m² 1 nädalaga?</summary>
+    <p>Soovitame küsida konkreetset ajakava päevade kaupa ja kontrollida alustööde paksust (peab olema 25–35 cm) ning tihendamise mõõtmised. EVS 901-3 standard nõuab kihtide kaupa tihendamist — seda füüsiliselt ei saa 1 nädalaga 500 m² kohta korrektselt teha.</p>
+  </details>
+</div>
+
+<h2>Seotud lehed</h2>
+<div class="related-grid">
+  <ul>
+    <li><a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus — üldjuhend</a></li>
+    <li><a href="/kivitoo-pakkumine-24h/">24h pakkumise teenus</a></li>
+    <li><a href="/sillutuskivi-paigaldus-eramaja-ettevalmistus/">Eramaja paigalduse ettevalmistus</a></li>
+    <li><a href="/parkla-sillutuskivi-paigaldus-ariklientidele/">Parkla paigaldus ärikliendile</a></li>
+    <li><a href="/sissesoidutee-sillutuskivi-paigaldus-hind/">Sissesõidutee paigaldus hind</a></li>
+    <li><a href="/blog/tanavakivi-hind-m2-2026/">Tänavakivi m² hind 2026</a></li>
+    <li><a href="/blog/tanavakivi-paigalduse-maksumus-kalkulaator/">Maksumuse kalkulaator</a></li>
+    <li><a href="/blog/tanavakivi-paigaldus-kevadel/">Paigaldus kevadel</a></li>
+  </ul>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Kiirpaigaldus: tänavakivi paigaldus 1-2 nädala jooksul 2026",
+      "description": "Kuidas korraldada kiireloomulisi tänavakivi paigaldustöid 1–2 nädala jooksul: eelplaneerimine, lisatöölised, lihtsustatud mustrid ja realistlikud ajakavad.",
+      "datePublished": "2026-05-24",
+      "dateModified": "2026-05-24",
+      "inLanguage": "et-EE",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://tänavakivipaigaldus24.ee/",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-luhike-tahtaeg/"
+      },
+      "keywords": "kiire tänavakivi paigaldus, ekspresspaigaldus, lühike tähtaeg, tänavakivi 1 nädalaga"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kas kiirpaigaldus on alati kallim kui tavapärane?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, tüüpiliselt 15–25% kallim. Lisakulud tulevad suuremast brigaadist, võimalikust nädalavahetuse tööst ja ekspressmaterjalitarnest. Hinnavahe 200 m² objekti puhul on ~1500–2500 €."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Milline on minimaalne realistlik tähtaeg 200 m² sissesõiduteele?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "7–9 tööpäeva kuiva ilmaga ja kui kivi on laos. Lühem aeg tähendab kvaliteedikompromisse alustöödes. Vihma korral pikeneb 10–12 päevani."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas garantii lüheneb kiirpaigalduse korral?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ei. Garantii on alati 2 aastat, sõltumata sellest, kas tähtaeg oli 1 nädal või 6 nädalat. Töö kvaliteet ja kontrollpunktid (EVS 901-3, EVS-EN 1338) on samad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas kiirpaigaldust saab teha talvel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reeglina ei. Külmunud pinnasel ei õnnestu killustikalust korralikult tihendada ning vuugitäide vajab kuiva pinda. Erandiks võivad olla väikesed sisetiibade paigaldused soojas vahekäigus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mida teha, kui konkureeriv firma lubab 500 m² 1 nädalaga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Soovitame küsida konkreetset ajakava päevade kaupa ja kontrollida alustööde paksust (peab olema 25–35 cm) ning tihendamise mõõtmised. EVS 901-3 nõuab kihtide kaupa tihendamist — seda ei saa 1 nädalaga 500 m² korrektselt teha."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://tänavakivipaigaldus24.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tänavakivipaigaldus24.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kiirpaigaldus 1–2 nädala jooksul",
+          "item": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-luhike-tahtaeg/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi impregneerimine | Tänavakivipaigaldus 24</title>
+  <meta name="description" content="Impregneerimise tüübid (hüdrofoobne vs oleofoobne), tootjate võrdlus, paigaldustehnika ja eeldatav vastupidavus aastates.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-impregneerimine-pinnatootlus-juhend/">
+
+  <meta property="og:title" content="Tänavakivi impregneerimine">
+  <meta property="og:description" content="Impregneerimise tüübid (hüdrofoobne vs oleofoobne), tootjate võrdlus, paigaldustehnika ja eeldatav vastupidavus aastates.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-impregneerimine-pinnatootlus-juhend/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi impregneerimine: pinnatöötluse juhend ja toodete võrdlus</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-03.jpg" alt="Tänavakivi impregneerimine: pinnatöötluse juhend ja toodete võrdlus" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi impregneerimine: pinnatöötluse juhend ja toodete võrdlus</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span>📅 14. juuni 2026</span> · <span>✍️ Keio Soo</span> · <span>⏱️ 8 min lugemine</span> · <span>🏷️ Hooldus & pinnatöötlus</span>
+</div>
+
+<h1>Tänavakivi impregneerimine: pinnatöötluse juhend ja toodete võrdlus</h1>
+
+<p class="lead"><a href="/tanavakivi/">Tänavakivi</a> impregneerimine on värvitu või toonitud kaitsekiht, mis tungib kivi poorides 2–5 mm sügavusele ning blokeerib vee, õli ja soolade tungimise. Õigesti pealekantud hüdrofoobne impregnant pikendab betoonkivi visuaalset eluiga 8–12 aastat, kuid nõuab uuendamist iga 3–5 aasta tagant. Selles juhendis võrdleme kahte peamist tüüpi, kolme tootjaperekonda ja anname samm-sammulise paigaldustehnika eramaja sissesõidutee jaoks.</p>
+
+<div class="answer-card">
+  <strong>Kiire vastus:</strong> Eramaja sissesõidutee jaoks (kuni 200 m²) sobib kõige paremini siloksaani-baasil hüdrofoobne impregnant (näiteks Aroc Stone Protector või Brikers Hydro-Stop) — kulu 6–9 €/m² koos paigaldusega, kuivamine 24 h, mõju kestab 3–5 aastat. Toidu- ja õliplekkidega kokkupuutuvatel aladel (grillinurk, restorani terrass) eelista kombineeritud oleofoobset-hüdrofoobset toodet hinnaga 11–16 €/m².
+</div>
+
+<h2>Miks tänavakivi üldse impregneerida?</h2>
+
+<p>Betoonkivi (EVS-EN 1338) ja looduskivi (EVS-EN 1342) poorid imavad ilma kaitsekihita vett 4–8% kivi massist. Eesti kliimas tähendab see 80–120 külmumistsüklit aastas, mis lõhuvad kivi pinnakihti, soodustavad sambla teket ja kiirendavad värvi pleekimist. Impregneerimine vähendab veeimavust 90–95%, mis tähendab kolme konkreetset võitu:</p>
+
+<ul>
+  <li><strong>Külmakindlus:</strong> kivi sisetemperatuuril vesi ei jäätu nii intensiivselt — pragude tekkimise risk langeb 60–70%.</li>
+  <li><strong>Plekikindlus:</strong> õli, vein, kohv ja roostevärv ei imendu kivisse, vaid jäävad pinnale ja on pestavad.</li>
+  <li><strong>Sambla ja umbrohu tõrje:</strong> kuiv vuugiliiv ei soodusta seemnete idanemist — saastumiskiirus langeb 2–3 korda.</li>
+</ul>
+
+<p>Ilma impregneerimiseta hakkab kvaliteetne betoonkivi pleekima ja saastuma juba 2–3 aasta möödudes. Impregneeritud pind säilitab esinduslikkuse 6–8 aastat. Loe lisaks <a href="/blog/tanavakivi-soolakahjustused-talvel-kaitse/">tänavakivi soolakahjustustest talvel</a> ja kaitsemeetmetest libedustõrje ajal.</p>
+
+<h2>Hüdrofoobne vs oleofoobne: kahe tüübi võrdlus</h2>
+
+<p>Impregnantide turg jaguneb tehniliselt kaheks põhitehnoloogiaks. Hüdrofoobsed (vett tõrjuvad) tooted katavad ligi 80% eramajade kasutuselt, oleofoobsed (rasva tõrjuvad) on hädavajalikud ärikinnistutel ja toiduga seotud aladel.</p>
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr><th>Parameeter</th><th>Hüdrofoobne (siloksaan)</th><th>Oleofoobne (fluoropolümeer)</th><th>Kombineeritud</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Toimepõhimõte</td><td>Tõrjub vett ja sooli</td><td>Tõrjub õli ja rasvu</td><td>Mõlemad korraga</td></tr>
+    <tr><td>Hind (€/m²)</td><td>2–4</td><td>6–9</td><td>5–8</td></tr>
+    <tr><td>Paigalduskulu kokku (€/m²)</td><td>6–9</td><td>11–16</td><td>10–14</td></tr>
+    <tr><td>Mõju kestus</td><td>3–5 aastat</td><td>4–6 aastat</td><td>4–6 aastat</td></tr>
+    <tr><td>Kuivamine</td><td>24 h</td><td>48 h</td><td>24–36 h</td></tr>
+    <tr><td>Sobivus eramaja sissesõidule</td><td>★★★★★</td><td>★★★</td><td>★★★★</td></tr>
+    <tr><td>Sobivus restoranile/kohvikule</td><td>★★</td><td>★★★★★</td><td>★★★★★</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Mis on siloksaan ja miks see toimib?</h3>
+
+<p>Siloksaanid on ränipõhised molekulid, mis tungivad kivi poorides 2–5 mm sügavusele ja moodustavad seal mikroskoopilise vett tõrjuva kihi. Erinevalt akrüül- või polüuretaan-pinnakatetest ei jäta siloksaan kile kivi peale — pinnatekstuur ja libedustegur ei muutu, kivi "hingab" edasi ja niiskus pääseb seestpoolt välja. See on kriitiline punkt: pinnakate (mitte impregnant) võib külmal ajal koorida ja luua talvel libedusriski.</p>
+
+<h3>Millal valida oleofoobne lahendus?</h3>
+
+<p>Fluoropolümeer-baasil oleofoobsed tooted on vältimatud kolmel juhul: <a href="/kivilahendus-restoranile-ja-kohvikule/">restoranide välitingimustes</a>, parkimisalad, kus on autoõli risk, ning <a href="/kivisillutis-tankla-bensiinijaam-paigaldus/">tanklate ja bensiinijaamade objektidel</a>. Eramaja kontekstis on need üle võimsad — ainsana põhjendab nende kasutamist välitingimustes asuv grillinurk või katusealune väliköök.</p>
+
+<h2>Tootjaperekondade võrdlus: Brikers, Aroc, Premia</h2>
+
+<p>Eesti turul on betoonkivide impregneerimisel kolm dominantset brändi. Kõik kolm tehast pakuvad oma originaalkivile sobitatud impregnante, kuid tooted on üksteisega ka ristkasutatavad.</p>
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr><th>Tootja / toode</th><th>Tüüp</th><th>Hind (€/L)</th><th>Kulu (m²/L)</th><th>Mõju kestus</th><th>Soovitus</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Brikers Hydro-Stop</td><td>Siloksaan</td><td>14–18</td><td>4–6</td><td>3–5 a</td><td>Standardlahendus eramajale</td></tr>
+    <tr><td>Aroc Stone Protector</td><td>Siloksaan + UV-stabilisaator</td><td>18–22</td><td>4–5</td><td>4–6 a</td><td>Päiksele avatud pinnad</td></tr>
+    <tr><td>Premia Premium Care</td><td>Kombineeritud</td><td>26–32</td><td>3–5</td><td>5–7 a</td><td>Esinduslikud pinnad, terrassid</td></tr>
+    <tr><td>Skandinaavia graniidi spetsiaalimpregnant</td><td>Mineraalne</td><td>30–40</td><td>5–7</td><td>6–10 a</td><td>Looduskivi, graniidist sillutis</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Looduskivi (graniit, basalt) vajab erinevat keemiat: mineraalsel baasil impregnandid sobivad palju paremini, kuna kivi pooristruktuur on tihedam ja siloksaanid ei tungi piisavalt sisse. Kui paigaldate <a href="/graniitkivi-paigaldus-eesti/">graniidist sillutist</a> või <a href="/looduskivi-paigaldus-tartu/">looduskivi pinda</a>, küsige tarnijalt spetsiaalne graniidi impregnant.</p>
+
+<div class="cta-strip">
+  <h3>Vajad tänavakivi impregneerimise pakkumist?</h3>
+  <p>Tuleme objektile, mõõdame pinna ja anname siduva hinna 24 tunni jooksul. Garantii pinnatöötlusele 2 aastat.</p>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+</div>
+
+<h2>Samm-sammuline paigaldustehnika</h2>
+
+<p>Impregneerimise efektiivsus sõltub 80% ettevalmistusest ja 20% tootest endast. Halvasti puhastatud või niiskele pinnale kantud impregnant kestab 6–12 kuud — mitte 3–5 aastat. Allpool on standardne 5-etapiline protokoll, mida kasutame oma objektidel.</p>
+
+<h3>1. Eelpuhastus (1. päev)</h3>
+<p>Pesumasin survega 100–150 bar, kuum vesi 50–60 °C. Vuugiliivad eemaldatakse vähemalt 5 mm sügavuselt. Plekkide korral (õli, rooste) kasutatakse spetsiaalset kivi puhastusvahendit pH 2–4. Survega pesemine ei kahjusta kvaliteetset betoonkivi (EVS-EN 1338 normide kohaselt vastupidav 200 bar surveni).</p>
+
+<h3>2. Kuivamine (2.–3. päev)</h3>
+<p>Kivi peab olema kuiv vähemalt 5 mm sügavuselt. Eesti suvel võtab see soojal kuival ilmal 48 h, pilvise ilmaga kuni 72 h. Niiskusmõõtjaga kontrollitav: tulemus alla 4%. Kondensaatne või sajuvesi kivipinnal blokeerib siloksaani imendumise täielikult.</p>
+
+<h3>3. Vuugiliiva taastäide</h3>
+<p>Enne impregneerimist täidetakse vuugid kuiva kvartsliivaga (fraktsioon 0,3–0,8 mm). See on kriitiline: liiv peab olema kuiv, et impregnant tungiks ka vuukide servadesse ja kaitseks neid umbrohu eest.</p>
+
+<h3>4. Impregnandi pealekanne (4. päev)</h3>
+<p>Madala rõhuga pihustiga, niisutades pind küllastuseni — kivi peab "imama" 3–5 minutit. Liiga vähene kogus = mõju ainult 1 mm sügavusel. Liiga palju = pinnale kile, mis hiljem koorub. Standardkulu: 4–5 m²/L. Töötemperatuur 10–25 °C, tuulekiirus alla 4 m/s.</p>
+
+<h3>5. Kuivamine ja taasavamine</h3>
+<p>24 tundi liikluse jaoks suletud (jalakäijad lubatud 12 h pärast). Auto liiklus 48 h pärast. Täielik keemiline sidumine toimub 7 päeva jooksul — selle aja jooksul tugevat survepesu vältida.</p>
+
+<h2>Eeldatav vastupidavus ja uuendamine</h2>
+
+<p>Impregneerimine ei ole "pane korra ja unusta" lahendus. Eesti kliimas kulub kaitsekiht järgmiselt:</p>
+
+<ul>
+  <li><strong>Aastad 1–2:</strong> 100% efektiivsus. Vesi pärlitub pinnal, plekid pestavad ära.</li>
+  <li><strong>Aastad 3–4:</strong> 60–70% efektiivsus. Mõnedes kohtades hakkab vesi imenduma.</li>
+  <li><strong>Aastad 5–6:</strong> 30–40% efektiivsus. Vajab uuendamist enne kui kivi taas saastub.</li>
+</ul>
+
+<p>Uuendamine on 30–40% odavam kui esmane töötlus, kuna eelpuhastus on lihtsam — vajalik on ainult standardne survepesu. Uuendamise indikaator on lihtne test: vala klaasitäis vett kivile. Kui vesi pärlitub ja kerkib tilgaks — impregnant töötab. Kui imendub 10 sekundi jooksul — uuendamise aeg on käes.</p>
+
+<div class="warning">
+  <strong>⚠️ Sageli tehtud viga:</strong> impregnandi peale ei tohi kanda akrüül- või polüuretaan-pinnakatet. Need tooted ei haaku siloksaaniga ja koorivad 1–2 aasta jooksul, jättes kivipinna kahjustunud kujul. Kui soovite läikivat pinda, valige juba algusest kombineeritud "wet-look" toode.
+</div>
+
+<h2>Millised kivid impregneerimist NÄHTAVALT muudavad?</h2>
+
+<p>Standardne värvitu impregnant ei muuda kivi välimust — see oligi eesmärk. Kui kasutate aga "wet-look" toonitud varianti, muutub kivi värv 15–25% tumedamaks ja küllastunumaks, jättes mulje, et pind on alati kerge vihmamärg. See efekt sobib hästi:</p>
+
+<ul>
+  <li><a href="/munakivi-paigaldus-vanalinn-tallinn/">Munakivile ajaloolises miljöös</a> — toob esile kivi struktuuri.</li>
+  <li><a href="/sissesoidutee-kivisillutis-eramaja/">Sissesõidutee kivisillutisele</a> — annab esindusliku välimuse.</li>
+  <li><a href="/basseiniumbruse-kivisillutis-paigaldus/">Basseiniümbruse sillutisele</a> — märg kivi sulandub veega esteetiliselt.</li>
+</ul>
+
+<p>"Wet-look" tooted maksavad 30–50% rohkem ja nende kestus on lühem (2–4 aastat), kuid esteetiline efekt õigustab kulu esinduslikel objektidel.</p>
+
+<h2>Hinnakujundus ja arvutus eramajale</h2>
+
+<p>Tüüpilise eramaja sissesõidutee (50–80 m²) impregneerimise koguhinnaarvutus:</p>
+
+<ul>
+  <li>Eelpuhastus (survepesu + plekkide eemaldamine): 3–5 €/m²</li>
+  <li>Vuugiliiva taastäide: 1–2 €/m²</li>
+  <li>Impregnant (Aroc Stone Protector): 3–4 €/m²</li>
+  <li>Paigaldustöö: 2–3 €/m²</li>
+  <li><strong>Kokku: 9–14 €/m² (paku- või väljapaku järgi)</strong></li>
+</ul>
+
+<p>Suuremate alade puhul (üle 200 m²) on hinnaskaala soodsam — kuni 25% allahindlus. Vaata ka meie <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">2026. aasta hinnakalkulaatorit</a> ja <a href="/hinnad/">üldist hinnakirja</a>. Korterelamute ja ärihoovide hinnakujundus erineb — küsi täpsem pakkumine meie <a href="/kivitoo-pakkumine-24h/">24-tunnise pakkumiskanali</a> kaudu.</p>
+
+<h2>KKK — Tänavakivi impregneerimine</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kas saan impregneerida ka 10 aastat vana tänavakivi?</summary>
+    <p>Jah, eeldusel et kivi pind on terve (pole murenev) ja korralikult puhastatud. Vana kivi nõuab tugevamat eelpuhastust (survepesu 150 bar + sambla eemaldamine pH 12 leelistega), kuid impregnant tungib ka 10–15-aastasesse kivisse normaalselt. Tulemus on identne uue kiviga.</p>
+  </details>
+  <details>
+    <summary>Mis aastaaeg on impregneerimiseks parim?</summary>
+    <p>Juuni–august, kui temperatuur on stabiilselt 15–25 °C ja sajuvaba periood vähemalt 4 päeva. Kevadel ja sügisel on niiskus pinnal probleem. Talvel impregneerimist ei tehta — temperatuur peab olema vähemalt +10 °C nii pinnal kui ka 7 päeva jooksul pärast paigaldust.</p>
+  </details>
+  <details>
+    <summary>Kas impregneerimine muudab kivi libedaks?</summary>
+    <p>Värvitu siloksaan-impregnant ei muuda libedustegurit — pind säilitab oma loomuliku haarduvuse (libedustegur SRT 60–75). "Wet-look" toonitud tooted vähendavad haarduvust 10–15% märgades tingimustes, mistõttu järskudele kallakutele neid ei soovita.</p>
+  </details>
+  <details>
+    <summary>Kas pean impregneerimist tegema enne või pärast vuugiliiva paigaldust?</summary>
+    <p>Pärast. Vuugiliiv täidetakse esimesena, seejärel kantakse impregnant pealekohale, mis kaitseb nii kivi kui ka vuukides olevat liiva. Vastupidine järjekord jätab vuugid kaitseta ja umbrohutõrje efekt kaob.</p>
+  </details>
+  <details>
+    <summary>Kui kaua kestab garantii impregneerimisele?</summary>
+    <p>Meie pakume impregneerimise paigaldusele 2-aastast garantiid — selle aja jooksul, kui kaitse efektiivsus langeb alla 60% (kontrollitav veetestiga), tasume parandustööd ise. Toote enda eluiga on 3–5 aastat, mis on tootja deklareeritud spetsifikatsioon.</p>
+  </details>
+</div>
+
+<div class="cta-strip">
+  <h3>Telli professionaalne impregneerimine</h3>
+  <p>Mõõdame pinna, hindame seisukorra ja anname soovituse parima toote osas. Balcon Grupp OÜ — kivitööde spetsialist <a href="/tanavakivi-paigaldus-tallinn/">Tallinnas</a>, Tartus ja Pärnus.</p>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+</div>
+
+<h2>Seotud artiklid ja teenused</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-soolakahjustused-talvel-kaitse/">Tänavakivi soolakahjustused talvel: kaitse ja taastamine</a>
+  <a href="/blog/betoonkivi-tootjad-eestis-vordlus-2026/">Betoonkivi tootjad Eestis — 2026. aasta võrdlus</a>
+  <a href="/blog/graniitkivi-tuubid-vorklevikivi-platsikivi-noppekivi/">Graniitkivi tüübid: võrkleva-, platsi- ja nõppekivi</a>
+  <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus — peamine teenuseleht</a>
+  <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">Sillutuskivi paigalduse hinnakalkulaator 2026</a>
+  <a href="/sissesoidutee-kivisillutis-eramaja/">Sissesõidutee kivisillutis eramajale</a>
+  <a href="/blog/">Kõik artiklid blog'is →</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tänavakivi impregneerimine: pinnatöötluse juhend ja toodete võrdlus",
+  "description": "Hüdrofoobse vs oleofoobse impregnandi võrdlus, tootjate (Brikers, Aroc, Premia) hinnatabel, 5-etapiline paigaldustehnika ja eeldatav vastupidavus 3–5 aastat.",
+  "datePublished": "2026-06-14",
+  "dateModified": "2026-06-14",
+  "author": {
+    "@type": "Person",
+    "name": "Keio Soo",
+    "jobTitle": "Tegevjuht",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Balcon Grupp OÜ"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Balcon Grupp OÜ",
+    "url": "https://xn--tnavakivipaigaldus24-tnc.ee/",
+    "telephone": "+372 58374422",
+    "email": "Balcongrupp@gmail.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xn--tnavakivipaigaldus24-tnc.ee/blog/tanavakivi-impregneerimine-pinnatootlus-juhend/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kas saan impregneerida ka 10 aastat vana tänavakivi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jah, eeldusel et kivi pind on terve ja korralikult puhastatud. Vana kivi nõuab tugevamat eelpuhastust (survepesu 150 bar + sambla eemaldamine), kuid impregnant tungib ka 10–15-aastasesse kivisse normaalselt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mis aastaaeg on impregneerimiseks parim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Juuni–august, kui temperatuur on stabiilselt 15–25 °C ja sajuvaba periood vähemalt 4 päeva. Talvel impregneerimist ei tehta — temperatuur peab olema vähemalt +10 °C 7 päeva jooksul pärast paigaldust."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas impregneerimine muudab kivi libedaks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Värvitu siloksaan-impregnant ei muuda libedustegurit — pind säilitab oma loomuliku haarduvuse (SRT 60–75). Wet-look toonitud tooted vähendavad haarduvust 10–15% märgades tingimustes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas pean impregneerimist tegema enne või pärast vuugiliiva paigaldust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pärast. Vuugiliiv täidetakse esimesena, seejärel kantakse impregnant pealekohale, mis kaitseb nii kivi kui ka vuukides olevat liiva."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kui kaua kestab garantii impregneerimisele?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pakume impregneerimise paigaldusele 2-aastast garantiid. Toote enda eluiga on 3–5 aastat, mis on tootja deklareeritud spetsifikatsioon."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Avaleht",
+      "item": "https://xn--tnavakivipaigaldus24-tnc.ee/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://xn--tnavakivipaigaldus24-tnc.ee/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tänavakivi impregneerimine: pinnatöötluse juhend ja toodete võrdlus",
+      "item": "https://xn--tnavakivipaigaldus24-tnc.ee/blog/tanavakivi-impregneerimine-pinnatootlus-juhend/"
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

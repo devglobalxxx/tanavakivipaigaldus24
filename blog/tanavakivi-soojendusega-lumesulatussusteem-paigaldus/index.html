@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soojendusega tänavakivi: lumesulatussüsteemi paigaldus...</title>
+  <meta name="description" content="Elektriline ja vee-baasil põrandakütte paigaldamine tänavakivi alla — maksumus, energiakulu, tasuvus Eesti talves. Tasuta pakkumine 24h. Kogenud paigaldaja">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-soojendusega-lumesulatussusteem-paigaldus/">
+
+  <meta property="og:title" content="Soojendusega tänavakivi: lumesulatussüsteemi paigaldus...">
+  <meta property="og:description" content="Elektriline ja vee-baasil põrandakütte paigaldamine tänavakivi alla — maksumus, energiakulu, tasuvus Eesti talves. Tasuta pakkumine 24h. Kogenud paigaldaja">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-soojendusega-lumesulatussusteem-paigaldus/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Soojendusega tänavakivi: lumesulatussüsteemi paigaldus eramus 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-08.jpg" alt="Soojendusega tänavakivi: lumesulatussüsteemi paigaldus eramus 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Soojendusega tänavakivi: lumesulatussüsteemi paigaldus eramus 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <nav class="breadcrumbs" aria-label="Teekond">
+    <a href="/">Avaleht</a> › <a href="/blog/">Blog</a> › <span>Soojendusega tänavakivi: lumesulatussüsteemi paigaldus eramus 2026</span>
+  </nav>
+  <div class="meta-row">
+    <span class="meta-date">Avaldatud: 26. juuni 2026</span>
+    <span class="meta-author">Autor: Keio Soo, Balcon Grupp OÜ</span>
+    <span class="meta-read">Lugemisaeg: ~10 min</span>
+  </div>
+</div>
+
+<h1>Soojendusega tänavakivi: lumesulatussüsteemi paigaldus eramus 2026</h1>
+
+<p class="lead">Soojendusega <a href="/tanavakivi/">tänavakivi</a> tähendab sissesõidutee, kõnnitee või trepi alla paigaldatud küttesüsteemi, mis sulatab lume ja jää ilma labida või soolata. Eesti kliimas — kus talve jooksul on keskmiselt 90–120 lumepäeva — vabastab see eramaja omaniku tundide kaupa lumekoristusest ja kaitseb <a href="/tanavakivi/">tänavakivi</a> soola-kahjustuste eest. Süsteemi keskmine maksumus 2026. aastal on <strong>180–320 €/m²</strong> elektrikaabli puhul ja <strong>220–380 €/m²</strong> vee-baasil torustiku puhul, lisaks <a href="/tanavakivi-paigaldus/">tänavakivi paigaldus</a> 75–140 €/m². Tasuvusaeg on tavaliselt 8–12 aastat, kui võrrelda säästetud lumekoristusteenuse ja vähenenud kivikahjustustega.</p>
+
+<div class="answer-card">
+  <strong>Kokkuvõte 30 sekundiga</strong>
+  <ul>
+    <li><strong>Maksumus eramus (50 m² sissesõidutee):</strong> 13 000–22 000 € (paigaldus + süsteem + <a href="/tanavakivi/">tänavakivi</a> koos).</li>
+    <li><strong>Energiakulu Eesti talvel:</strong> 25–45 kWh/m² hooaja kohta — keskmise 50 m² ala puhul ~1 500–2 200 € elektrit aastas.</li>
+    <li><strong>Soovitatav tehnoloogia eramule:</strong> elektriline takistuskaabel (lihtne hooldus, ei vaja katlamaja); kommertsobjektidele soovitame vee-baasil glükoolisüsteem.</li>
+    <li><strong>Eluiga:</strong> kvaliteetne kaabel 20–25 aastat; vee-baasil torustik (PEX-a) 30+ aastat — meie garantii kuni 2 aastat paigaldustöödele.</li>
+    <li><strong>Standard:</strong> kivikate EVS-EN 1338 (betoonkivi) või EVS-EN 1342 (looduskivi), aluskonstruktsioon EVS 901-3, elektritöö A-klassi paigaldajalt.</li>
+  </ul>
+</div>
+
+<p>Kui kaalud lumesulatussüsteemi paigaldamist sissesõidutee alla, on see artikkel sinu jaoks. Käime samm-sammult läbi kõik, mida pead teadma: tehnoloogia valik, kihiline ehitus, hinnaarvutus konkreetse näitega, energiakulu Eesti tingimustes, tasuvusarvutus ja kõige sagedasemad vead. Lõpuks leiad korraliku KKK ja viited meie teistele juhenditele.</p>
+
+<h2>Miks soojendusega tänavakivi Eesti kliimas mõtet annab?</h2>
+
+<p>Eesti talv 2024/2025 tõi keskmiselt 47 lumepäeva ja 18 päeva, mil temperatuur kõikus +2 °C ja −5 °C vahel — just see vahemik on tänavakivile kõige hävitavam. Jää-vee vaheldumine viib niiskust kivi pooridesse, vesi paisub külmudes ~9% ja lõhub kivikatte. Lisaks kasutatakse Eestis aastas üle 50 000 tonni teesoola, mis põhjustab betoonkivil heitkesi, graniidil tuhmumist ja vuugiliiva väljauhtumist.</p>
+
+<p>Lumesulatussüsteem lahendab korraga kolm probleemi:</p>
+
+<ul>
+  <li><strong>Ohutus.</strong> Sissesõidutee, trepi ja ukseesise ala jää-vaba pind kogu talve — eriti oluline eakatele ja peredele väikelastega.</li>
+  <li><strong>Kivi eluiga.</strong> Kuna sooli ei kasutata ja niiskus ei jää kihti seisma, pikeneb <a href="/tanavakivi/">tänavakivi</a> eluiga keskmiselt 35–50% (35 → 50 aasta-ekvivalentvõrdluses).</li>
+  <li><strong>Aja kokkuhoid.</strong> Keskmine eramaja omanik kulutab talve jooksul lumekoristusele 40–70 tundi või maksab teenuse eest 800–1 500 €.</li>
+</ul>
+
+<p>Samas ei sobi soojendus iga objekti alla. Kui kasutad sissesõiduteed harva (suvila, maakodu) või talved on lühikesed, ei pruugi süsteem end ära tasuda. Vaata ka meie võrdlust <a href="/blog/tanavakivi-betoonkivi-vs-graniitkivi-vordlus/">betoonkivi vs graniitkivi</a>, sest kivivalik mõjutab ka soojuse jaotumist ja süsteemi efektiivsust.</p>
+
+<h2>Elektriline vs vee-baasil süsteem: kumb sobib eramule?</h2>
+
+<p>Eramus paigaldatakse 80% juhtudel elektriline takistuskaabel. Vee-baasil glükoolisüsteem on tehniliselt parem suurte (üle 200 m²) ja sageli kasutatavate alade jaoks, kuid nõuab katlamaja, soojuspumpa või gaasikatlat ning eraldi pumbasüsteemi. Allpool võrdleme kahte tehnoloogiat objektiivselt.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameeter</th>
+      <th>Elektriline kaabel</th>
+      <th>Vee-baasil (glükool + PEX-a)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Paigalduse maksumus (€/m²)</td>
+      <td>180–320 €</td>
+      <td>220–380 €</td>
+    </tr>
+    <tr>
+      <td>Energiakulu (kWh/m² hooaeg)</td>
+      <td>30–45 kWh</td>
+      <td>15–25 kWh (soojuspumbaga)</td>
+    </tr>
+    <tr>
+      <td>Töövõimsus (W/m²)</td>
+      <td>250–400 W/m²</td>
+      <td>200–350 W/m² (vedeliku t° 35–45 °C)</td>
+    </tr>
+    <tr>
+      <td>Eluiga</td>
+      <td>20–25 aastat</td>
+      <td>30+ aastat (PEX-a toru)</td>
+    </tr>
+    <tr>
+      <td>Vajalik tehnoruum</td>
+      <td>Ei (kontroller seinal)</td>
+      <td>Jah (pump, paisupaak, katel)</td>
+    </tr>
+    <tr>
+      <td>Hooldus</td>
+      <td>Minimaalne</td>
+      <td>Glükooli vahetus iga 7–10 aasta järel</td>
+    </tr>
+    <tr>
+      <td>Sobiv ala suurus</td>
+      <td>10–150 m²</td>
+      <td>50 m² ja rohkem</td>
+    </tr>
+    <tr>
+      <td>Soovitatud objektitüüp</td>
+      <td>Eramaja, ridaelamu, korteriühistu hoov</td>
+      <td>Ärihoone, suur sissesõit, kallakuga teed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Lihtne otsustusreegel: kui ala on alla 100 m² ja sul ei ole juba olemas soojuspumba- või katlasüsteemi, vali elektriline kaabel. Kui ehitad uut maja koos maakütte- või õhk-vesi-soojuspumbaga ja sissesõidutee on üle 100 m², vee-baasil süsteem amortiseerub kiiremini. Meie eelistame eramaja projektidele <a href="/sissesoidutee-tanavakivi-paigaldus-tartu/">tänavakivi sissesõidutee</a> alla just elektrilist lahendust selle lihtsuse ja garantii pärast.</p>
+
+<h2>Kihiline ehitus: kuidas süsteem korrektselt paigaldatakse?</h2>
+
+<p>Soojendusega <a href="/tanavakivi-paigaldus/">tänavakivi paigaldus</a> ei ole tavaline kivipaigaldus + lisakaabel. Aluskihid peavad olema natuke teistsugused, et soojus liiguks ülespoole kivile, mitte alla pinnasesse. Kasutame järgmist kihiskeemi, mis vastab EVS 901-3 nõuetele ja Skandinaavia parima praktika juhistele:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kihinr</th>
+      <th>Materjal</th>
+      <th>Paksus</th>
+      <th>Ülesanne</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Põhi</td>
+      <td>Pinnase tihendus + geotekstiil</td>
+      <td>—</td>
+      <td>Stabiilsus, juurte-vee tõke</td>
+    </tr>
+    <tr>
+      <td>2. Aluskiht</td>
+      <td>Killustik 32/63</td>
+      <td>20–30 cm</td>
+      <td>Kandevõime, drenaaž</td>
+    </tr>
+    <tr>
+      <td>3. Soojusisolatsioon</td>
+      <td>XPS 200 kPa</td>
+      <td>5–10 cm</td>
+      <td>Soojuse hoidmine ülal — KOHUSTUSLIK</td>
+    </tr>
+    <tr>
+      <td>4. Tasanduskiht</td>
+      <td>Killustik 0/16 + tasandusliiv</td>
+      <td>10 cm</td>
+      <td>Kaabli paigalduspind</td>
+    </tr>
+    <tr>
+      <td>5. Küttekiht</td>
+      <td>Takistuskaabel või PEX-a torustik</td>
+      <td>3–5 cm</td>
+      <td>Soojusallikas, samm 5–8 cm</td>
+    </tr>
+    <tr>
+      <td>6. Paigaldusliiv</td>
+      <td>Liiv 0/4</td>
+      <td>3–5 cm</td>
+      <td>Tänavakivi alus</td>
+    </tr>
+    <tr>
+      <td>7. Tänavakivi</td>
+      <td>Betoonkivi (Brikers/Aroc) või graniit</td>
+      <td>6–8 cm</td>
+      <td>Pinnakate</td>
+    </tr>
+    <tr>
+      <td>8. Vuugitäide</td>
+      <td>Polümeerliiv</td>
+      <td>—</td>
+      <td>Vuugi püsivus, niiskuse tõke</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Kõige kriitilisem kiht on <strong>XPS-isolatsioon</strong> (kiht 3). Ilma selleta kulub kuni 60% soojusest alla pinnasesse ja energiakulu kahekordistub. Kasutame XPS 200 kPa kvaliteediklassi, mis talub ka raskeveokite koormust ärilistel objektidel.</p>
+
+<div class="warning">
+  <strong>Hoiatus tähtsa detaili kohta.</strong> Takistuskaabel paigaldatakse alati püsiva sammuga (tüüpiliselt 6 cm), kasutades fikseerimisvõre. Kunagi ära paigalda kaablit otse liivale ilma võreta — kaabel võib kivi paigaldamise ajal nihkuda, tekivad "soojad" ja "külmad" kohad, mis lõpuks lõhuvad tänavakivi ebaühtlase paisumise tõttu. Sama kehtib PEX-a torustiku kohta: samm 10–15 cm, kinnitatud klipsidele.
+</div>
+
+<p>Vuugitäidiseks soovitame polümeerliiva (tüüp NaturePave või sarnane), mis ei pese vihmaga välja ega lase juurtel ega umbrohul tärgata. Tavalise vuugiliivaga süsteem lekib niiskust kihti, mis vähendab soojendamise efektiivsust talve jooksul kuni 15%.</p>
+
+<h2>Maksumus 2026 — kolm reaalset näidet</h2>
+
+<p>Toome kolm tüüpilist eramu projekti koos kogumaksumusega. <a href="/hinnad/">Hinnad</a> on suunavad ja sisaldavad süvendamist, aluskihte, XPS-isolatsiooni, küttesüsteemi, <a href="/tanavakivi/">tänavakivi</a> ja viimistlust. KM lisandub.</p>
+
+<h3>Näide 1: Sissesõidutee ja garaaž (50 m²)</h3>
+<ul>
+  <li>Süvendus ja aluskihid: 2 400 €</li>
+  <li>XPS-isolatsioon 8 cm: 1 100 €</li>
+  <li>Elektriline küttekaabel (300 W/m²) + kontroller: 9 200 €</li>
+  <li>Betoonkivi 8 cm (Brikers Trillino): 4 100 €</li>
+  <li><a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>: 4 200 €</li>
+  <li>Vuugitäide + viimistlus: 600 €</li>
+  <li><strong>Kokku ~21 600 € (~432 €/m²)</strong></li>
+</ul>
+
+<h3>Näide 2: Trepp + ukseesine (12 m²)</h3>
+<ul>
+  <li>Süvendus, aluskihid, XPS: 1 600 €</li>
+  <li>Elektriline küttekaabel (350 W/m² trepile) + andur: 2 800 €</li>
+  <li>Graniitkivi 8 cm (Skandinaavia hall): 2 400 €</li>
+  <li>Paigaldus: 1 800 €</li>
+  <li><strong>Kokku ~8 600 € (~717 €/m²)</strong></li>
+</ul>
+<p>Trepi puhul on hind ruutmeetri kohta kõrgem, sest töömaht (kaabli paigaldus astmetele) ja graniitkivi maksumus on suuremad.</p>
+
+<h3>Näide 3: Ärihoone sissepääs ja parkla (180 m²)</h3>
+<ul>
+  <li>Süvendus, killustik, XPS 10 cm: 8 500 €</li>
+  <li>Vee-baasil PEX-a torustik + jaotur + pump: 19 400 €</li>
+  <li>Soojuspumba liides olemasolevasse süsteemi: 4 200 €</li>
+  <li>Betoonkivi 8 cm (koormuskindel, Aroc): 11 700 €</li>
+  <li>Paigaldus ja viimistlus: 14 200 €</li>
+  <li><strong>Kokku ~58 000 € (~322 €/m²)</strong></li>
+</ul>
+
+<p>Suuremate alade puhul on €/m² madalam, kuna fikseeritud kulud (pump, kontroller, projekt) jagunevad rohkemate ruutude vahele. Vaata ka meie <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">sillutuskivi paigalduse hind 2026 kalkulaator</a>, kust saad oma projekti baashinda kiiresti hinnata.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Soovid soojendusega tänavakivi pakkumist?</strong>
+    Saadame täpse hinna 24 tunni jooksul — tasuta mõõdistus eramutele 2024/2025/2026 hooajal.
+  </div>
+  <div class="cta-buttons">
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  </div>
+</div>
+
+<h2>Energiakulu ja tasuvusarvutus Eesti tingimustes</h2>
+
+<p>Lumesulatussüsteemi reaalne energiakulu sõltub kolmest tegurist: süsteemi võimsus (W/m²), tööolukord (lumi vs jää vs kuiv külm) ja juhtimissüsteemi kvaliteet. Eesti talve keskmine tööaeg on 280–420 tundi hooaja kohta — see on aeg, mil andurid registreerivad lume või niiskuse + külma kombinatsiooni.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Süsteem</th>
+      <th>Võimsus</th>
+      <th>Tööaeg/hooaeg</th>
+      <th>Kulu/m²/hooaeg</th>
+      <th>50 m² kulu (0,16 €/kWh)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elektriline + lihtne lülitus</td>
+      <td>300 W/m²</td>
+      <td>420 h</td>
+      <td>126 kWh</td>
+      <td>1 010 € / hooaeg</td>
+    </tr>
+    <tr>
+      <td>Elektriline + nutiandur</td>
+      <td>300 W/m²</td>
+      <td>140 h</td>
+      <td>42 kWh</td>
+      <td>335 € / hooaeg</td>
+    </tr>
+    <tr>
+      <td>Vee-baasil + soojuspump (SCOP 3,5)</td>
+      <td>250 W/m²</td>
+      <td>140 h</td>
+      <td>10 kWh</td>
+      <td>80 € / hooaeg</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Suurim tegur energiakulus on <strong>juhtimissüsteem</strong>. Lihtne sisse-välja lüliti või termostaat sunnib süsteemi töötama suure osa talvest "igaks juhuks". Nutiandur (kombineeritud lumeandur + niiskuseandur + temperatuuriandur, näiteks Heatmiser, Devireg Touch või Tekmar) töötab vaid siis, kui lund tõesti sajab — see vähendab tööaega 3–4×.</p>
+
+<p>Tasuvusarvutus eramaja näitel (50 m² sissesõidutee, elektriline süsteem nutianduriga):</p>
+
+<ul>
+  <li>Investeering: 21 600 €</li>
+  <li>Energiakulu aastas: 335 €</li>
+  <li>Säästetud lumekoristusteenus: 1 200 €/aasta (kahel pool maja, 47 lumepäeva, 25 €/kord)</li>
+  <li>Säästetud kivihooldus ja remont: ~150 €/aasta (vuugiliiva taastäide, soola-kahjustused)</li>
+  <li><strong>Aastane netosääst: ~1 015 €</strong></li>
+  <li><strong>Tasuvusaeg: ~21 aastat</strong></li>
+</ul>
+
+<p>Puhtalt rahaliselt ei ole soojendus eramus tihti kõige kiirema tasuvusajaga investeering. Suurim "tulu" on aja kokkuhoid (40–70 tundi/aastas) ja mugavus — eriti talvel tööle ruttades, vanemate inimeste puhul või eluasemerajoonides, kus lume äravedu on nõutud naabruskonna reeglitega. Vaata ka <a href="/soojendusega-kivisillutis-sissesoidutee-lumesulatus/">soojendusega kivisillutise sissesõidutee lumesulatuse</a> lehte konkreetsete näitejuhtumitega.</p>
+
+<h2>Sagedasemad vead, mida vältida</h2>
+
+<p>Oleme näinud süsteeme, mis töötasid esimese aasta hästi, kuid läksid katki teisel-kolmandal talvel. Põhjused on peaaegu alati paigalduslikud, mitte tehnoloogilised. Allpool kõige sagedasemad vead:</p>
+
+<ol>
+  <li><strong>XPS-isolatsiooni unustamine.</strong> Süsteem küll soojendab, kuid 50–60% soojusest läheb alla pinnasesse. Energiakulu kahekordne, kivi külmub talvel ikkagi alt üles.</li>
+  <li><strong>Kaabli ebaühtlane samm.</strong> Käsitsi paigaldades võivad lõigud olla 4 cm ja 9 cm — tulemus on triibuline jäätumismuster.</li>
+  <li><strong>Liiv otse kaablile ilma võreta.</strong> Kaabel nihkub kivi paigaldamise ajal, tekib pingekohti, mis 2–3 aasta jooksul lõhuvad kontakti.</li>
+  <li><strong>Anduri vale asukoht.</strong> Andur paigaldatakse alale, mis on tuulele või päikesele eriline avatud — süsteem reageerib vale niiskuse-mustrile.</li>
+  <li><strong>Ülevõimsus.</strong> 500+ W/m² kaabel eramaja ette on raiskamine — Eesti talvel piisab 250–350 W/m², mis hoiab käituskulu madalal.</li>
+  <li><strong>Vuugi tavaline liiv.</strong> Tavaline liiv peseb välja, niiskus tungib alla, tekitab külmunud "patju" ja lõhub kivi.</li>
+  <li><strong>Elektriprojekti puudumine.</strong> 5–15 kW süsteem nõuab eraldi kaitset elektrikilbis. Ilma B-klassi paigaldaja projektita ei pruugi süsteem läbida elektrikontrolli — sa ei saa kindlustusjuhul hüvitist.</li>
+</ol>
+
+<p>Korralik projekt algab sellest, et paigaldaja teeb objektil mõõdistuse, küsib ühenduspunkti võimsust ja koostab kihiplaani enne, kui mainib hinda. Kui keegi pakub "umbes 5 000 € paigaldust" telefoni teel ilma objektil käimata, soovitame teist pakkujat otsida. Loe lähemalt ka <a href="/blog/tanavakivi-paigaldaja-valimine-leping-pakkumine/">tänavakivi paigaldaja valimisest</a>.</p>
+
+<h2>Kuidas süsteemi hooldada?</h2>
+
+<p>Hea uudis: korralikult paigaldatud süsteem ei vaja palju hooldust. Halb uudis: kui hooldus jäetakse tegemata, lühendab see eluiga oluliselt. Soovitame järgnevat kalendrit:</p>
+
+<ul>
+  <li><strong>Iga sügis (oktoober).</strong> Kontrolli kontrolleri tööd, anduri puhtus (lehed, mustus eemaldada), elektrikilbis kaitse staatus. Aeg ~30 minutit.</li>
+  <li><strong>Iga kevad (märts-aprill).</strong> Pärast hooaja lõppu vaatame, kas mõni kivi on liikunud või tekkinud vuugi-defektid. Polümeerliivaga vuukide täiendamine iga 3–5 aasta järel.</li>
+  <li><strong>Iga 5 aasta järel.</strong> Elektritakistuse mõõtmine kaablil (megaomi-test) — A-klassi elektrik teeb ~80 € eest.</li>
+  <li><strong>Vee-baasil süsteem:</strong> glükooli kontsentratsiooni mõõtmine iga 2 aasta järel, vahetus iga 7–10 aasta järel (~400–700 €).</li>
+</ul>
+
+<p>Korraliku hoolduse korral on elektrikaabli reaalne eluiga 22–25 aastat. Vee-baasil torustik (PEX-a) kestab 30 aastat ja rohkemgi, kuid pump ja kontroller vajavad uuendamist 10–15 aasta järel.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Valmis arutama oma projekti?</strong>
+    Tuleme tasuta mõõdistama Tallinn / Tartu / Pärnu / Viljandi piirkonnas. Garantii kuni 2 aastat paigaldustöödele.
+  </div>
+  <div class="cta-buttons">
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  </div>
+</div>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui kaua kestab soojendusega tänavakivi paigaldus 50 m² alale?</summary>
+    <p>Tüüpiline ajakava on 8–12 tööpäeva: 2–3 päeva süvendamine ja aluskihid, 1 päev XPS ja küttesüsteemi paigaldus, 1 päev elektritöö (kontroller, andurid, ühendus kilbiga), 3–4 päeva <a href="/tanavakivi-paigaldus/">tänavakivi paigaldus</a> ja vuugitäide, 1–2 päeva viimistlus ja test. Töötempo sõltub ka ilmast — paigaldame kuivades tingimustes temperatuuril +5 °C kuni +25 °C.</p>
+  </details>
+  <details>
+    <summary>Kas süsteemi saab paigaldada olemasoleva tänavakivi alla ilma seda lahti võtmata?</summary>
+    <p>Ei, soojendussüsteem nõuab täielikku lahti võtmist ja uue kihilise aluskonstruktsiooni rajamist. Põhjus on XPS-isolatsioonikiht (5–10 cm), mis muudab kogu pinna kõrgust. Olemasolev <a href="/tanavakivi/">tänavakivi</a> võib taaskasutada ~70% ulatuses, kui see on hea seisukorras — see vähendab maksumust ~30%.</p>
+  </details>
+  <details>
+    <summary>Milline on energiakulu 100 m² sissesõidutee puhul Eesti talvel?</summary>
+    <p>Elektriline süsteem (300 W/m²) nutianduriga kulutab keskmiselt 42 kWh/m² hooaja kohta = ~4 200 kWh = ~670 € elektrikulu (hind 0,16 €/kWh). Vee-baasil süsteem soojuspumbaga (SCOP 3,5) jääb umbes 160 € lähedale aastas. Lisaks tuleb arvestada, et tipphinnaga elektri kasutamine võib hinda tõsta — soovitame börsihinna paketti.</p>
+  </details>
+  <details>
+    <summary>Kas süsteem sobib graniitkivi alla?</summary>
+    <p>Jah, graniitkivi (8 cm paksusega) on soojendusele isegi parem kui betoonkivi — graniidi soojusjuhtivus on ~3,0 W/m·K vs betoonkivi 1,4 W/m·K, mis tähendab kiiremat soojuse jõudmist pinnale. Loe lähemalt meie võrdlust <a href="/graniit-tanavakivi-vs-betoonkivi-hind/">graniit tänavakivi vs betoonkivi hind</a>.</p>
+  </details>
+  <details>
+    <summary>Mis garantii Balcon Grupp OÜ pakub soojendusega kivile?</summary>
+    <p>Pakume kuni 2 aastat garantiid paigaldustöödele ja kihilisele konstruktsioonile. Küttesüsteemi enda garantii sõltub tootjast (Devi, Ebeco, Raychem) ja kestab tüüpiliselt 10–20 aastat. Garantii kehtib eeldusel, et süsteem on paigaldatud A-klassi elektriku poolt ja on dokumenteeritud elektrikontrollimisaktiga.</p>
+  </details>
+</div>
+
+<h2>Seotud lehed ja teemad</h2>
+
+<div class="related-grid">
+  <a href="/soojendusega-kivisillutis-sissesoidutee-lumesulatus/">Soojendusega kivisillutis: sissesõidutee lumesulatus →</a>
+  <a href="/sissesoidutee-tanavakivi-paigaldus-tartu/">Sissesõidutee tänavakivi paigaldus →</a>
+  <a href="/tanavakivi-paigaldus-garaazitee-koormuskindel/">Tänavakivi paigaldus garaažitee (koormuskindel) →</a>
+  <a href="/tanavakivi-sissesoidutee-eramu-paigaldus-hind/">Tänavakivi sissesõidutee eramu — hind →</a>
+  <a href="/sillutuskivi-paigaldus-eramu-oue-hind-pakett/">Sillutuskivi paigaldus eramu õue — pakett →</a>
+  <a href="/blog/tanavakivi-paigaldus-autotee-sissesoit-kandevoime/">Sissesõidutee kandevõime juhend →</a>
+  <a href="/blog/tanavakivi-betoonkivi-vs-graniitkivi-vordlus/">Betoonkivi vs graniitkivi võrdlus →</a>
+  <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">Sillutuskivi hinnakalkulaator 2026 →</a>
+  <a href="/hinnad/">Hinnakiri →</a>
+  <a href="/blog/">Kõik artiklid →</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Soojendusega tänavakivi: lumesulatussüsteemi paigaldus eramus 2026",
+  "description": "Elektriline ja vee-baasil põrandakütte paigaldamine tänavakivi alla — maksumus 180–380 €/m², energiakulu 25–45 kWh/m² hooaja kohta, tasuvus ja tehnilised nõuded Eesti talves.",
+  "datePublished": "2026-06-26",
+  "dateModified": "2026-06-26",
+  "inLanguage": "et-EE",
+  "author": {
+    "@type": "Person",
+    "name": "Keio Soo",
+    "jobTitle": "Tegevjuht",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Balcon Grupp OÜ"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Balcon Grupp OÜ",
+    "telephone": "+372 58374422",
+    "email": "Balcongrupp@gmail.com",
+    "url": "https://tänavakivipaigaldus24.ee/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-soojendusega-lumesulatussusteem-paigaldus/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kui kaua kestab soojendusega tänavakivi paigaldus 50 m² alale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tüüpiline ajakava on 8–12 tööpäeva: süvendamine ja aluskihid 2–3 päeva, XPS ja küttesüsteem 1 päev, elektritöö 1 päev, tänavakivi paigaldus 3–4 päeva, viimistlus ja test 1–2 päeva. Paigaldame kuivades tingimustes temperatuuril +5 °C kuni +25 °C."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas süsteemi saab paigaldada olemasoleva tänavakivi alla ilma seda lahti võtmata?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ei, soojendussüsteem nõuab täielikku lahti võtmist ja uue kihilise aluskonstruktsiooni rajamist, sest XPS-isolatsioonikiht muudab kogu pinna kõrgust. Olemasolev tänavakivi võib taaskasutada ~70% ulatuses, kui see on hea seisukorras, mis vähendab maksumust ~30%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Milline on energiakulu 100 m² sissesõidutee puhul Eesti talvel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elektriline süsteem (300 W/m²) nutianduriga kulutab keskmiselt 42 kWh/m² hooaja kohta = ~4 200 kWh = ~670 € elektrikulu hinnaga 0,16 €/kWh. Vee-baasil süsteem soojuspumbaga (SCOP 3,5) jääb umbes 160 € lähedale aastas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas süsteem sobib graniitkivi alla?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jah, graniitkivi 8 cm paksusega on soojendusele isegi parem kui betoonkivi — graniidi soojusjuhtivus on ~3,0 W/m·K vs betoonkivi 1,4 W/m·K, mis tähendab kiiremat soojuse jõudmist pinnale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mis garantii Balcon Grupp OÜ pakub soojendusega kivile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pakume kuni 2 aastat garantiid paigaldustöödele ja kihilisele konstruktsioonile. Küttesüsteemi enda garantii sõltub tootjast (Devi, Ebeco, Raychem) ja kestab tüüpiliselt 10–20 aastat. Garantii kehtib eeldusel, et süsteem on paigaldatud A-klassi elektriku poolt ja dokumenteeritud elektrikontrollimisaktiga."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Avaleht",
+      "item": "https://tänavakivipaigaldus24.ee/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://tänavakivipaigaldus24.ee/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Soojendusega tänavakivi: lumesulatussüsteemi paigaldus eramus 2026",
+      "item": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-soojendusega-lumesulatussusteem-paigaldus/"
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

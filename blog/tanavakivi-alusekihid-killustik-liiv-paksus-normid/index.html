@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi aluskihid – killustik, liiv ja paksuse normid...</title>
+  <meta name="description" content="Detailne tehniline juhend aluskihtide paksusest sõiduteedele, jalgteedele ja parklatele Eesti kliimas. Tasuta pakkumine 24h. Kogenud paigaldajad üle Eesti.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-alusekihid-killustik-liiv-paksus-normid/">
+
+  <meta property="og:title" content="Tänavakivi aluskihid – killustik, liiv ja paksuse normid...">
+  <meta property="og:description" content="Detailne tehniline juhend aluskihtide paksusest sõiduteedele, jalgteedele ja parklatele Eesti kliimas. Tasuta pakkumine 24h. Kogenud paigaldajad üle Eesti.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-alusekihid-killustik-liiv-paksus-normid/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi aluskihid – killustik, liiv ja paksuse normid 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-03.jpg" alt="Tänavakivi aluskihid – killustik, liiv ja paksuse normid 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi aluskihid – killustik, liiv ja paksuse normid 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-item">📅 8. juuli 2026</span>
+  <span class="meta-item">✍️ Keio Soo</span>
+  <span class="meta-item">⏱️ 9 min lugemist</span>
+  <span class="meta-item">📂 Tehniline juhend</span>
+</div>
+
+<h1>Tänavakivi aluskihid – killustik, liiv ja paksuse normid 2026</h1>
+
+<p class="lead"><a href="/tanavakivi/">Tänavakivi</a> aluskihid määravad vähemalt 80% paigalduse kvaliteedist ja elueast. Vale paksuse või vale fraktsiooniga killustik toob 2–3 aasta jooksul kaasa vajumid, lombid ja üksikute kivide vajumise – hoolimata sellest, kui hästi kivi ise on paigaldatud. See juhend avab, kui paks peab olema aluskiht sõiduteedele, jalgteedele ja parklatele Eesti kliimas, milline killustik ja liiv kuhu sobib ning kuidas vältida kõige levinumaid vigu.</p>
+
+<div class="answer-card">
+  <h2 style="margin-top:0;">Kiire vastus: aluskihi paksused Eestis</h2>
+  <ul>
+    <li><strong>Jalgtee / terrass:</strong> 15–20 cm killustik (fr. 4/32) + 3–5 cm paigaldusliiv</li>
+    <li><strong>Sissesõidutee eramajale (sõiduauto):</strong> 25–35 cm killustik (2 kihti: 20 cm fr. 16/32 + 10 cm fr. 4/16) + 3–4 cm paigaldusliiv</li>
+    <li><strong>Parkla / kaubandusala (kuni 3,5 t):</strong> 35–45 cm killustik (2 kihti: 25 cm 32/63 + 15 cm 4/32) + 3–4 cm liiv</li>
+    <li><strong>Raskeliiklusega ala / logistikakeskus (üle 10 t):</strong> 45–60 cm killustik + tsemendistabiliseeritud kiht + 3 cm liiv, projekt kohustuslik</li>
+    <li><strong>Standard:</strong> EVS 901-3 „Tee-ehitus. Sillutis"</li>
+  </ul>
+</div>
+
+<h2>Miks aluskiht on tähtsam kui kivi ise?</h2>
+
+<p>Betoonkivi surve­tugevus on tehase järgi ~50 MPa – see kannab ilma probleemideta 40-tonnist veokit, kui aluspind on ühtlane. Kui aluskiht vajub 5 mm ebaühtlaselt, hakkab kivi külgedelt lahti tulema ja sillutis "elab" – tekivad lohud, kuhu koguneb vesi, mis külmub ja lõhub kivi servad. See on põhjus, miks 3–4 aasta pärast paistvad tuttavas naabruskonnas mõnede eramajade sissesõiduteedel juba lained ja kaldenurgad.</p>
+
+<p>Eesti kliimas on kolm külmumis-sulamistsüklit aastas kriitiline – killustiku alla jäänud liigne peenfraktsioon (savi, muld, tolm) hoiab vett, laieneb külmudes ja kergitab sillutise ~10–15 mm kohati üles. Sellepärast ei tohi aluskihis olla üldse orgaanilist ainest ega peenmaterjali fr. < 0,063 mm rohkem kui 5%.</p>
+
+<h3>Neli aluskihi ülesannet</h3>
+<ol>
+  <li><strong>Koormuse jaotamine</strong> – pinnasele jõudev surve peab langema alla ~250 kPa (savipinnas talub kuni 300 kPa)</li>
+  <li><strong>Vee ärajuhtimine</strong> – killustik on drenaaživõrk, mis viib vihmavee alla ja kaldega välja</li>
+  <li><strong>Külmakerke vältimine</strong> – killustiku suurte pooride kaudu vesi ei hoidu üles</li>
+  <li><strong>Ühtlane tugipind kivile</strong> – paigaldusliiv teeb viimase 3–4 cm täpselt tasandi</li>
+</ol>
+
+<h2>Aluskihi ülesehitus – kihthaaval</h2>
+
+<p>Klassikaline korrektne aluskiht koosneb neljast kihist alt üles: tihendatud aluspinnas → geotekstiil → jämekillustik → peenkillustik → paigaldusliiv → sillutuskivi. Eramaja sissesõiduteel on kihtide kogupaksus tavaliselt 30–40 cm, parklas 40–50 cm.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kiht</th>
+      <th>Materjal</th>
+      <th>Paksus (eramaja tee)</th>
+      <th>Paksus (parkla)</th>
+      <th>Tihendamine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Aluspinnas</td>
+      <td>Tihendatud olemasolev pinnas (savi, moreen)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Vibroplaadi 3 ülekäiku</td>
+    </tr>
+    <tr>
+      <td>2. Eraldajakiht</td>
+      <td>Geotekstiil (150 g/m²)</td>
+      <td>1 kiht</td>
+      <td>1 kiht (200 g/m²)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>3. Jämekillustik</td>
+      <td>Fraktsioon 16/32 või 32/63</td>
+      <td>20 cm</td>
+      <td>25–35 cm</td>
+      <td>Kihiti 10 cm, iga kiht 4 ülekäiku</td>
+    </tr>
+    <tr>
+      <td>4. Peenkillustik</td>
+      <td>Fraktsioon 4/16 või 4/32</td>
+      <td>10 cm</td>
+      <td>10–15 cm</td>
+      <td>4 ülekäiku vibroplaadiga</td>
+    </tr>
+    <tr>
+      <td>5. Paigaldusliiv</td>
+      <td>Kvartsliiv fr. 0/4</td>
+      <td>3–4 cm</td>
+      <td>3–4 cm</td>
+      <td>Ei tihendata enne kivi</td>
+    </tr>
+    <tr>
+      <td>6. Sillutuskivi</td>
+      <td>Betoon-/graniit-/klinkerkivi</td>
+      <td>6–8 cm</td>
+      <td>8–10 cm</td>
+      <td>Vibroplaat gummimattiga peale</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Killustiku fraktsioonid – millist kuhu?</h2>
+
+<p>Killustiku fraktsioon (näiteks 4/32) tähendab, et graaniuli suurus on 4 mm kuni 32 mm. Suurem fraktsioon annab jäigema kandekonstruktsiooni, aga vajab peale peenemat kihti tasandamiseks. Väiksem fraktsioon on kergem tihendada, aga alla 4 mm materjali osakaal peab olema minimaalne, muidu ei toimi drenaaž.</p>
+
+<h3>Alumine (kandev) kiht</h3>
+<ul>
+  <li><strong>Fr. 32/63 (dolomiit või graniit)</strong> – raskeliiklus, parklad, tootmisalad. Suur poor, suurepärane drenaaž. Nõuab peale peenemat tasanduskihti.</li>
+  <li><strong>Fr. 16/32 (dolomiit)</strong> – eramaja sissesõiduteed, jalgteed. Levinuim Eesti kliimas.</li>
+</ul>
+
+<h3>Ülemine (tasandus) kiht</h3>
+<ul>
+  <li><strong>Fr. 4/16 (dolomiit)</strong> – ideaalne pealmine killustikukiht enne paigaldusliiva. Ei vaju liiva sisse.</li>
+  <li><strong>Fr. 4/32 (dolomiit)</strong> – lubatud õhemate konstruktsioonide korral (jalgtee, terrass), kui kogupaksus alla 20 cm.</li>
+</ul>
+
+<h3>Paigaldusliiv (viimane kiht kivi all)</h3>
+<ul>
+  <li><strong>Kvartsliiv fr. 0/4 (pestud, peenmaterjalivaba)</strong> – kohustuslik. Peab olema teravaservaline, mitte ümar jõeliiv.</li>
+  <li><strong>Paksus:</strong> 3–4 cm, mitte kunagi üle 5 cm (paksem liivakiht liigub, tekitavad vajumid)</li>
+  <li><strong>Peenosise piirmäär:</strong> < 3% osakesi mõõdus alla 0,063 mm</li>
+</ul>
+
+<div class="warning">
+  <strong>⚠️ Levinud viga:</strong> jõeliiv või ehitusliiv paigaldusliivaks. Ümar tera ei "haaku" ja kivi hakkab 6–12 kuu jooksul liikuma. Kasutage ainult purustatud kvartsliiva fr. 0/4, mis on ka EVS 901-3 nõue. Ehitusliiv on lubatud ainult vuukide täitmiseks (fr. 0/2).
+</div>
+
+<h2>Kihipaksused kasutusala järgi</h2>
+
+<p>Killustiku kogupaksus (kaks kihti kokku) sõltub kolmest tegurist: koormus, aluspinnas ja külmakoormus. Eesti klimaatilises vööndis kehtib rusikareegel: killustikkihti kogupaksus peab olema ≥ 30% eeldatava tippkoormuse pikendustegurist ja katma külmakerkeohtliku sügavuse (Lõuna-Eestis ~1 m, Põhja-Eestis ~1,2 m, aga sillutise all kompenseeritakse see osaliselt drenaažiga).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kasutusala</th>
+      <th>Kivi paksus</th>
+      <th>Peenkillustik fr. 4/16</th>
+      <th>Jämekillustik fr. 16/32 või 32/63</th>
+      <th>Kogupaksus (aluskiht)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aiatee, terrass (jalakäija)</td>
+      <td>4–6 cm</td>
+      <td>5 cm</td>
+      <td>10–15 cm</td>
+      <td>18–24 cm</td>
+    </tr>
+    <tr>
+      <td>Jalgtee üldkasutuses</td>
+      <td>6 cm</td>
+      <td>5 cm</td>
+      <td>15 cm</td>
+      <td>23–25 cm</td>
+    </tr>
+    <tr>
+      <td>Eramaja sissesõidutee (sõiduauto ≤ 2,5 t)</td>
+      <td>6–8 cm</td>
+      <td>10 cm</td>
+      <td>20 cm</td>
+      <td>33–38 cm</td>
+    </tr>
+    <tr>
+      <td>Garaaži ette, autotall (kuni 3,5 t)</td>
+      <td>8 cm</td>
+      <td>10 cm</td>
+      <td>25 cm</td>
+      <td>38–43 cm</td>
+    </tr>
+    <tr>
+      <td>Parkla, kaubandusala (kuni 10 t)</td>
+      <td>8–10 cm</td>
+      <td>15 cm</td>
+      <td>30 cm</td>
+      <td>48–55 cm</td>
+    </tr>
+    <tr>
+      <td>Logistikakeskus, tööstusala (üle 10 t)</td>
+      <td>10 cm (klinker/graniit)</td>
+      <td>15 cm</td>
+      <td>35–45 cm + stabilis. kiht</td>
+      <td>60–70 cm (projektiga)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Numbrid on suunavad ja kehtivad standardse moreen-savi pinnase korral. Kui aluspinnas on turvas, kuivendamata savi või pehme muld, tuleb aluspinnas välja vahetada 0,4–0,8 m sügavuseni ja täita killustikuga. Sellisel juhul on <a href="/tanavakivi-paigaldus-parkla-arikinnistule-hind-m2/">äriprojektide hinnad</a> ligi kaks korda kõrgemad.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Vajate täpset kihtide arvutust oma projektile?</strong><br>
+    Saadame 24h jooksul aluskihi spetsifikatsiooni koos km²-hinnaga.
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Tihendamine – vibroplaadi töötsüklid</h2>
+
+<p>Tihendamise kvaliteet on kohe pärast killustiku fraktsiooni teine tähtsaim faktor. Tihendamata killustik vajub esimese 3 kuu jooksul 8–15% mahust, mis tähendab, et 30 cm kihist saab 25 cm ja sillutise pind vajub 5 cm alla algset taset. Korrektne tihendamine viib vajumi alla 1%.</p>
+
+<h3>Vibroplaadi valik ja töötamine</h3>
+<ul>
+  <li><strong>Alla 20 cm killustikukiht:</strong> kerge vibroplaat 100–200 kg, tsentrifugaaljõud 15–30 kN</li>
+  <li><strong>20–40 cm kiht:</strong> keskmine vibroplaat 300–500 kg, tsentrifugaaljõud 40–65 kN</li>
+  <li><strong>Üle 40 cm kiht:</strong> raske vibroplaat 500+ kg või vibrorull, tsentrifugaaljõud 70+ kN</li>
+  <li><strong>Töötsükkel:</strong> 4 ülekäiku samas suunas, seejärel 4 ülekäiku 90° pöördega</li>
+  <li><strong>Kihipaksus vibroplaadi kohta:</strong> maksimaalselt 10 cm korraga – paksemat kihti ei tihenda vibroplaat läbi</li>
+</ul>
+
+<h3>Kuidas kontrollida tihendust?</h3>
+<p>Praktikas kasutatakse kolme meetodit: (1) visuaalne – tihendatud kiht ei vaju enam vibroplaadi all, plaadi hüpe on selgelt kuulda; (2) plaatkoormustesti – professionaalne meetod, mõõdab deformatsiooni­moodulit Ev2 ≥ 45 MPa jalgteel, ≥ 80 MPa sõiduteel; (3) sondi katse – 1,2 m metallsondiga surumine, tihendatud killustikku ei tohi tungida sügavamale kui 15 cm.</p>
+
+<h2>Kalded ja drenaaž</h2>
+
+<p>Sillutise pind peab olema kaldega ehitisest eemale minimaalselt 2% (2 cm iga meetri kohta). Selle all olev killustik peab järgima sama kallet – nii ei kogune vesi ühte kohta ja kandekonstruktsioon püsib kuiv. Suuremate pindade puhul (üle 100 m²) on soovitav ka drenaažitorud (perforeeritud PE 100 mm) killustiku sees, kaldega välja.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sillutisetüüp</th>
+      <th>Minimaalne kalle</th>
+      <th>Soovituslik kalle</th>
+      <th>Drenaažitorud vajalikud?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Terrass, jalgtee</td><td>1,5%</td><td>2%</td><td>Ei (pindala &lt; 50 m²)</td></tr>
+    <tr><td>Eramaja sissesõidutee</td><td>2%</td><td>2,5%</td><td>Kui pikkus &gt; 15 m</td></tr>
+    <tr><td>Parkla (kuni 500 m²)</td><td>2%</td><td>2,5–3%</td><td>Jah, üks toru pindala kohta</td></tr>
+    <tr><td>Suurparkla (üle 500 m²)</td><td>2%</td><td>3%</td><td>Jah, drenaaživõrk projekt</td></tr>
+  </tbody>
+</table>
+
+<p><a href="/soojendusega-kivisillutis-sissesoidutee-lumesulatus/">Sooja aluskihiga sillutisel</a> peab drenaaž olema veelgi hoolikam – lumesulatuse veevoolud on suuremad kui vihm.</p>
+
+<h2>Kliima ja külmakerkeoht</h2>
+
+<p>Külmakerkeoht on peamine põhjus, miks Eestis on aluskihid paksemad kui Kesk-Euroopas. Külmumissügavus varieerub Eestis 0,8 m (Saaremaa, Lääne-Eesti) kuni 1,4 m (Ida-Virumaa, Kagu-Eesti). Killustikukiht ei pea külmumissügavust täielikult kompenseerima – piisab, kui killustik on drenaaživõimeline (peensei osakaal < 5%) ja aluspinnasesse ei jää seisvat vett.</p>
+
+<h3>Piirkondlikud iseärasused</h3>
+<ul>
+  <li><strong><a href="/tanavakivi-paigaldus-tallinn/">Tallinn ja Põhja-Eesti:</a></strong> Paekivialune pinnas, drenaaž hea, aluskiht 25–35 cm eramajale</li>
+  <li><strong><a href="/tanavakivi-paigaldus-tartu-supilinn/">Tartu ja Lõuna-Eesti:</a></strong> Sageli savine, aluskiht 30–40 cm + geotekstiil kohustuslik</li>
+  <li><strong><a href="/tanavakivi-paigaldus-parnu-ramapromenaad/">Pärnu ja rannikuala:</a></strong> Liivane pinnas, aluskiht võib olla 20–25 cm, aga soolarest­riktsioonid graniit­kivil</li>
+  <li><strong><a href="/tanavakivi-paigaldus-narva-hind/">Narva ja Ida-Virumaa:</a></strong> Külmakoormus suurim, aluskiht 30–40 cm eramajale, 45+ cm parklas</li>
+  <li><strong><a href="/tanavakivi-paigaldus-saaremaa/">Saaremaa, Hiiumaa:</a></strong> Merepinna madal tase, kohati vaja drenaažiseadet aluskihi alla</li>
+</ul>
+
+<h2>Kõige levinumad vead ja nende hind</h2>
+
+<p>Alljärgnev on kaheksa aasta praktikast koondatud probleemide edetabel. Iga vea puhul on toodud selle avaldumine ja parandamise ligikaudne maksumus.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Viga</th>
+      <th>Avaldub</th>
+      <th>Parandamise hind (100 m² sissesõidutee)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Liiga õhuke killustikukiht (alla 20 cm sõiduteel)</td><td>1–2 aastaga lohud, vajumid</td><td>3 500 – 5 000 €</td></tr>
+    <tr><td>Vale liiv paigalduse all (jõeliiv/muld)</td><td>Kivi liigub 6–12 kuu jooksul</td><td>2 500 – 4 000 €</td></tr>
+    <tr><td>Tihendamata killustik</td><td>Kogu pind vajub 5–8 cm</td><td>4 000 – 6 000 €</td></tr>
+    <tr><td>Puudub geotekstiil savipinnasel</td><td>2–3 aastaga killustik "kaob" muda sisse</td><td>4 500 – 6 500 €</td></tr>
+    <tr><td>Vale kalle või puudub kalle</td><td>Veelombid, jää talvel</td><td>2 000 – 3 500 €</td></tr>
+    <tr><td>Ilma äärekivideta paigaldus</td><td>Servad "lähevad laiali" 1 aastaga</td><td>1 800 – 3 000 € + <a href="/aarekivi/">äärekivi paigaldus</a></td></tr>
+    <tr><td>Vajumine ehitusprahi/oksade tõttu</td><td>Punktvajumid 3–5 kuu jooksul</td><td>2 500 – 4 500 €</td></tr>
+    <tr><td>Sillutise paigaldus liiga õhukesele kivile (4 cm sõiduteel)</td><td>Kivid pragunevad koormuse all</td><td>Kogu sillutise uuendus 8 000+ €</td></tr>
+  </tbody>
+</table>
+
+<div class="warning">
+  <strong>Ökonoomiline vaade:</strong> 100 m² eramaja sissesõidutee korrektne rajamine maksab 6 000 – 9 500 € (kõik kihid + <a href="/graniit-tanavakivi-vs-betoonkivi-hind/">betoonkivi</a> valikul). Sama pinna hilisem taastamine pärast aluskihi vigu maksab 4 000 – 8 000 € – peaaegu sama palju kui algne töö. Aluskihi säästmine on kõige kulukam SEIS otsus sillutise juures.
+</div>
+
+<h2>Materjalide ligikaudsed hinnad 2026</h2>
+
+<p><a href="/hinnad/">Hinnad</a> on aluskihi materjalide keskmine turuhind Eestis 2026 II kvartalis (ilma paigalduse ja transporditta). Vahemikud tulenevad piirkonnast ja koguse mahust.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Materjal</th>
+      <th>Ühik</th>
+      <th>Hind (€)</th>
+      <th>Mahu-tihedus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Dolomiitkillustik fr. 4/16</td><td>tonn (~0,6 m³)</td><td>14–18</td><td>1,55 t/m³</td></tr>
+    <tr><td>Dolomiitkillustik fr. 16/32</td><td>tonn (~0,6 m³)</td><td>13–17</td><td>1,55 t/m³</td></tr>
+    <tr><td>Dolomiitkillustik fr. 32/63</td><td>tonn (~0,6 m³)</td><td>12–16</td><td>1,55 t/m³</td></tr>
+    <tr><td>Graniitkillustik fr. 4/16</td><td>tonn</td><td>22–28</td><td>1,55 t/m³</td></tr>
+    <tr><td>Kvartsliiv fr. 0/4 (pestud)</td><td>tonn</td><td>16–22</td><td>1,55 t/m³</td></tr>
+    <tr><td>Geotekstiil 150 g/m²</td><td>m²</td><td>1,10–1,60</td><td>–</td></tr>
+    <tr><td>Geotekstiil 200 g/m² (raskeliiklus)</td><td>m²</td><td>1,80–2,40</td><td>–</td></tr>
+    <tr><td>Vibroplaadi rent (500 kg)</td><td>päev</td><td>65–90</td><td>–</td></tr>
+  </tbody>
+</table>
+
+<p>100 m² eramaja sissesõidutee vajab: ~50 tonni jämekillustikku (30 cm × 100 m² × 1,55 t/m³ + tihendustegur), ~15 tonni peenkillustikku, ~6 tonni paigaldusliiva, 110 m² geotekstiili. Kokku materjali maksumus ~1 400 – 1 900 €. Ülejäänud kulu läheb tööjõule, tehnikale ja äärekividele. Täpne <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">projektihinna arvestus on kalkulaatoris</a>.</p>
+
+<h2>Millal kutsuda spetsialist – ja millal saab ise?</h2>
+
+<p>Väike aiatee (kuni 20 m², jalakäija koormus) on suvine DIY-projekt kogenud inimesele – piisab 15 cm killustikust ja vibroplaadi rentist. Sissesõidutee eramajale on juba piiripealne: kihipaksuste õige planeerimine, kalded, äärekivide betoneerimine ja kivi paigalduse tehnika vajavad kogemust. Parklad, restoranide-kohvikute juurdesõidud, äri- ja tootmisalad on alati projektitöö – vale koormusklassi valik võib tähendada kogu sillutise vahetust 3 aasta pärast.</p>
+
+<p>Balcon Grupp OÜ paigaldab <a href="/tanavakivi/">tänavakivi</a> kogu Eestis alates 2021. aastast. Meie brigaad võtab vastutuse kogu paigaldusprotsessi eest – aluspinnase kaevamisest kuni viimase vuugi täitmiseni. Anname kõikidele töödele <a href="/tanavakivi-paigalduse-garantii-tingimused-aastad/">2-aastase paigaldusgarantii</a>, mis katab ka aluskihi vajumid ja kalded, kui need on tingitud paigaldusveast.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Planeerite tänavakivi paigaldust 2026?</strong><br>
+    Kevad- ja suvehooaeg täitub kiiresti – broneerige juba nüüd oma projekt.
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui paks peab olema killustikukiht eramaja sissesõiduteel?</summary>
+    <p>Standardse sõiduauto (kuni 2,5 t) korral vajab eramaja sissesõidutee kokku 30–35 cm killustikku kahes kihis: 20 cm alumine jämekillustik fr. 16/32 ja 10 cm peenkillustik fr. 4/16. Sellele lisandub 3–4 cm paigaldusliiv ja 6–8 cm betoonkivi. Kogupaksus aluspinnasest kuni sillutise pinnani on 40–47 cm. Kui garaaži ette parkitakse kaubik või maastur (kuni 3,5 t), suurendage killustiku kihte 5 cm võrra kummalgi.</p>
+  </details>
+  <details>
+    <summary>Kas parkla aluskiht on erinev eramaja teest?</summary>
+    <p>Jah – parklas on kihipaksused 40–55 cm (kuni 10-tonnise koormuse korral) ja peab kasutama jämedamat alumist fraktsiooni 32/63 dolomiitkillustikku. Lisaks on parklas kohustuslik geotekstiil 200 g/m² (mitte 150 g/m² nagu eramajal) ja kalle 2,5–3% (mitte 2%). Suurte parkalade (üle 500 m²) korral on kohustuslik ka drenaažitorude võrk killustiku sees. Kihi tugevust mõõdetakse plaatkoormustestiga Ev2 ≥ 80 MPa.</p>
+  </details>
+  <details>
+    <summary>Mis vahe on jõeliival ja paigaldusliival?</summary>
+    <p>Jõeliiv on ümarterine, sest on aastasadu vees veeretud – tera ei "haaku" naabertera külge ja liivakiht liigub. Paigaldusliiv on purustatud kvartsliiv fr. 0/4, mis on teravaservaline ja lukustub tihendatuna paigale. EVS 901-3 nõuab, et alla 0,063 mm peenosise osakaal oleks alla 3%. Jõeliiva kasutamine paigaldusliivana on kõige levinum viga, mille tulemuseks on kivi liikumine 6–12 kuu jooksul.</p>
+  </details>
+  <details>
+    <summary>Kas geotekstiil on alati vajalik?</summary>
+    <p>Geotekstiil on kohustuslik savise, mudase või orgaanilise pinnase korral (üle 80% Eesti piirkondadest) – ilma selleta segunevad savi ja killustik 2–3 aasta jooksul ning killustik kaotab drenaaživõime. Puhtal liivpinnasel (näiteks Pärnu ranniku­ala mõned kohad) võib teoreetiliselt loobuda, aga soovitame ikkagi paigaldada – hinnavahe on 100 m² kohta ainult 130–200 €, aga eluiga pikeneb tuntavalt. Raskeliikluse (parklad) korral kasutage tugevamat 200 g/m² materjali.</p>
+  </details>
+  <details>
+    <summary>Kui pikk on korrektselt paigaldatud sillutise eluiga?</summary>
+    <p>Betoonkivi sillutis korrektse aluskihiga peab vastu 25–30 aastat ilma suurema uuendamiseta. <a href="/graniit-tanavakivi-paigaldus-eestis/">Graniit­kivi</a> ja klinkerkivi elavad üle 50 aasta. Aluskiht ise (killustik + liiv) ei "vanane" – kui see on korrektselt paigaldatud ja tihendatud, säilib ka pärast kivi vahetust. Kõige lühem eluiga on betoonkivi ülapinnal – tänavasoola mõjul võib pind 15–20 aasta pärast värvust kaotada, aga struktuurne tugevus säilib.</p>
+  </details>
+</div>
+
+<h2>Seotud artiklid</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-paigaldus-tootstusala-laoplats-koormusklass/" class="related-card">
+    <h3>Tänavakivi paigaldus tootstusalale ja laoplatsile</h3>
+    <p>Raskeliiklusklassid, kihipaksused ja koormusarvutused tööstus­aladel.</p>
+  </a>
+  <a href="/blog/tanavakivi-paigaldus-garantii-tootja-paigaldaja-vahe/" class="related-card">
+    <h3>Tänavakivi garantii – tootja vs paigaldaja</h3>
+    <p>Mida katab tootja 2-aastane garantii ja mida paigaldaja vastutus.</p>
+  </a>
+  <a href="/blog/tanavakivi-vahetus-uuendus-vana-plats-renoveerimine/" class="related-card">
+    <h3>Tänavakivi vahetus ja renoveerimine</h3>
+    <p>Kas võib vana killustiku peale uuesti paigaldada – millal jah, millal ei.</p>
+  </a>
+  <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/" class="related-card">
+    <h3>Sillutuskivi paigalduse hind – kalkulaator 2026</h3>
+    <p>Arvuta oma projekti eeldatav maksumus m² järgi.</p>
+  </a>
+  <a href="/tanavakivi-paigaldus/" class="related-card">
+    <h3>Tänavakivi paigaldus – teenus</h3>
+    <p>Meie täisteenus kogu Eestis: projekteerimine, materjalid, paigaldus.</p>
+  </a>
+  <a href="/hinnad/" class="related-card">
+    <h3>Kõik hinnad 2026</h3>
+    <p>Ülevaatlik hinnakiri kõikidele kivitöödele.</p>
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tänavakivi aluskihid – killustik, liiv ja paksuse normid 2026",
+  "description": "Detailne tehniline juhend tänavakivi aluskihtide paksusest, killustiku fraktsioonidest ja tihendamisest sõiduteedele, jalgteedele ja parklatele Eesti kliimas 2026.",
+  "datePublished": "2026-07-08",
+  "dateModified": "2026-07-08",
+  "author": {
+    "@type": "Person",
+    "name": "Keio Soo",
+    "jobTitle": "Tegevjuht",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Balcon Grupp OÜ"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Balcon Grupp OÜ",
+    "url": "https://tänavakivipaigaldus24.ee/",
+    "telephone": "+372 58374422",
+    "email": "Balcongrupp@gmail.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-alusekihid-killustik-liiv-paksus-normid/"
+  },
+  "articleSection": "Tehniline juhend",
+  "inLanguage": "et-EE"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kui paks peab olema killustikukiht eramaja sissesõiduteel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standardse sõiduauto (kuni 2,5 t) korral vajab eramaja sissesõidutee kokku 30–35 cm killustikku kahes kihis: 20 cm alumine jämekillustik fr. 16/32 ja 10 cm peenkillustik fr. 4/16. Sellele lisandub 3–4 cm paigaldusliiv ja 6–8 cm betoonkivi. Kogupaksus aluspinnasest kuni sillutise pinnani on 40–47 cm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas parkla aluskiht on erinev eramaja teest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Parklas on kihipaksused 40–55 cm (kuni 10-tonnise koormuse korral) ja peab kasutama jämedamat alumist fraktsiooni 32/63 dolomiitkillustikku. Lisaks on parklas kohustuslik geotekstiil 200 g/m² ja kalle 2,5–3%. Suurte parkalade korral (üle 500 m²) on kohustuslik drenaažitorude võrk. Kihi tugevust mõõdetakse plaatkoormustestiga Ev2 ≥ 80 MPa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mis vahe on jõeliival ja paigaldusliival?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jõeliiv on ümarterine ja liigub – kivi hakkab 6–12 kuu jooksul liikuma. Paigaldusliiv on purustatud kvartsliiv fr. 0/4, teravaservaline ja lukustub tihendatuna paigale. EVS 901-3 nõuab, et alla 0,063 mm peenosise osakaal oleks alla 3%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas geotekstiil on alati vajalik?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geotekstiil on kohustuslik savise, mudase või orgaanilise pinnase korral – üle 80% Eesti piirkondadest. Ilma selleta segunevad savi ja killustik 2–3 aasta jooksul ning killustik kaotab drenaaživõime. Raskeliikluse korral kasutage 200 g/m² materjali."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kui pikk on korrektselt paigaldatud sillutise eluiga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Betoonkivi sillutis korrektse aluskihiga peab vastu 25–30 aastat. Graniitkivi ja klinkerkivi elavad üle 50 aasta. Aluskiht ise ei vanane – kui see on korrektselt paigaldatud ja tihendatud, säilib ka pärast kivi vahetust."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Avaleht",
+      "item": "https://tänavakivipaigaldus24.ee/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://tänavakivipaigaldus24.ee/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tänavakivi aluskihid – killustik, liiv ja paksuse normid 2026",
+      "item": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-alusekihid-killustik-liiv-paksus-normid/"
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

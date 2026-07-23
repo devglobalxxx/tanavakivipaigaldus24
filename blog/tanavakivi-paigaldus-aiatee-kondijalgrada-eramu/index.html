@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi aiateele ja kõnniteele | Tänavakivipaigaldus 24</title>
+  <meta name="description" content="Aia- ja kõnniteede kavandamine eramus - laius, mustrid, rohukivid ja servad. Õhem aluskiht ja madalama kandevõimega lahendused jalakäijatele.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-aiatee-kondijalgrada-eramu/">
+
+  <meta property="og:title" content="Tänavakivi aiateele ja kõnniteele">
+  <meta property="og:description" content="Aia- ja kõnniteede kavandamine eramus - laius, mustrid, rohukivid ja servad. Õhem aluskiht ja madalama kandevõimega lahendused jalakäijatele.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-paigaldus-aiatee-kondijalgrada-eramu/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi aiateele ja kõnniteele: kitsad rajad eramus 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-06.jpg" alt="Tänavakivi aiateele ja kõnniteele: kitsad rajad eramus 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi aiateele ja kõnniteele: kitsad rajad eramus 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span>Avaldatud: 20. juuni 2026</span> · 
+  <span>Autor: Keio Soo</span> · 
+  <span>Lugemisaeg: 9 min</span> · 
+  <span>Kategooria: Tänavakivi paigaldus</span>
+</div>
+
+<h1>Tänavakivi aiateele ja kõnniteele: kitsad rajad eramus 2026</h1>
+
+<p class="lead"><a href="/tanavakivi/">Tänavakivi</a> aiatee eramus ehitatakse tüüpiliselt 80–120 cm laiusena, 6 cm paksusest betoonkivist ning 15–20 cm kogupaksusega aluskihiga. Kuna koormus on kergem kui sissesõiduteel, saab aluskihti õhendada ligi poole võrra ja kasutada ka rohukive või looduslikku materjali — see hoiab hinda 35–55 €/m² vahemikus paigaldatuna.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus (2026 hinnatase):</strong>
+  <ul>
+    <li><strong>Laius:</strong> kõnnitee 80–120 cm (üks inimene), 130–160 cm (kaks kõrvuti), kärutee min 90 cm</li>
+    <li><strong>Kivi paksus:</strong> 6 cm betoonkivi (EVS-EN 1338) või 4–6 cm graniidiplaat (EVS-EN 1342)</li>
+    <li><strong>Aluskiht kokku:</strong> 15–20 cm (vs sõidutee 30–45 cm)</li>
+    <li><strong>Hinnaklass:</strong> 35–55 €/m² betoonkivi, 70–110 €/m² graniit (paigaldatuna)</li>
+    <li><strong>Servad:</strong> peen <a href="/aarekivi/">äärekivi</a> (8×20 cm) või plastservaliist 30–50 mm</li>
+    <li><strong>Eluiga:</strong> 25–30+ aastat korrektse aluskihi ja drenaažiga</li>
+  </ul>
+</div>
+
+<h2>Miks aiatee aluskiht erineb sõiduteest</h2>
+
+<p>Aia- ja kõnniteed kannavad ainult jalakäija (kuni 1 kN/m²) ning aeg-ajalt aiakäru või muruniiduki koormust — see on 8–12 korda väiksem kui eramaja <a href="/sissesoidutee-kivisillutis-eramaja/">sissesõidutee koormus</a>, kuhu sõidab pidevalt 1,5–2,5 t sõiduauto. Seetõttu pole vaja 35–45 cm killustikalust, vaid piisab 10–15 cm killustikust (fr 16/32) ja 3–5 cm paigaldusliivast (fr 0/4). Kogupaksus jääb 15–20 cm vahele.</p>
+
+<p>Õhem aluskiht tähendab, et 1 m² aiatee maksab 35–55 €/m² (paigaldatuna), kui auto sissesõidutee maksab tüüpiliselt 55–85 €/m². Säästate materjalil, kaeve mahtudel ja paigaldustundidel. Samas — kui rada läbib koht, kuhu hooldusauto või väike traktor satub, peab seal aluskihi tavalisele 30 cm paksusele tagasi tooma.</p>
+
+<h3>Aluskihi kihid jalakäijatee jaoks</h3>
+
+<ul>
+  <li><strong>Geotekstiil (klass 2):</strong> savise pinnase peal soovitatav, takistab killustiku vajumist mulda</li>
+  <li><strong>Killustik fr 16/32:</strong> 10–15 cm, tihendatud plate-vibraatoriga 2 läbimist</li>
+  <li><strong>Paigaldusliiv fr 0/4:</strong> 3–5 cm, tasandatakse latiga, EI tihendata enne kivi paigaldust</li>
+  <li><strong>Kivi:</strong> 6 cm betoonkivi või 4–6 cm graniidiplaat</li>
+  <li><strong>Vuugitäide:</strong> peen liiv (fr 0/2) või polümeerliiv, harjatakse vuukidesse</li>
+</ul>
+
+<h2>Tee laius ja vormi planeerimine</h2>
+
+<p>Aiatee laius määratakse selle funktsiooni järgi. Eramus on praktikas 4 levinud kasutusjuhtu, mille mõõdud on toodud allpool. Liiga kitsast teed ei tasu projekteerida — kui kaks inimest ei mahu kõrvuti, kasutatakse teed lõpuks vähem ja muru kulub kõrvalt ribana ära.</p>
+
+<table>
+  <thead>
+    <tr><th>Tee otstarve</th><th>Soovitav laius</th><th>Tüüpiline pikkus eramus</th><th>Aluskiht</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sissepääsutee uksele</td><td>120–150 cm</td><td>5–15 m</td><td>15–20 cm</td></tr>
+    <tr><td>Kondijalgrada aias</td><td>60–80 cm</td><td>10–30 m</td><td>10–15 cm</td></tr>
+    <tr><td>Tee terrassile / grillalale</td><td>100–130 cm</td><td>4–10 m</td><td>15–20 cm</td></tr>
+    <tr><td>Käru-/hooldustee aiamajja</td><td>90–110 cm</td><td>10–25 m</td><td>20 cm</td></tr>
+    <tr><td>Murul olev astekivide rada</td><td>40 cm plaadid 60 cm vahega</td><td>5–20 m</td><td>5–8 cm liivapatju</td></tr>
+  </tbody>
+</table>
+
+<h3>Kõverad ja sirged: kumb sobib aeda?</h3>
+
+<p>Sirgjooneline tee on ehituslikult lihtsam ja umbes 10–15% odavam, sest lõikamist on vähem ja servakivide kulu minimaalne. Kõverdunud rada nõuab täiskivide nurklõikamist (5–8% kividest tuleb saagida) ja paindlikku servalahendust — plastservaliist on siis sageli loogilisem kui jäik <a href="/aarekivi/">äärekivi</a>. Kõvera tee paigaldus võtab umbes 1,3 korda kauem aega kui sirge sama m² kohta.</p>
+
+<p>Reegel: kui aiatee on alla 80 cm laiune ja läbib avara muruala, sobib sujuv kaar paremini kui terav nurk. Kui tee teenindab sissepääsu (külalised, kuller, sünnipäevad), valige sirgem joon ja vähemalt 120 cm laius.</p>
+
+<h2>Mustrid: mis sobib kitsale rajale</h2>
+
+<p>Kitsale (alla 100 cm) teele EI sobi kõik tänavakivimustrid, mida sõiduteel kasutatakse. Murtud side ja kalasaba näevad alla 80 cm laiusel rajal segasena välja, sest mustri kordus jääb katkendlikuks. Eramaja aiateele on kolm musti, mis töötavad järjekindlalt:</p>
+
+<ul>
+  <li><strong>Roomav side (running bond):</strong> kivid nihutatud poole võrra, sobib igale laiusele alates 60 cm, lihtne paigaldada, sõbralik silmale</li>
+  <li><strong>Risti-rästi (basket weave):</strong> 2×4 või 4×8 kivide paaride vaheldumine — toimib 100–150 cm laiusel, klassikaline eramaja look</li>
+  <li><strong>Plokid (stack bond):</strong> kivid samade vuugijoontega — minimalistlik, sobib modernse maja stiilile, vajab 100% täpset paigaldust</li>
+</ul>
+
+<p>Kui soovite teha kalasabamustri (herringbone), tehke seda ainult vähemalt 130 cm laiusel teel ja arvestage, et lõigatud kive (servades) on 12–18% mahust. Loe põhjalikum võrdlus <a href="/klinkerkivi-vs-tanavakivi-vordlus/">klinkerkivi ja tänavakivi materjalivõrdlusest</a>, kui kaalute klinkerkivi peenema aiatee jaoks.</p>
+
+<div class="cta-strip">
+  <strong>Plaanid aiateed või kõnniteed eramus?</strong>
+  Tuleme tasuta kohale, mõõdame ära ja paneme kokku konkreetse 2026 hinnapakkumise. Hinnasõlmime kohapealt 24 h jooksul.
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+</div>
+
+<h2>Rohukivid ja astekivid: poolloomulik lahendus</h2>
+
+<p>Kui tahate säilitada aia roheluse, kuid soovite mugavat kõndimispinda, on kaks alternatiivi täiskividest tänavakivile. Mõlemad maksavad poole vähem ja näevad väiksel pinnal naturaalsemad välja.</p>
+
+<h3>Rohukivi (avatud struktuuriga betoonkivi)</h3>
+
+<p>Rohukivi on 8–12 cm paksune betoonelement, mille avadesse külvatakse muru. Kasutatakse osaliselt sõidetavatel aladel — näiteks "rohelisel parklal" külaliste autoga sissesõitudel. Eramaja aiateele sobib see ainult väga harva kasutatavatele radadele, sest jalanõud (kõrgemad kontsad, suusakingad) takerduvad avadesse. Hind paigaldatuna: 25–40 €/m².</p>
+
+<h3>Astekivid muruga vahel</h3>
+
+<p>Levinuim aialahendus on 40×40 või 50×50 cm graniidi- või betoonplaadid, mis paigaldatakse 50–70 cm sammuga sammude pikkuse järgi. Plaatide vahel kasvab muru. Plaadid paigaldatakse 5–8 cm liivapatjadele otse murul, ilma killustikuta. Sobib ka <a href="/munakivi-paigaldus-aiateedele/">munakivi aiateel astekividena</a>, kui eelistate naturaalsemat ilmet. Hind: 25–45 €/plaat materjali pluss 8–12 €/plaat paigaldus.</p>
+
+<div class="warning">
+  <strong>Tähtis:</strong> astekivid murus nõuavad muruniidukit, mis pääseb plaatide tasapinnast üle. Paigaldage plaadid <strong>3–5 mm muru tasapinnast madalamale</strong>, mitte kõrgemale — niiduk lõikab muidu otsa vastu kivi ja kihutab tera nüriks.
+</div>
+
+<h2>Servad ja drenaaž: kus aiatee tegelikult katki läheb</h2>
+
+<p>Aiateel pole kandevõime probleem (kerge koormus), vaid kaks asja: serva taandumine ja vee seismine. 70% aiatee remondijuhtudest tuleb sellest, et serv on aja jooksul muru poole nihkunud ja vuugid valguvad lahti.</p>
+
+<h3>Servade valik vastavalt eelarvele</h3>
+
+<table>
+  <thead>
+    <tr><th>Serv</th><th>Hind/jm</th><th>Eluiga</th><th>Kus kasutada</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Plastservaliist (50 mm)</td><td>4–7 €</td><td>10–15 a</td><td>Kõverdunud rada, eelarvepiir</td></tr>
+    <tr><td>Betoonist peenäärekivi (8×20 cm)</td><td>9–14 €</td><td>20–25 a</td><td>Standard eramaja aiatee</td></tr>
+    <tr><td>Graniidiäärekivi (10×20 cm)</td><td>22–35 €</td><td>50+ a</td><td>Esinduslik sissepääs, kestlik valik</td></tr>
+    <tr><td>Klinkerkivi servariba (kahekordne)</td><td>14–22 €</td><td>40+ a</td><td>Klinkerkivist põhipinnaga teedel</td></tr>
+  </tbody>
+</table>
+
+<p>Plastservaliist kinnitub 25–30 cm pikkuste metallnaeltega ja sobib ainult muruga külgnevatele aladele — kui serva taga on hekk juurtega või auto sõidab serva lähedusest mööda, tuleb valida <a href="/aarekivi/">betoon- või graniidiäärekivi</a>. Loe lähemalt <a href="/graniit-aarekivi-paigaldus-eramaja-sissesoit/">graniidist äärekivi paigalduse juhendit</a> kui aiatee on eramaja peaväravast jaotusega ühenduses.</p>
+
+<h3>Drenaaž ja kalle</h3>
+
+<p>Aiatee minimaalne ristkalle on 1,5–2% (1,5–2 cm 1 m laiuse kohta) ja pikikalle 0,5–1%. Kui rada on tasapinnaline, koguneb vesi vuukidesse, talvel külmub ja lükkab kive üksteise vastu. Eestis on see oktoobrist märtsini iganädalane risk.</p>
+
+<p>Probleemsetes kohtades (madalal asuv aianurk, savikas pinnas, varjuline ala) tuleb teha tee alla ka drenaažitoru (110 mm) 30 cm sügavusele, suunatuna kraavi või immutuskaevu. Vasta EVS 901-3 nõuetele toimub vee äravool maksimaalselt 1 h pärast vihma.</p>
+
+<h2>Kui palju ühe aiatee tegemine maksab</h2>
+
+<p>2026 aasta suunavad <a href="/hinnad/">hinnad</a> eramaja aiateele (paigaldatuna, koos materjali, aluskihi ja vuugitäitega):</p>
+
+<table>
+  <thead>
+    <tr><th>Tee tüüp</th><th>Pikkus × laius</th><th>Pindala</th><th>Hinnavahemik</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Kondijalgrada muru sees</td><td>20 m × 0,8 m</td><td>16 m²</td><td>720–1 050 €</td></tr>
+    <tr><td>Sissepääsutee uksele</td><td>10 m × 1,3 m</td><td>13 m²</td><td>650–880 €</td></tr>
+    <tr><td>Tee terrassile / grillile</td><td>8 m × 1,2 m</td><td>9,6 m²</td><td>480–710 €</td></tr>
+    <tr><td>Aiamajja viiv kärutee</td><td>18 m × 1,0 m</td><td>18 m²</td><td>950–1 350 €</td></tr>
+    <tr><td>Astekivid muru vahel (10 plaati)</td><td>20 m, 50 cm sammuga</td><td>2,0 m²</td><td>290–460 €</td></tr>
+  </tbody>
+</table>
+
+<p>Lisakulud, mida tasub eelarves arvestada:</p>
+<ul>
+  <li>Vana muru/hummuse eemaldus ja äravedu: 4–7 €/m²</li>
+  <li>Killustiku ja liiva eelarve eraldi (kui paigaldate ise materjali): 12–18 €/m²</li>
+  <li>Drenaažitoru paigaldus: 12–18 €/jm</li>
+  <li>Geotekstiil savises pinnases: 2–3 €/m²</li>
+</ul>
+
+<p>Täpse hinna saate <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">2026 hinnakalkulaatorist</a> või vaadake meie <a href="/hinnad/">hinnaleht</a>.</p>
+
+<h2>Paigalduse ajakava ja ilm</h2>
+
+<p>Tüüpiline aiatee (15–25 m²) valmib 1,5–2 tööpäevaga 2-mehelise meeskonnaga: 1. päev kaeve + aluskiht, 2. päev kivi paigaldus + vuugid. Kondijalgrada 50–80 m pikkusena vajab 3–4 tööpäeva.</p>
+
+<p>Parim aeg paigalduseks on aprilli keskpaigast oktoobri lõpuni, kui pinnas on sulanud ja kuiv. Märja ilmaga paigalduse risk on vajumine — loe lähemalt <a href="/blog/tanavakivi-vajumine-pohjused-parandus/">vajumise põhjuste artiklist</a>. Kevadel sulanud, kuid veel niiske pinnase peale paigaldamine on omaette teema, mida käsitleme <a href="/blog/tanavakivi-paigaldus-kevadel-sulanud-pinnasel/">kevadise paigalduse artiklis</a>.</p>
+
+<h2>Materjali valik: betoon-, klinker- või graniidikivi?</h2>
+
+<p>Eramaja aiateele on kolm peamist materjali. Lühivõrdlus:</p>
+
+<table>
+  <thead>
+    <tr><th>Materjal</th><th>Standard</th><th>Hind paigaldusena</th><th>Eluiga</th><th>Hooldus</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Betoonkivi 6 cm (Brikers, Aroc, Premia)</td><td>EVS-EN 1338</td><td>35–55 €/m²</td><td>25–30 a</td><td>Vuugitäide iga 5–7 a</td></tr>
+    <tr><td>Klinkerkivi 5,2 cm</td><td>EVS-EN 1344</td><td>55–80 €/m²</td><td>40–50 a</td><td>Vuugitäide iga 8–10 a</td></tr>
+    <tr><td>Graniidiplaat 4–6 cm</td><td>EVS-EN 1342</td><td>70–110 €/m²</td><td>50+ a</td><td>Praktiliselt hooldusvaba</td></tr>
+  </tbody>
+  </table>
+
+<p>Betoonkivi on aiateel kõige levinum lahendus — hinna ja eluea suhe on parim ning saadaval on lai värvivalik (hall, antratsiit, terrakota, kahvatu beež). Klinkerkivi sobib hästi vanasse miljöösse ja modernsesse maja stiili — vt <a href="/klinkerkivi-konnitee-paigaldus-tallinn/">klinkerkivi kõnnitee näiteid</a>. Graniidiplaat on premium-valik esinduslikele sissepääsudele — eriti, kui aiatee ühineb <a href="/graniitsillutise-paigaldus-eramaja-oue/">graniitsillutise eramaja õuel</a>.</p>
+
+<h2>5 levinumat viga aiatee paigaldusel</h2>
+
+<ol>
+  <li><strong>Liiga kitsas tee.</strong> 60 cm rada paneb ka ühe inimese astuma muru peale, kui ta kotti või labidat kannab. Min 80 cm, soovitavalt 100 cm.</li>
+  <li><strong>Aluskiht jäetakse ära.</strong> Otse murule liiva peale paigaldatud kivid vajuvad 1–2 aastaga 3–5 cm sügavusele. Killustikualus on kohustuslik.</li>
+  <li><strong>Servad puuduvad.</strong> Ilma servata laguneb tee 5–8 aastaga otsast lahti. Plastservaliist on minimum.</li>
+  <li><strong>Vale kalle.</strong> 0–0,5% kalle koondab vee vuukidesse — talvine kerge külmaga lükkab kivid lahti.</li>
+  <li><strong>Liigne tihendus paigaldusliivale.</strong> Liiv (3–5 cm) tihendatakse alles peale kivi paigaldust koos kivi vibreerimisega — mitte enne.</li>
+</ol>
+
+<h2>Aiatee ja teiste õuelahenduste sidumine</h2>
+
+<p>Aiatee on harva üksiklahendus — see ühendab tüüpiliselt sissesõidutee, terrassi ja aiamaja. Kui plaanite ka teisi õueosi sillutada, säästate ühisprojektist 8–15%, sest kaeve ja aluskiht tehakse korraga ning materjal tarnitakse ühe veoga. Tüüpiline kombineeritud lahendus eramus:</p>
+
+<ul>
+  <li><a href="/sissesoidutee-kivisillutis-eramaja/">Sissesõidutee</a> (8 cm betoonkivi, 30–35 cm aluskiht)</li>
+  <li><a href="/sillutuskivi-paigaldus-terrass-grill-ala/">Terrassi- ja grilliala</a> (6 cm kivi, 20 cm alus)</li>
+  <li>Aiatee uksele (6 cm kivi, 15–20 cm alus)</li>
+  <li>Kondijalgrada aianurka (6 cm kivi, 10–15 cm alus)</li>
+</ul>
+
+<div class="cta-strip">
+  <strong>Soovid kogu õueala lahendust ühe pakkumisena?</strong>
+  Mõõdame ja projekteerime sissesõidutee, terrassi ja aiateed koos — säästad 8–15% versus eraldi tellitud lõigud.
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+</div>
+
+<h2 id="kkk">Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui lai peaks olema aiatee eramus?</summary>
+    <p>Üks inimene mahub mugavalt 80–100 cm laiusele rajale. Kaks inimest kõrvuti vajavad 130–160 cm. Kärutee aiamajja peab olema vähemalt 90 cm. Sissepääsutee uksele soovitame teha 120–150 cm, et külalised ja kuller ei astuks muru peale.</p>
+  </details>
+  <details>
+    <summary>Kui paks peab olema aluskiht aiateel?</summary>
+    <p>Jalakäijatele mõeldud aiatee aluskiht on kokku 15–20 cm (10–15 cm killustikku + 3–5 cm paigaldusliiva). Sõidutee aluskiht on 30–45 cm — aiateel ei pea seda paksust hoidma, kuna koormus on 8–12 korda väiksem. Kui rada läbib koht, kuhu satub väike traktor või hooldusauto, tuleb aluskiht selles lõigus 30 cm paksuseks tagasi tuua.</p>
+  </details>
+  <details>
+    <summary>Mis on tänavakivi aiatee hind 2026?</summary>
+    <p>Eramaja aiatee maksab paigaldatuna 35–55 €/m² betoonkivi (6 cm) puhul, 55–80 €/m² klinkerkivi puhul ja 70–110 €/m² graniidiplaadi puhul. Hind sisaldab kaevet, aluskihti, kivi, paigaldust ja vuugitäidet. Eraldi tasuda tuleb vana muru äravedu (4–7 €/m²) ja servade jaoks <a href="/aarekivi/">äärekivi</a> (9–35 €/jm). Astekividest rada muru vahel maksab kõige vähem — 25–45 € plaat.</p>
+  </details>
+  <details>
+    <summary>Kas aiateele sobib rohukivi?</summary>
+    <p>Rohukivi (avatud struktuuriga betoonelement, mille sees kasvab muru) sobib ainult väga harva kasutatavatele aladele — näiteks rohelisele parklale või sissesõidule, mida kasutatakse paar korda kuus. Igapäevasele aiateele see ei sobi, sest jalanõud (kõrgemad kontsad, suusakingad, lapsed) takerduvad avadesse. Eelistatud alternatiiv aias on graniit- või betoonplaatidest astekivid muru vahel 50–70 cm sammuga.</p>
+  </details>
+  <details>
+    <summary>Kui kaua võtab aiatee paigaldus aega?</summary>
+    <p>Tüüpiline aiatee 15–25 m² valmib 2-mehelise meeskonnaga 1,5–2 tööpäevaga: esimesel päeval kaeve ja aluskiht, teisel päeval kivi paigaldus ja vuugid. Pikem kondijalgrada (50–80 m) võtab 3–4 tööpäeva. Kõverdunud rada võtab umbes 1,3 korda kauem kui sirge sama m² kohta lõikamise tõttu.</p>
+  </details>
+</div>
+
+<h2>Seotud artiklid ja lehed</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-paigaldus-rae-vald-juri-peetri-lagedi/">Tänavakivi paigaldus Rae vallas (Jüri, Peetri, Lagedi)</a>
+  <a href="/blog/tanavakivi-vs-looduskivi-graniit-paekivi-vordlus/">Tänavakivi vs looduskivi (graniit, paekivi) võrdlus</a>
+  <a href="/blog/tanavakivi-paigaldus-kallakul-jarsk-noumine/">Tänavakivi paigaldus kallakul</a>
+  <a href="/blog/tanavakivi-vajumine-pohjused-parandus/">Tänavakivi vajumine — põhjused ja parandus</a>
+  <a href="/sillutuskivi-paigaldus-terrass-grill-ala/">Sillutuskivi paigaldus terrassile ja grillalale</a>
+  <a href="/sissesoidutee-kivisillutis-eramaja/">Sissesõidutee kivisillutis eramajale</a>
+  <a href="/munakivi-paigaldus-aiateedele/">Munakivi paigaldus aiateedele</a>
+  <a href="/sillutuskivi-paigalduse-hind-2026-kalkulaator/">Sillutuskivi paigalduse hind 2026 — kalkulaator</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Tänavakivi aiateele ja kõnniteele: kitsad rajad eramus 2026",
+      "description": "Aiatee ja kõnnitee planeerimine eramus: laius 80–160 cm, õhem 15–20 cm aluskiht, mustrid, rohukivid, servad ja hinnad 35–55 €/m² (betoonkivi) kuni 70–110 €/m² (graniit).",
+      "datePublished": "2026-06-20",
+      "dateModified": "2026-06-20",
+      "inLanguage": "et-EE",
+      "url": "https://xn--tnavakivipaigaldus24-tnc.ee/blog/tanavakivi-paigaldus-aiatee-kondijalgrada-eramu/",
+      "mainEntityOfPage": "https://xn--tnavakivipaigaldus24-tnc.ee/blog/tanavakivi-paigaldus-aiatee-kondijalgrada-eramu/",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://xn--tnavakivipaigaldus24-tnc.ee/",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "keywords": "tänavakivi aiatee, aiatee paigaldus, kõnnitee eramu, kondijalgrada, rohukivi, astekivid"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui lai peaks olema aiatee eramus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Üks inimene mahub mugavalt 80–100 cm laiusele rajale. Kaks inimest kõrvuti vajavad 130–160 cm. Kärutee aiamajja peab olema vähemalt 90 cm. Sissepääsutee uksele soovitame teha 120–150 cm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui paks peab olema aluskiht aiateel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jalakäijatele mõeldud aiatee aluskiht on kokku 15–20 cm (10–15 cm killustikku + 3–5 cm paigaldusliiva). Sõidutee aluskihti (30–45 cm) ei pea aiateel hoidma, kuna koormus on 8–12 korda väiksem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mis on tänavakivi aiatee hind 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eramaja aiatee maksab paigaldatuna 35–55 €/m² betoonkivi (6 cm) puhul, 55–80 €/m² klinkerkivi puhul ja 70–110 €/m² graniidiplaadi puhul. Astekivid muru vahel maksavad 25–45 € plaat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas aiateele sobib rohukivi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohukivi sobib ainult väga harva kasutatavatele aladele. Igapäevasele aiateele see ei sobi, sest jalanõud takerduvad avadesse. Eelistatud alternatiiv aias on graniit- või betoonplaatidest astekivid muru vahel 50–70 cm sammuga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui kaua võtab aiatee paigaldus aega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tüüpiline 15–25 m² aiatee valmib 2-mehelise meeskonnaga 1,5–2 tööpäevaga. Pikem kondijalgrada (50–80 m) võtab 3–4 tööpäeva. Kõverdunud rada võtab umbes 1,3 korda kauem kui sirge sama m² kohta."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://xn--tnavakivipaigaldus24-tnc.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://xn--tnavakivipaigaldus24-tnc.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi aiateele ja kõnniteele: kitsad rajad eramus 2026",
+          "item": "https://xn--tnavakivipaigaldus24-tnc.ee/blog/tanavakivi-paigaldus-aiatee-kondijalgrada-eramu/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

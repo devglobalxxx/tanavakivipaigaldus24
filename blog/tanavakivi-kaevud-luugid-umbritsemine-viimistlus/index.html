@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaevude ja luukide ümbritsemine tänavakiviga: profid ja...</title>
+  <meta name="description" content="Kanalisatsiooni-, side- ja gaasikaevude viimistlus kivikattega - täpne mõõtmine, ketaslõikuriga kohandamine, kolmnurksed ja ringjad tükid ning tolmuvaba...">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-kaevud-luugid-umbritsemine-viimistlus/">
+
+  <meta property="og:title" content="Kaevude ja luukide ümbritsemine tänavakiviga: profid ja...">
+  <meta property="og:description" content="Kanalisatsiooni-, side- ja gaasikaevude viimistlus kivikattega - täpne mõõtmine, ketaslõikuriga kohandamine, kolmnurksed ja ringjad tükid ning tolmuvaba...">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-kaevud-luugid-umbritsemine-viimistlus/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Kaevude ja luukide ümbritsemine tänavakiviga: profid ja lõikamine</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-07.jpg" alt="Kaevude ja luukide ümbritsemine tänavakiviga: profid ja lõikamine" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Kaevude ja luukide ümbritsemine tänavakiviga: profid ja lõikamine</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-item">📅 19. juuli 2026</span>
+  <span class="meta-item">✍️ Keio Soo</span>
+  <span class="meta-item">⏱️ 9 min lugemist</span>
+  <span class="meta-item">🏷️ Tehnika · Viimistlus</span>
+</div>
+
+<h1>Kaevude ja luukide ümbritsemine tänavakiviga: profid ja lõikamine</h1>
+
+<p class="lead">Kanalisatsiooni-, side- ja gaasikaevude kaunis ümbritsemine tänavakiviga on iga sillutuse kvaliteedi lakmuspaber. Kui luugi ümber on 2–3 mm täpsed lõiked, kolmnurksed täitetükid istuvad puhtalt ja tolmuvabalt tehtud, saab kliendi sillutis 25+ aastat teenida. Kui mitte, tekivad kohe esimese talvega laminaadid ja lahtised kivid.</p>
+
+<div class="answer-card">
+  <h2>Lühivastus</h2>
+  <p><strong>Kaevu ümbritsemine kiviga</strong> nõuab kolme asja: (1) täpne mõõtmine ja markeerimine (tolerants 2–3 mm), (2) märglõikus teemantkettaga ketaslõikuril tolmuvabalt, (3) kolmnurksete ja kaarjate täitetükkide ettevalmistamine 10–15% varuga. Standardne kaev (Ø600 mm) võtab kogenud paigaldajal 45–90 minutit, luugi ümbermõõt umbes 1,9 m nõuab 12–18 kohandatud tükki. Materjalikadu tuleb 8–12% suurema kui sirgpaigalduses.</p>
+</div>
+
+<h2>Miks kaevud on tänavakivipaigalduses kriitiline punkt</h2>
+
+<p><strong>Iga sillutise nõrgim koht on üleminek kivilt luugile.</strong> Kanalisatsiooni-, sidekaablite ja gaasitorustiku luugid seisavad malmist või teraseraamis, mille tase erineb tihti 5–15 mm ümbritseva kivipinna omast. Kui neid ei ümbritseta korrektselt, hakkab vesi kogunema äärde ning esimese külmaperioodi jooksul (november–märts) tõuseb kivi paisumissurve mõjul luugi äärest üles.</p>
+
+<p>Eesti standardi <strong>EVS 901-3</strong> (välisrajatiste ehitus) järgi peab kivi ja luugiraami vaheline vuuk olema 3–8 mm ning täidetud puhta 0/2 või 0/4 kvartsliivaga. Sellest suurem vuuk laseb sisse pinnast, väiksem takistab paisumist.</p>
+
+<p>Vale ümbrituse kahju on nähtav aastate lõikes:</p>
+<ul>
+  <li><strong>1. talv:</strong> kivid liiguvad, vuugid hakkavad tühjenema</li>
+  <li><strong>2. talv:</strong> luugi ümber tekib laminaadiline lohk, vesi seisab</li>
+  <li><strong>3. talv:</strong> kivi murdub, remont maksab 150–350 €/luugi kohta</li>
+</ul>
+
+<p>Meie 2 aasta garantii kohaldub täies mahus ainult siis, kui kaevu ümbritsemine on tehtud <a href="/tanavakivi-paigaldus/">meie tänavakivipaigalduse metoodika</a> järgi ja alusehitus vastab standardile <a href="/blog/tanavakivi-aluspohi-killustik-liiv-paksus-eeltood/">EVS-EN 1338 nõuetele</a>.</p>
+
+<h2>Tööetapid: mõõtmisest viimase vuugini</h2>
+
+<p><strong>Kaevu ümbritsemise töö on 6 etapiline protsess</strong>, mille kestus sõltub luugi kujust ja kivi tüübist. Ringjas Ø600 mm kaevuluuk võtab keskmiselt 60–90 minutit, ristkülikukujuline 400×400 mm sidekaev 30–45 minutit.</p>
+
+<h3>1. Luugi tasapinna kontroll ja markeerimine</h3>
+<p>Enne kivi paigaldamist kontrollime laserniveleeriga luugi ülemise raami taseme. Kui see erineb projekteeritud kivipinna tasemest üle 3 mm, tuleb luuk enne tõsta või langetada. Markeerimiseks kasutame veekindlat kriiti või ehitusspreid, mis annab 2–3 mm täpse joone.</p>
+
+<h3>2. Ringjoone või hulknurga skeemi määramine</h3>
+<p>Ringja luugi ümber laotakse tänavakivid tavaliselt kiirjalt (viilulaotus), keskpunktiga luugi keskel. Ristkülikuluugi ümber sobib tellislaotus või jooksusalv. Skeem tuleb enne lõikamist paberil välja joonistada.</p>
+
+<h3>3. Kohandatud tükkide ettevalmistus</h3>
+<p>Iga tükk märgistatakse eraldi ja lõigatakse eelnevalt. Ringi ümbritsemiseks tuleb valmistada 12–18 kolmnurkset või trapetsikujulist tükki, sõltuvalt kivi mõõdust.</p>
+
+<h3>4. Märgketaslõikus</h3>
+<p>Kasutame teemantkettaga ketaslõikurit koos veeühendusega, mis välistab kvartsitolmu tekkimise. Kuiva lõikamise korral tekib PM2.5 tolm, mis on tervisele ohtlik ja Eesti töötervishoiu määruse järgi keelatud tootjatalu piires elavatesse kohtadesse.</p>
+
+<h3>5. Paigaldus paigalduskihile</h3>
+<p>Kohandatud tükid paigaldatakse liivast alusele (0/4 mm, paksus 30–40 mm), kaevu vahetusse äärde asetatakse tugev kivi (mitte poolik tükk).</p>
+
+<h3>6. Vuugitäide ja tihendus</h3>
+<p>Vuugid täidetakse kvartsliivaga ja tihendatakse plaadivibraatoriga läbi kummimatiga. Luugi vahetu ümbrus vibreeritakse käsitsi kummivasaraga, et malmraami mitte kahjustada.</p>
+
+<div class="cta-strip">
+  <div class="cta-content">
+    <strong>Vajad täpset ja garantiiga kaevude ümbritsemist?</strong>
+    <p>Meie meeskond on paigaldanud üle 400 kaevu Eestis. Tulemus istub 2–3 mm täpsusega ja peab 25+ aastat.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Kolmnurksed ja kaarjad tükid: kuidas neid õigesti lõigata</h2>
+
+<p><strong>Kolmnurkne täitetükk on kaevu ümbritsemise tehniline keskpunkt.</strong> Kui kolmnurk on lõigatud vale nurga all, tekib kivi ja luugiraami vahele üle 8 mm vuuk, mis rikub kogu piirkonna esteetika ja funktsionaalsuse.</p>
+
+<p>Ringja luugi ümber on iga kolmnurga <strong>keskne nurk</strong> arvutatav: 360° jagatuna tükkide arvuga. Kui ümbritseme Ø600 mm luuki 15 tükiga, on igaüks 24° laiune. Kolmnurga sisekülg (luugi äärde) järgib ringjoone kaart, välisküljed on sirged.</p>
+
+<h3>Lõikamise tehniline järjekord</h3>
+<ul>
+  <li><strong>Samm 1:</strong> Aseta terve kivi maha, kontrolli asendit</li>
+  <li><strong>Samm 2:</strong> Märgista sirge joonlauaga sisemine kaarjoon (raadius = luugi raadius + 3–5 mm vuuk)</li>
+  <li><strong>Samm 3:</strong> Märgista mõlemad küljed vastavalt keskse nurgale</li>
+  <li><strong>Samm 4:</strong> Lõika esmalt kaks külge, seejärel kaar (kaar tehakse mitme lühema lõikega)</li>
+  <li><strong>Samm 5:</strong> Kontrolli asetust — kui vuuk on üle 8 mm, saab tellida uue tüki</li>
+</ul>
+
+<h3>Materjalide võrdlus lõikamisel</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Materjal</th>
+      <th>Standard</th>
+      <th>Lõikeaeg 1 tükk</th>
+      <th>Ketta kulu</th>
+      <th>Materjalikadu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Betoonkivi (Brikers, Aroc)</td>
+      <td>EVS-EN 1338</td>
+      <td>25–40 s</td>
+      <td>~150 lõiget</td>
+      <td>8–10%</td>
+    </tr>
+    <tr>
+      <td>Graniit tänavakivi</td>
+      <td>EVS-EN 1342</td>
+      <td>60–90 s</td>
+      <td>~50 lõiget</td>
+      <td>10–12%</td>
+    </tr>
+    <tr>
+      <td>Klinker</td>
+      <td>EVS-EN 1344</td>
+      <td>40–60 s</td>
+      <td>~80 lõiget</td>
+      <td>9–11%</td>
+    </tr>
+    <tr>
+      <td>Munakivi</td>
+      <td>Loodusmaterjal</td>
+      <td>ei lõigata</td>
+      <td>—</td>
+      <td>ei rakendu</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Graniidi puhul rakendame tavaliselt <a href="/graniidist-tanavakivi-paigaldus-hind/">graniidist tänavakivi paigalduse metoodikat</a>, mille juurde kuulub eraldi lõikamiskoht ja tugevam ketaslõikur (nt Hilti DSH 700 või Stihl TS 500i).</p>
+
+<h2>Tolmuvaba lõikamine: miks veeühendus on kohustuslik</h2>
+
+<p><strong>Kvartsitolm on Eesti standardi järgi klassifitseeritud kantserogeenina.</strong> Kuiva ketaslõikuse käigus tekib PM2.5 fraktsioon, mis läheb kopsudesse ja põhjustab silikoosi ehk kvartsitolmu põhjustatud kopsuhaigust.</p>
+
+<p>Meie kõikidel objektidel kasutame ainult märgketaslõikust — ketaslõikur on ühendatud 10–15 L veepaagiga, mis annab kettale vee jugana lõikamise ajal. Vesi:</p>
+<ul>
+  <li>seob kvartsitolmu allalanguks pastaks</li>
+  <li>jahutab ketast (pikendab eluiga 40–60%)</li>
+  <li>vähendab müra 92 dB → 85 dB (naabruskonna sõbralikkus)</li>
+</ul>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> Kui teie senine paigaldaja lõikab kivi kuivalt eramaja hoovil või naabruskonnas, on see nii tervise- kui ka keskkonnarikke. Kvartsitolm katab autod, aknad ja lapse mänguala 100 m raadiuses. Eesti töötervishoiu määruse alusel on kuivlõikamine elamurajoonis lubatud vaid erandkorras.
+</div>
+
+<h2>Kaevu tüübid ja nende erinevused paigaldusel</h2>
+
+<p><strong>Erinevate kaevutüüpide ümbritsemine nõuab erinevat lähenemist.</strong> Kanalisatsiooniluugid on tavaliselt raskeim kategooria (D400 koormus), sidekaevud lihtsaimad (B125 kuni C250).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kaevu tüüp</th>
+      <th>Koormusklass</th>
+      <th>Ümbermõõt (Ø 600)</th>
+      <th>Vuuk kivini</th>
+      <th>Töö kestus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kanalisatsioon (sadevesi + fekaal)</td>
+      <td>D400 (40 t)</td>
+      <td>~1,9 m</td>
+      <td>5–8 mm</td>
+      <td>75–90 min</td>
+    </tr>
+    <tr>
+      <td>Sidekaev (telekom, Elisa/Telia)</td>
+      <td>B125 (12,5 t)</td>
+      <td>ristkülik 400×400 mm</td>
+      <td>3–5 mm</td>
+      <td>30–45 min</td>
+    </tr>
+    <tr>
+      <td>Gaasikaev (Eesti Gaas)</td>
+      <td>C250 (25 t)</td>
+      <td>~1,3 m</td>
+      <td>4–6 mm</td>
+      <td>50–70 min</td>
+    </tr>
+    <tr>
+      <td>Elektrikaev (Elektrilevi)</td>
+      <td>B125–C250</td>
+      <td>ristkülik 600×400 mm</td>
+      <td>4–6 mm</td>
+      <td>45–60 min</td>
+    </tr>
+    <tr>
+      <td>Veekaev (kinnistu piirvent)</td>
+      <td>B125</td>
+      <td>Ø 250 mm</td>
+      <td>3–5 mm</td>
+      <td>25–40 min</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Kanalisatsiooniluugi puhul on kriitiline, et alusepõhi jätaks ruumi luugi hooldusele — meil peab paigaldaja saama luugi tulevikus välja tõsta. Seetõttu ei tsementeerita luugi äärt kunagi kinni, vaid jäetakse ainult kvartsliiv vuugiks.</p>
+
+<p>Sissesõiduteede ja garaažide juurdepääsudel, kus luugid puutuvad kokku autoraskusega, järgime <a href="/blog/tanavakivi-sissesoidutee-garaazi-juurdepaas-eramaja/">sissesõidutee paigalduse eritingimusi</a> ja tugevdame alusepõhja täiendava 50 mm killustikukihiga.</p>
+
+<h2>Enne ja pärast paigaldust: kontrollpunktid</h2>
+
+<p><strong>Iga kaevu ümbritsuse kvaliteedi saab kontrollida 5 punkti alusel:</strong></p>
+<ol>
+  <li><strong>Tasapind:</strong> luugi ja kivi tasapinna erinevus ei ületa 3 mm (mõõdetakse 1 m latiga)</li>
+  <li><strong>Vuugid:</strong> luugi ümber olev vuuk on ühtlaselt 3–8 mm ja täidetud kvartsliivaga</li>
+  <li><strong>Kalle:</strong> vee äravooluks luugi suunas on kalle 1,5–2,5% (arvutatakse kaugusega)</li>
+  <li><strong>Kivi terviklikkus:</strong> luugi vahetuses ei ole ühtki pooletükki alla 1/3 originaalsuurusest</li>
+  <li><strong>Kolmnurga geomeetria:</strong> kaared järgivad luugi äärt ilma nurkade katkestusteta</li>
+</ol>
+
+<p>Kui teil on olemas vana paigaldus, mis nendele punktidele ei vasta, saame teha lokaalse ümbertöötluse. Meie <a href="/tanavakivi-lahtivotmine-ja-umberpaigaldus/">tänavakivi lahtivõtmise ja ümberpaigaldus teenus</a> hõlmab ainult probleemsete kohtade (kaevude ümbruse, <a href="/aarekivi/">äärekivi</a> ühenduskoha) uuesti tegemist ilma kogu pinda lammutamata.</p>
+
+<h2>Hind ja projekti maht</h2>
+
+<p><strong>Kaevu ümbritsemise hind sõltub kolmest tegurist:</strong> luugi mõõtmed, kivi materjal ja alusepõhja seisukord. Meie hindade suunavad vahemikud (2026 eest):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Töö</th>
+      <th>Betoonkivi</th>
+      <th>Graniit / klinker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ringjas kaev Ø600 mm</td>
+      <td>85–130 €/luugi</td>
+      <td>160–230 €/luugi</td>
+    </tr>
+    <tr>
+      <td>Ristkülikluuk 400×400 mm</td>
+      <td>55–85 €/luugi</td>
+      <td>110–160 €/luugi</td>
+    </tr>
+    <tr>
+      <td>Gaasi- või sidekaev väike</td>
+      <td>45–75 €/luugi</td>
+      <td>95–140 €/luugi</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="/hinnad/">Hinnad</a> kehtivad, kui kaevude ümbritsus tehakse osana suuremast projektist. Üksikute luukide (nt olemasoleva sillutuse remont) korral rakendub minimaalne väljasõit — vt <a href="/hinnad/">hinnakiri</a>.</p>
+
+<div class="cta-strip">
+  <div class="cta-content">
+    <strong>Broneeri 2026 hooaeg juba täna</strong>
+    <p>Vaba kalender täitub kiiresti — soovitame kaevutööde tellimist vähemalt 3 nädalat ette. Uurime skeemid ja tuleme 48 h jooksul objekti üle mõõtma.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui palju maksab ühe kaevuluugi ümbritsemine tänavakiviga?</summary>
+    <p>Ringja Ø600 mm kanalisatsiooniluugi ümbritsemine maksab 85–130 € betoonkivi puhul ja 160–230 € graniidi/klinkeri puhul. Ristkülikuluugi (nt sidekaev 400×400 mm) hind on 55–85 €. <a href="/hinnad/">Hinnad</a> kehtivad osana suuremast paigaldusprojektist. Üksikute luukide remondi puhul lisandub väljasõit alates 65 €.</p>
+  </details>
+  <details>
+    <summary>Kui kaua võtab ühe kaevu ümbritsemine aega?</summary>
+    <p>Kogenud paigaldaja teeb standardse Ø600 mm ringja luugi ümbritsuse 60–90 minutiga, sh mõõtmine, 12–18 tüki lõikamine, paigaldus ja vuugitäide. Ristkülikkujulised sidekaevud võtavad 30–45 minutit, väikesed veekaevud Ø250 mm ca 25–40 minutit. Ühe eramaja hoovis on tavaliselt 2–5 kaevu.</p>
+  </details>
+  <details>
+    <summary>Kas kivi tuleb lõigata kohapeal või tehases?</summary>
+    <p>Iga kolmnurkne või kaarjas tükk lõigatakse kohapeal, sest iga luugi geomeetria ja alusepõhja tase on veidi erinev. Lõikame teemantkettaga märgketaslõikuriga, mis välistab kvartsitolmu tekkimise. Kuiva lõikamist elamurajoonis ei tehta — see on tervisele ohtlik ja rikub naabruskonda tolmuga.</p>
+  </details>
+  <details>
+    <summary>Kui suur peab olema vuuk kivi ja luugiraami vahel?</summary>
+    <p>Standardi EVS 901-3 järgi on vuuk 3–8 mm ja täidetud puhta 0/2 või 0/4 kvartsliivaga. Alla 3 mm vuuk takistab kivi paisumist külmaga, üle 8 mm laseb sisse pinnast ja umbrohuseemneid. Vuuki ei tsementeerita kunagi — see raskendab tulevast luugi hooldust ja rikub sillutise elutsükli.</p>
+  </details>
+  <details>
+    <summary>Miks tekivad luukide ümber lohud ja lahtised kivid?</summary>
+    <p>Peamised põhjused on: (1) alusepõhi liiga õhuke (alla 100 mm killustikku), (2) vale vuugi laius (üle 8 mm või alla 3 mm), (3) väike kivitükk luugi vahetuses (alla 1/3 originaalsuurusest), (4) puuduv kalle vee äravoolule. Meie 2 aasta garantii katab kõik need probleemid, kui alusepõhi vastab EVS-EN 1338 nõuetele.</p>
+  </details>
+</div>
+
+<h2>Seotud lehed</h2>
+
+<div class="related-grid">
+  <a class="related-card" href="/blog/tanavakivi-aluspohi-killustik-liiv-paksus-eeltood/">
+    <strong>Tänavakivi alusepõhi ja eeltööd</strong>
+    <span>Killustiku ja liiva paksus, tihendamine, standardid</span>
+  </a>
+  <a class="related-card" href="/blog/tanavakivi-drenaaz-vihmavesi-sadeveesusteem/">
+    <strong>Drenaaž ja sadevee süsteem</strong>
+    <span>Kaevud ja rennid, ühendus tänavakiviga</span>
+  </a>
+  <a class="related-card" href="/blog/tanavakivi-sissesoidutee-garaazi-juurdepaas-eramaja/">
+    <strong>Sissesõidutee eramajale</strong>
+    <span>Garaaži juurdepääs ja koormuskindlus</span>
+  </a>
+  <a class="related-card" href="/blog/tanavakivi-paigaldus-kaldpind-nolv-kalle-protsent/">
+    <strong>Kalded ja kaldpind</strong>
+    <span>Kalde protsendid ja vee äravool</span>
+  </a>
+  <a class="related-card" href="/tanavakivi-lahtivotmine-ja-umberpaigaldus/">
+    <strong>Lahtivõtmine ja ümberpaigaldus</strong>
+    <span>Vana sillutise remont ja lokaalne parandus</span>
+  </a>
+  <a class="related-card" href="/hinnad/">
+    <strong>Hinnakiri</strong>
+    <span>Kõik teenused ja suunavad hinnavahemikud</span>
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Kaevude ja luukide ümbritsemine tänavakiviga: profid ja lõikamine",
+      "description": "Kanalisatsiooni-, side- ja gaasikaevude viimistlus kivikattega — täpne mõõtmine, ketaslõikuriga kohandamine, kolmnurksed ja ringjad tükid ning tolmuvaba märgketaslõikus.",
+      "url": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-kaevud-luugid-umbritsemine-viimistlus/",
+      "datePublished": "2026-07-19",
+      "dateModified": "2026-07-19",
+      "inLanguage": "et-EE",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://tänavakivipaigaldus24.ee/",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-kaevud-luugid-umbritsemine-viimistlus/"
+      },
+      "articleSection": "Tehnika · Viimistlus"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui palju maksab ühe kaevuluugi ümbritsemine tänavakiviga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ringja Ø600 mm kanalisatsiooniluugi ümbritsemine maksab 85–130 € betoonkivi puhul ja 160–230 € graniidi/klinkeri puhul. Ristkülikuluugi (nt sidekaev 400×400 mm) hind on 55–85 €. Hinnad kehtivad osana suuremast paigaldusprojektist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui kaua võtab ühe kaevu ümbritsemine aega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kogenud paigaldaja teeb standardse Ø600 mm ringja luugi ümbritsuse 60–90 minutiga, sh mõõtmine, 12–18 tüki lõikamine, paigaldus ja vuugitäide. Ristkülikkujulised sidekaevud võtavad 30–45 minutit, väikesed veekaevud Ø250 mm ca 25–40 minutit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas kivi tuleb lõigata kohapeal või tehases?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Iga kolmnurkne või kaarjas tükk lõigatakse kohapeal, sest iga luugi geomeetria ja alusepõhja tase on veidi erinev. Lõikame teemantkettaga märgketaslõikuriga, mis välistab kvartsitolmu tekkimise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui suur peab olema vuuk kivi ja luugiraami vahel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standardi EVS 901-3 järgi on vuuk 3–8 mm ja täidetud puhta 0/2 või 0/4 kvartsliivaga. Alla 3 mm vuuk takistab kivi paisumist külmaga, üle 8 mm laseb sisse pinnast. Vuuki ei tsementeerita kunagi — see raskendab tulevast luugi hooldust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Miks tekivad luukide ümber lohud ja lahtised kivid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Peamised põhjused on: alusepõhi liiga õhuke (alla 100 mm killustikku), vale vuugi laius (üle 8 mm või alla 3 mm), väike kivitükk luugi vahetuses ja puuduv kalle vee äravoolule. Meie 2 aasta garantii katab kõik need probleemid."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://tänavakivipaigaldus24.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://tänavakivipaigaldus24.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kaevude ja luukide ümbritsemine tänavakiviga",
+          "item": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-kaevud-luugid-umbritsemine-viimistlus/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

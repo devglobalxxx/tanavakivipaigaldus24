@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi puhastus ja hooldus | Tänavakivipaigaldus 24</title>
+  <meta name="description" content="Praktiline juhend kivi iga-aastasest hooldusest - survepesu bar-surve valik, õli- ja rooste-plekkide eemaldus ning sammal-samblik keemiline töötlus.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tänavakivipaigaldus24.ee/blog/tanavakivi-puhastus-survepesu-samblaeemaldus-hooldus/">
+
+  <meta property="og:title" content="Tänavakivi puhastus ja hooldus">
+  <meta property="og:description" content="Praktiline juhend kivi iga-aastasest hooldusest - survepesu bar-surve valik, õli- ja rooste-plekkide eemaldus ning sammal-samblik keemiline töötlus.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://tänavakivipaigaldus24.ee/blog/tanavakivi-puhastus-survepesu-samblaeemaldus-hooldus/">
+  <meta property="og:image" content="https://tänavakivipaigaldus24.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fafaf9;--surface:#fff;--ink:#1a1a1a;--ink-2:#525252;--muted:#737373;
+      --accent:#d97706;--accent-dark:#b45309;--accent-soft:#fef3c7;
+      --line:#e7e5e4;--success:#15803d;--radius:14px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+      --shadow-lg:0 10px 30px rgba(0,0,0,.10);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    /* Layout */
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:96px 0}}
+
+    h1,h2,h3{line-height:1.2;letter-spacing:-.02em;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5em}
+    h3{font-size:1.25rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+    .brand span{color:var(--accent)}
+    .top-cta{display:flex;align-items:center;gap:14px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem}
+    .top-phone span{color:var(--muted);font-weight:500;font-size:.8rem;display:block}
+    @media(max-width:560px){.top-phone span{display:none}}
+
+    /* Hero */
+    .hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);padding-top:48px;padding-bottom:48px}
+    @media(min-width:900px){.hero{padding-top:80px}}
+    .hero-grid{display:grid;gap:40px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}}
+    .hero h1{margin-bottom:.5em}
+    .hero .lead{margin-bottom:24px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .badge{background:var(--accent-soft);color:var(--accent-dark);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:999px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:52px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-secondary:hover{background:#000;text-decoration:none}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+    .reassurance{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .reassurance::before{content:"✓";color:var(--success);font-weight:700}
+
+    /* Hero form card */
+    .form-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+    .form-card h2{font-size:1.5rem;margin-bottom:.4em}
+    .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field textarea{resize:vertical;min-height:80px}
+    .form-card .btn{width:100%;margin-top:8px}
+    .form-foot{margin-top:14px;font-size:.82rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:var(--surface);border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+    .trust-item .num{font-size:1.8rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.85rem;color:var(--muted);margin-top:4px}
+
+    /* Services */
+    .services-grid{display:grid;gap:24px;margin-top:48px}
+    @media(min-width:760px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+    .service{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .15s,box-shadow .15s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .service .icon{width:56px;height:56px;background:var(--accent-soft);color:var(--accent-dark);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+    .service ul{list-style:none;margin-top:14px}
+    .service ul li{font-size:.95rem;color:var(--ink-2);padding:6px 0 6px 24px;position:relative}
+    .service ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .service .price{margin-top:18px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+    /* Why us */
+    .why{background:var(--surface)}
+    .why-grid{display:grid;gap:32px;margin-top:48px}
+    @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+    .why-item .num{font-size:2.5rem;font-weight:800;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .why-item h3{margin-top:12px}
+    .why-item p{font-size:.95rem;margin-top:6px}
+
+    /* Process */
+    .steps{display:grid;gap:24px;margin-top:48px;counter-reset:step}
+    @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+    .step{position:relative;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);counter-increment:step}
+    .step::before{
+      content:counter(step);position:absolute;top:-18px;left:22px;
+      width:36px;height:36px;background:var(--ink);color:#fff;border-radius:50%;
+      display:grid;place-items:center;font-weight:800;font-size:.95rem
+    }
+    .step h3{margin-top:8px;font-size:1.05rem}
+    .step p{font-size:.92rem;margin-top:6px}
+
+    /* Gallery */
+    .gallery{background:var(--surface)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:40px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:8px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:820px;margin:48px auto 0}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.5rem;color:var(--muted);transition:transform .15s;flex:none}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 22px 22px;color:var(--ink-2);font-size:.97rem}
+
+    /* CTA section */
+    .cta-final{background:var(--ink);color:#fff;text-align:center}
+    .cta-final h2{color:#fff}
+    .cta-final p{color:#d6d3d1;font-size:1.1rem;max-width:560px;margin:12px auto 28px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:var(--accent);color:#fff}
+    .cta-final .btn-secondary:hover{background:var(--accent-dark)}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+    /* Footer */
+    footer{background:#0c0c0c;color:#a3a3a3;padding:56px 0 32px;font-size:.92rem}
+    .foot-grid{display:grid;gap:32px;margin-bottom:40px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:14px;font-size:1rem}
+    .foot-grid a{color:#d4d4d4;display:block;padding:4px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #262626;padding-top:24px;text-align:center;font-size:.85rem}
+
+    /* Sticky mobile bar */
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:48px;padding:12px;font-size:.95rem}
+    @media(max-width:760px){
+      .sticky-bar{display:flex;gap:8px}
+      body{padding-bottom:80px}
+    }
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #d97706;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">Tänavakivi<span>paigaldus 24</span></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">
+        +372 58374422
+        
+      </a>
+      <a href="#kontakt" class="btn btn-primary" style="padding:10px 16px;min-height:auto;font-size:.92rem">Hinnapakkumine</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi puhastus ja hooldus: survepesu, sammal ja plekid 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-09.jpg" alt="Tänavakivi puhastus ja hooldus: survepesu, sammal ja plekid 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi puhastus ja hooldus: survepesu, sammal ja plekid 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-date">17. juuli 2026</span>
+  <span class="meta-sep">•</span>
+  <span class="meta-author">Keio Soo</span>
+  <span class="meta-sep">•</span>
+  <span class="meta-read">10 min lugemist</span>
+</div>
+
+<h1>Tänavakivi puhastus ja hooldus: survepesu, sammal ja plekid 2026</h1>
+
+<p class="lead">Korralikult paigaldatud <a href="/tanavakivi/">tänavakivi</a> kestab 25–40 aastat, kuid ilma iga-aastase hoolduseta kaotab pind ilme juba 3–5 aastaga: vuukidesse tekib sammal, õli- ja roostetäpid söövivad end kivi pooridesse ning talvine soolatuisk lõhub pinnakihti. Selles juhendis anname konkreetse aastaringse hooldusplaani — millise bar-survega pesta betoonkivi vs graniiti, milliste ainetega eemaldada sammal ja rasvaplekid ning millal on aeg vuugiliiv taastada.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Pesu betoonkivile <strong>80–120 bar</strong> (düüs 25°, kaugus 25–30 cm), looduskivile <strong>50–80 bar</strong>. Optimaalne aeg <strong>aprill–mai</strong> ja <strong>september</strong>. Sammalt tapab <strong>3–5% naatriumhüpokloriit</strong> (majapidamis-valgendaja lahjendus 1:4), õliplekid pesuainega + soojaveega esimese 24 h jooksul. Pärast pesu <strong>alati taastada vuugiliiv</strong> (kvarts 0,1–2 mm). Kogu tsükkel eramaja 100 m² sissesõiduteel: <strong>4–6 tundi</strong>, hind teenuse tellimisel <strong>2,50–4,50 €/m²</strong>.
+</div>
+
+<h2>Miks tänavakivi üldse hooldust vajab?</h2>
+
+<p><a href="/tanavakivi/">Tänavakivi</a> ei ole "paigaldan ja unustan" materjal. EVS-EN 1338 standardile vastav betoonkivi on küll külmakindel (klass F2, min 50 sula-külmatsüklit) ja hõõrdumiskindel (klass 4, alla 20 mm kulumist 16 000 pöördega Böhme-testil), kuid vuugid ja pind on avatud kolmele kulutajale: bioloogiline (sammal, samblik, umbrohi), mehaaniline (liiv, tolm, koorik) ja keemiline (õli, rooste, teesool, koeraukriin).</p>
+
+<p>Ilma hoolduseta juhtub tüüpiliselt järgmine ajajoon:</p>
+
+<ul>
+  <li><strong>1–2 aastat:</strong> vuukidesse settib tolm ja seemned, esimesed umbrohutupsud servadelt</li>
+  <li><strong>3–4 aastat:</strong> nähtav rohekas sammalkiht varjupoolel, vuugiliiv on 20–30% väiksem</li>
+  <li><strong>5–7 aastat:</strong> sammal katab varjupoolseid alasid ühtlaselt, kivi hakkab "loperdama" kuna vuugid on tühjenenud</li>
+  <li><strong>8–10 aastat:</strong> ilma sekkumiseta on vaja lahtivõtmist ja ümberpaigaldamist, mille hind on <strong>18–28 €/m²</strong> — vaata ka <a href="/tanavakivi-lahtivotmine-ja-umberpaigaldus/">tänavakivi lahtivõtmise ja ümberpaigalduse juhendit</a></li>
+</ul>
+
+<p>Kord aastas tehtud korralik pesu + vuukide taastamine hoiab kivi visuaalselt uue moodi kogu selle <strong>25–40-aastase eluea</strong> vältel ning maksab kordades vähem kui hilisem restaureerimine.</p>
+
+<h2>Survepesu: bar-surve valik kivi tüübi järgi</h2>
+
+<p><strong>Answer-first:</strong> Betoonkivi talub 80–120 bar survet, graniit ja klinker kuni 150 bar, poorne looduskivi (paekivi, liivakivi) ainult 50–80 bar. Vale surve teeb rohkem kahju kui kasu — liiga tugev pesu lõhub vuugid, tekitab kivipinnas mikropraod ja loputab välja pinnakihi tsemendi.</p>
+
+<h3>Survemasinate soovitused</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kivitüüp</th>
+      <th>Optimaalne surve</th>
+      <th>Düüsi nurk</th>
+      <th>Kaugus pinnast</th>
+      <th>Vee kogus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Betoonkivi (Brikers, Aeroc, Premia)</td>
+      <td>80–120 bar</td>
+      <td>25° veeviha</td>
+      <td>25–30 cm</td>
+      <td>8–12 l/min</td>
+    </tr>
+    <tr>
+      <td>Graniit tänavakivi</td>
+      <td>100–150 bar</td>
+      <td>15° või 25°</td>
+      <td>20–25 cm</td>
+      <td>10–15 l/min</td>
+    </tr>
+    <tr>
+      <td>Klinkerkivi</td>
+      <td>100–140 bar</td>
+      <td>25°</td>
+      <td>25 cm</td>
+      <td>8–12 l/min</td>
+    </tr>
+    <tr>
+      <td>Paekivi / liivakivi</td>
+      <td>50–80 bar</td>
+      <td>40° laivaht</td>
+      <td>30–40 cm</td>
+      <td>6–10 l/min</td>
+    </tr>
+    <tr>
+      <td>Munakivi</td>
+      <td>60–100 bar</td>
+      <td>25° või 40°</td>
+      <td>30 cm</td>
+      <td>8–12 l/min</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Kodukasutuses piisab tavalisest 100–140 bar Kärcheri klassist masinast (näiteks K4/K5). Suuremate alade (üle 200 m²) puhul on efektiivsem <strong>pöörlev pinnapesija</strong> (Kärcher T5/T7, Nilfisk Patio Cleaner) — see hoiab surve ja kauguse ühtlasena, ei jäta triipe ega loputa vuuke tühjaks nii kiiresti.</p>
+
+<div class="warning">
+  <strong>Ära tee seda:</strong> Punkt-düüs (0° nõel) ei sobi tänavakivile <em>kunagi</em> — see uuristab betoonis 1–2 mm sügavuse triibu 3 sekundiga ja peseb vuugist välja kogu liiva. Kasuta alati vähemalt 25° hajutusdüüsi.
+</div>
+
+<h3>Millal survepesu teha</h3>
+
+<p>Eestis on kaks head akent aastas:</p>
+
+<ul>
+  <li><strong>Aprill–mai:</strong> pärast lume sulamist, kui pind on kuiv ja öökülm on möödas. Talvine sool ja liiv on pinnal, sammal on nõrgemas seisus — kõik tuleb korraga ära.</li>
+  <li><strong>September:</strong> enne sügiseste lehtede kogunemist. Suvel kasvanud sammal saab neutraliseeritud enne külma, vuugiliiv jõuab jäätuda kompaktselt.</li>
+</ul>
+
+<p>Ära pese <strong>üle +5 °C külmakraadidel</strong>, otsese päikese all keskpäeval (vesi kuivab liiga kiiresti ja jätab triibud) ega vahetult enne vihmasadu — pärast pesu peab vuugiliiv jõudma kuivada vähemalt 24 h enne uut niiskust.</p>
+
+<h2>Sammal ja samblik: keemiline töötlus, mis tegelikult töötab</h2>
+
+<p><strong>Answer-first:</strong> Sammalt hävitab kõige efektiivsemalt <strong>3–5% naatriumhüpokloriti lahus</strong> (majapidamis-valgendaja lahjendatud veega 1:4) või kaubanduslikud toodetud sammal-eemaldid (Wolfin, Algimun, Purus MOSS-CLEAN, HG Algae & Mould Remover). Hind ~8–15 €/liiter, kulu 1 liiter katab 15–20 m². Toimib 24–48 h, seejärel pestakse survepesuga maha.</p>
+
+<h3>Kolm töötluse taset</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Saaste tase</th>
+      <th>Meetod</th>
+      <th>Kemikaal</th>
+      <th>Ooteaeg</th>
+      <th>Hind (€/m²)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kerge (õhuke roheline kile)</td>
+      <td>Ainult survepesu</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0,80–1,50</td>
+    </tr>
+    <tr>
+      <td>Keskmine (paksem sammalkiht)</td>
+      <td>Kemikaal + survepesu</td>
+      <td>3% NaClO või Algimun</td>
+      <td>24 h</td>
+      <td>1,80–2,80</td>
+    </tr>
+    <tr>
+      <td>Raske (samblik + must koorik)</td>
+      <td>Kahekordne töötlus</td>
+      <td>5% NaClO + happeline lisatöötlus</td>
+      <td>48 h + 24 h</td>
+      <td>3,00–4,50</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Töö käik samm-sammult</h3>
+
+<ol>
+  <li><strong>Kuiv pind</strong> — puhasta lahtised lehed, tolm ja liiv harja või lehepuhuriga</li>
+  <li><strong>Kanna kemikaal peale</strong> aiakastmiskannuga või madala survega pihustiga, katteta ka vuukide sisemus</li>
+  <li><strong>Oota 24–48 h</strong> ilma vihmata — sammal muutub tumepruuniks/mustaks, mis näitab et see on surnud</li>
+  <li><strong>Survepesu</strong> vastavalt kivi tüübile — surnud sammal tuleb maha koos vuugiliiva ülemise kihiga</li>
+  <li><strong>Taastatud vuugiliiv</strong> 24 h pärast pesu, kui pind on täielikult kuiv</li>
+</ol>
+
+<div class="warning">
+  <strong>Ohutus:</strong> Naatriumhüpoklorit (majapidamis-valgendaja) EI TOHI kokku puutuda ammoniaagi ega happeliste puhastusvahenditega — tekib mürgine kloorgaas. Kanna kummikinnasid ja kaitseprille, hoia lapsed ja lemmikloomad eemal kuni pesu on lõpetatud.
+</div>
+
+<p>Ökoloogilisemad alternatiivid (äädikas 10%, sooda + kuum vesi) toimivad ainult kergel saastel ja nõuavad korduvat töötlust 3–4 nädala tagant. Suurte alade (üle 100 m²) puhul on aja-hinna suhe naatriumhüpokloritil selgelt parem.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Vajad professionaalset hooldust?</strong><br>
+    Balcon Grupp OÜ pakub täisteenus pesu + vuukide taastamist üle Eesti. Hinnad 100 m² eramaja sissesõiduteele alates 250 €.
+  </div>
+  <div class="cta-buttons">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Plekkide eemaldus: õli, rooste, kummi, chewinggummi</h2>
+
+<p><strong>Answer-first:</strong> Reegel nr 1 — mida värskem plekk, seda parem tulemus. Õli esimese 24 h jooksul eemaldatakse pesugeeliga (Fairy) + soojaveega 90%+ juhtumitel jälgi jätmata. Vana õli (nädalad, kuud) vajab spetsiaalset õlieemaldit (Purus OIL-OFF, HG Oil & Grease Remover, MEM Ölfleckenentferner) hinnaga 15–25 €/tk ja kulub 1 pudel ~1 m² pinna kohta.</p>
+
+<h3>Plekkide käsiraamat</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Plekk</th>
+      <th>Värske (0–24 h)</th>
+      <th>Vana (üle nädala)</th>
+      <th>Eduprotsent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mootoriõli, hüdroõli</td>
+      <td>Kassiliiv 30 min → pesugeel → soe vesi</td>
+      <td>Õlieemaldusgeel 24 h + kompressiga → survepesu</td>
+      <td>Värske 95% / vana 60–75%</td>
+    </tr>
+    <tr>
+      <td>Rooste (metallmööbel, tööriistad)</td>
+      <td>Sidrunhape 10% → 2 h → hõõru harjaga</td>
+      <td>Oksaalhape 5% (Rost-Ex) → 30 min → pesu</td>
+      <td>Värske 90% / vana 70%</td>
+    </tr>
+    <tr>
+      <td>Rohuvärv, taimemahl</td>
+      <td>Klooripõhine puhastusvahend → 15 min</td>
+      <td>NaClO 5% + kaks korda</td>
+      <td>Värske 95% / vana 80%</td>
+    </tr>
+    <tr>
+      <td>Punane vein, marjad</td>
+      <td>Sool + valge vein → pesugeel</td>
+      <td>NaClO 3% → 30 min</td>
+      <td>Värske 90% / vana 65%</td>
+    </tr>
+    <tr>
+      <td>Närimiskumm</td>
+      <td>Külmutuspihusti (freeze spray) → kraabi ära</td>
+      <td>Sama meetod</td>
+      <td>95%</td>
+    </tr>
+    <tr>
+      <td>Rehvijäljed, kumm</td>
+      <td>Sooda + soe vesi → hõõru</td>
+      <td>Naftapõhine puhastaja + survepesu</td>
+      <td>85%</td>
+    </tr>
+    <tr>
+      <td>Tsement, mörttilgad</td>
+      <td>–</td>
+      <td>Tsemendieemaldi (soolhape 5–10%) NB: EI SOBI paekivi/marmorile</td>
+      <td>90%</td>
+    </tr>
+    <tr>
+      <td>Bituumen, asfaltilaigud</td>
+      <td>Rasvaeemaldi + kraap → pesugeel</td>
+      <td>Bituumeneemaldi (Purus BITUMEN-EX)</td>
+      <td>75%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Kolm reeglit iga pleki puhul</h3>
+
+<ol>
+  <li><strong>Testi väiksel alal</strong> — eriti happelised puhastusvahendid võivad heledal betoonkivil jätta valge laigu. Proovi 10×10 cm mustril varjatud kohas enne suurema ala töötlust.</li>
+  <li><strong>Töötle pleki servalt keskmesse</strong>, mitte vastupidi — muidu levib plekk laiemale alale.</li>
+  <li><strong>Loputa alati suure koguse veega</strong> pärast keemilist töötlust — muidu jääb kemikaali jääk kivi poori ja tekitab uue plekilaigu 2–3 kuu pärast.</li>
+</ol>
+
+<h2>Vuugiliiva taastamine: kriitiline samm, mida enamik unustab</h2>
+
+<p><strong>Answer-first:</strong> Igal survepesul kaotab vuuk 15–40% liivast, sõltuvalt survest ja tehnikast. Vuuke tuleb pärast pesu <strong>alati taastada</strong> — kuivalt eramaja 100 m² sissesõiduteel kulub tavaliselt <strong>80–150 kg kuivpolümeer- või kvartsliiva</strong>, hind 25–60 € materjali kohta.</p>
+
+<h3>Kolm vuugimaterjali</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Materjal</th>
+      <th>Hind (€/25 kg kott)</th>
+      <th>Eluiga</th>
+      <th>Sobivus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kvartsliiv 0,1–2 mm</td>
+      <td>4–8</td>
+      <td>2–4 aastat</td>
+      <td>Kõik betoon- ja looduskivi</td>
+    </tr>
+    <tr>
+      <td>Polümeerliiv (SolidFuge, Romex, Dansand)</td>
+      <td>25–45</td>
+      <td>5–10 aastat</td>
+      <td>Sissesõiduteed, äriparklad, alad kuhu ei taheta sammalt</td>
+    </tr>
+    <tr>
+      <td>Epoksüvuuk (Romex D1, Techniseal HP)</td>
+      <td>60–120</td>
+      <td>10–15+ aastat</td>
+      <td>Suur koormus, bassein, terrass — vuuk läheb kõvaks nagu kivi</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Vuugi tegemine samm-sammult</h3>
+
+<ol>
+  <li><strong>Pind peab olema täielikult kuiv</strong> — polümeerliiv aktiveerub niiskusest, sissemänguline liigne niiskus rikub vuugi</li>
+  <li><strong>Vala liiv pinnale</strong> ja aja gumipõkeriga vuukidesse (harja EI KASUTA polümeerliivaga — see keeb tekitada)</li>
+  <li><strong>Puhasta pind hoolikalt</strong> — polümeerliiva jäägid jäävad kivi peale kollasteks laikudeks kui neid maha jätta</li>
+  <li><strong>Aktiveeri veega</strong> — pihusti udu peale 2–3 kihina, mitte joana</li>
+  <li><strong>Kuivamine 24–48 h</strong> ilma koormata (auto, jalakäijad)</li>
+</ol>
+
+<p>Kui plaanid vuugi paigalduse ise, siis oled näpistamas ainult ~40% kogutööst. Kui sisemine ala on suurem kui 150 m² või tegemist on parkla ja sissesõiduteega, tasub kaaluda professionaalset teenust. Meie <a href="/kivitoo-pakkumine-24h/">kivitöö 24h pakkumise vormist</a> saab hinnapakkumise 24 tunni jooksul.</p>
+
+<h2>Talvine hooldus ja soolakahjustuste vältimine</h2>
+
+<p><strong>Answer-first:</strong> Naatriumkloriid (tavaline teesool) EI SOBI kvaliteetsele betoonkivile — see süvendab pinnavigastusi 3–5× kiiremini. Kasuta selle asemel <strong>kaltsiumkloriidi (CaCl₂)</strong>, <strong>magneesiumkloriidi (MgCl₂)</strong> või <strong>uureadenolüpsist</strong> (~15–25 €/25 kg kotti). Alternatiiv: mehaaniline lume eemaldus + peen liiv (0–4 mm) libedustõrjeks.</p>
+
+<h3>Talvise hoolduse põhireeglid</h3>
+
+<ul>
+  <li><strong>Ära kunagi kasuta metallist labidat</strong> tänavakivil — kraabi kivi pinnakihti ja lõhub vuuke. Kasuta plastlabidat või kummiservaga alumiiniumit.</li>
+  <li><strong>Lume eemaldus võimalikult vara</strong>, enne kui see kokku vajub jääks — jää eemaldamiseks vajaminev jõud on 5–10× suurem kui värske lume puhul.</li>
+  <li><strong>Kui kasutad sooltooteid, siis vähe ja punktuaalselt</strong> — kogus max 25–50 g/m² korraga, mitte üldpuistamine.</li>
+  <li><strong>Kevadel esimene töö on soola loputamine</strong> — survepesu läbi kogu ala loputab välja soolajäägid pooridest.</li>
+</ul>
+
+<p>Rasketesse tingimustesse (rannikupiirkond, tugeva liiklusega ala) tasub kaaluda ka <a href="/soojendusega-kivisillutis-sissesoidutee-lumesulatus/">soojenduskaablitega sissesõidutee</a>, mis välistab sooldamise vajaduse täielikult — vaata ka meie <a href="/blog/tanavakivi-soojakaablid-lume-jaa-sulatamine-talvel/">talvise soojenduskaablite paigalduse artiklit</a>.</p>
+
+<h2>Aastane hoolduskalender: mida millal teha</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kuu</th>
+      <th>Tegevus</th>
+      <th>Aeg (100 m²)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aprill</td>
+      <td>Kevadine survepesu + soola loputamine</td>
+      <td>3–4 h</td>
+    </tr>
+    <tr>
+      <td>Mai</td>
+      <td>Vuugiliiva taastamine, umbrohu eemaldus</td>
+      <td>2–3 h</td>
+    </tr>
+    <tr>
+      <td>Juuni</td>
+      <td>Vaatlus — kas on tekkinud sammal või lohkusid?</td>
+      <td>30 min</td>
+    </tr>
+    <tr>
+      <td>Juuli–august</td>
+      <td>Umbrohu ennetav töötlus (kui vaja)</td>
+      <td>1 h</td>
+    </tr>
+    <tr>
+      <td>September</td>
+      <td>Sügisene sammalpuhastus + survepesu</td>
+      <td>4–5 h</td>
+    </tr>
+    <tr>
+      <td>Oktoober</td>
+      <td>Lehtede regulaarne eemaldus, vuukide kontroll</td>
+      <td>iganädalane 30 min</td>
+    </tr>
+    <tr>
+      <td>November</td>
+      <td>Lumepuhastusvahendite ettevalmistamine (plastlabidad, CaCl₂)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Dets–märts</td>
+      <td>Regulaarne lume eemaldus, õrn libedustõrje</td>
+      <td>vastavalt vajadusele</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Kaitsev impregneerimine: kas seda tasub teha?</h2>
+
+<p><strong>Answer-first:</strong> Impregnaat (silaan-siloksaan-põhised tooted nagu Fila HydroREP, Lithofin Stainstop, Purus IMPREG) tekitab pinnakihile veetõkke, mis vähendab plekkide siirdumist kivi poori ~70–85%. Hind materjal <strong>4–8 €/m²</strong>, teenusega paigaldus <strong>8–14 €/m²</strong>. Eluiga <strong>3–5 aastat</strong>. Tasub kõige rohkem <strong>graniidi ja poorse looduskivi (paekivi, liivakivi) puhul</strong>, betoonkivil on efekt tagasihoidlikum.</p>
+
+<h3>Millal impregneerimine tasub</h3>
+
+<ul>
+  <li>✅ Uus graniit- või looduskivi sissesõidutee, kuhu tuleb autoparkimine (õlirisk)</li>
+  <li>✅ <a href="/basseini-umbruse-kivisillutis-libisemiskindel-looduskivi/">Basseini ümbruse looduskivi</a> — kloor ja päikesekaitseõli plekitavad kergesti</li>
+  <li>✅ Restorani terrass, kus veiniplekid ja rasvatilkumine on igapäevane risk</li>
+  <li>✅ Vanalinna <a href="/graniit-munakivi-paigaldus-vanalinn-restaureerimine/">restaureeritud munakivi</a> — ilme säilitamine tähtis</li>
+  <li>❌ Standard betoonkivi eramaja käigualal ilma spetsiifilise riskikohata</li>
+  <li>❌ Ala, kus tehakse iga-aastane hooldus niikuinii (impregneerimise raha kulub ratsionaalsemalt hooldusele)</li>
+</ul>
+
+<h2>DIY vs professionaalne teenus: hinnaanalüüs</h2>
+
+<p>100 m² sissesõidutee kevadine hooldus (pesu + sammal + vuugid):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kuluartikkel</th>
+      <th>DIY</th>
+      <th>Teenus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Survepesumasin (rent 1 päev)</td>
+      <td>40–70 €</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Pinnapesija (rent)</td>
+      <td>25–40 €</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Sammal-eemaldi (5 L)</td>
+      <td>35–50 €</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Vuugiliiv (100 kg)</td>
+      <td>25–60 €</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Töö (6–8 h)</td>
+      <td>Su aeg</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td><strong>Kokku DIY</strong></td>
+      <td><strong>125–220 € + 8 h</strong></td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td><strong>Kokku teenus</strong></td>
+      <td>–</td>
+      <td><strong>250–450 €</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>DIY teeb rahaliselt mõtet väiksematel aladel (kuni 80 m²) või kui teed niikuinii mitmele naabrile korraga. Suuremate alade, äripindade ja korteriühistute puhul on <a href="/korteriuhistu-kivisillutise-uuendamine/">professionaalne hooldusteenus</a> tavaliselt ratsionaalsem — tellima saab ka <a href="/korteruhistu-ouala-kivisillutis-renoveerimine-pakkumine/">korteriühistu õueala renoveerimise pakkumise</a> koos hoolduskavaga.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Iga-aastane hoolduspakett Balcon Grupp OÜ-lt</strong><br>
+    Kevad + sügis + vuugid + garantii tehtud tööle. Alates 4,50 €/m². Küsi hinnapakkumine.
+  </div>
+  <div class="cta-buttons">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui tihti tuleb tänavakivi survepesuga puhastada?</summary>
+    <p>Eramaja sissesõiduteed ja käigualad — <strong>üks kord aastas</strong>, optimaalselt aprillis-mais. Suure koormusega alad (äriparklad, tanklate esine, restoraniterrassid) — <strong>kaks korda aastas</strong> (aprill + september). Varjupoolsed alad, kuhu sammal tekib kiiresti — vajadusel kolm korda (aprill, juuli, september).</p>
+  </details>
+  <details>
+    <summary>Kas survepesu lõhub tänavakivi vuuki?</summary>
+    <p>Jah, iga survepesu eemaldab 15–40% vuugiliiva ülemisest kihist. See on <strong>vältimatu ja normaalne</strong> — sellepärast peab pärast igat pesu vuugid taastama (kvartsliiv 0,1–2 mm või polümeerliiv). Ilma vuugi taastamiseta hakkavad kivid 6–12 kuu pärast "loperdama" ja pinna elueaga läheb 30–50% kiiremini alla.</p>
+  </details>
+  <details>
+    <summary>Miks minu betoonkivi on muutunud helehalliks / valgeks?</summary>
+    <p>See on <strong>lubjaeflorestsents</strong> — betoonis olev kaltsiumhüdroksiid tuleb niiskusega välja pinnale ja moodustab valge kihi. Enim juhtub esimesel 1–2 aastal pärast paigaldust. Eemalda õrna sidrunhappega (5% lahus), aiakastmiskannuga peale, 15 min, seejärel loputa. Ära kasuta soolhapet betoonkivil — see nõrgestab pinnakihti püsivalt.</p>
+  </details>
+  <details>
+    <summary>Kas tänavakivi tuleb impregneerida kohe pärast paigaldust?</summary>
+    <p>EI. Betoonkivi peab enne impregneerimist "hingama" 4–8 nädalat pärast paigaldust, et kaltsiumhüdroksiid saaks välja tulla. Impregnaadi peale kandmine kohe blokeerib pooride ja tekitab kollakat läiget. Optimaalne aeg: <strong>2–3 kuud pärast paigaldust</strong>, kuivas ilmastikus, temperatuuril +10 kuni +25 °C.</p>
+  </details>
+  <details>
+    <summary>Mida teha, kui vuukidesse kasvab pidev umbrohi?</summary>
+    <p>Umbrohu põhjus on <strong>madal vuugiliiva tase</strong>. Taastage vuugid täiskõrguseni polümeerliivaga (mitte kvartsliivaga) — polümeer takistab seemnete idanemist ja peab vastu 5–10 aastat. Alternatiiv: kuum vesi + sool (100 °C) — hävitab juured, aga vaid punktuaalselt ega ole püsivaks lahenduseks.</p>
+  </details>
+</div>
+
+<h2>Seotud artiklid ja teenused</h2>
+
+<div class="related-grid">
+  <a href="/tanavakivi-paigalduse-garantii-tingimused-aastad/">
+    <strong>Tänavakivi paigalduse garantii tingimused</strong>
+    <span>Mis garantiiga saab tööd ja mille eest see katab</span>
+  </a>
+  <a href="/tanavakivi-lahtivotmine-ja-umberpaigaldus/">
+    <strong>Tänavakivi lahtivõtmine ja ümberpaigaldus</strong>
+    <span>Kui hooldus enam ei aita — hind ja protsess</span>
+  </a>
+  <a href="/blog/tanavakivi-soojakaablid-lume-jaa-sulatamine-talvel/">
+    <strong>Tänavakivi soojakaablid talvel</strong>
+    <span>Alternatiiv sooldamisele, mis säästab kivi</span>
+  </a>
+  <a href="/soojendusega-kivisillutis-sissesoidutee-lumesulatus/">
+    <strong>Soojendusega sissesõidutee</strong>
+    <span>Lumesulatussüsteemi paigaldus ja hind</span>
+  </a>
+  <a href="/tanavakivi-paigaldus/">
+    <strong>Tänavakivi paigaldus</strong>
+    <span>Põhiteenus — kõik alused, materjalid ja hinnad</span>
+  </a>
+  <a href="/hinnad/">
+    <strong>Hinnad ja pakkumine</strong>
+    <span>Suunavad hinnad kõikidele töödele</span>
+  </a>
+  <a href="/blog/tanavakivi-tootjad-eestis-brikston-tmb-aeroc-vordlus/">
+    <strong>Tänavakivi tootjad Eestis</strong>
+    <span>Brikers, Aeroc, TMB, Premia võrdlus</span>
+  </a>
+  <a href="/blog/">
+    <strong>Kõik artiklid blogis</strong>
+    <span>Nõuanded, juhendid, hinnad</span>
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tänavakivi puhastus ja hooldus: survepesu, sammal ja plekid 2026",
+  "description": "Praktiline juhend tänavakivi iga-aastasest hooldusest: survepesu bar-surve valik, õli- ja rooste-plekkide eemaldus, sammal-samblik keemiline töötlus, vuugiliiva taastamine ja talvine soolakaitse.",
+  "datePublished": "2026-07-17",
+  "dateModified": "2026-07-17",
+  "author": {
+    "@type": "Person",
+    "name": "Keio Soo",
+    "jobTitle": "Tegevjuht",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Balcon Grupp OÜ"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Balcon Grupp OÜ",
+    "url": "https://tänavakivipaigaldus24.ee/",
+    "telephone": "+372 58374422",
+    "email": "Balcongrupp@gmail.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-puhastus-survepesu-samblaeemaldus-hooldus/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kui tihti tuleb tänavakivi survepesuga puhastada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eramaja sissesõiduteed ja käigualad tuleb pesta üks kord aastas, optimaalselt aprillis-mais. Suure koormusega alad (äriparklad, tanklate esine, restoraniterrassid) kaks korda aastas (aprill + september). Varjupoolsed alad vajadusel kolm korda."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas survepesu lõhub tänavakivi vuuki?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jah, iga survepesu eemaldab 15–40% vuugiliiva ülemisest kihist. See on vältimatu ja normaalne — sellepärast peab pärast igat pesu vuugid taastama kvartsliiva (0,1–2 mm) või polümeerliivaga. Ilma vuugi taastamiseta hakkavad kivid 6–12 kuu pärast loperdama."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Miks minu betoonkivi on muutunud helehalliks või valgeks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "See on lubjaeflorestsents — betoonis olev kaltsiumhüdroksiid tuleb niiskusega välja pinnale ja moodustab valge kihi. Enim juhtub esimesel 1–2 aastal pärast paigaldust. Eemalda õrna sidrunhappega (5% lahus), 15 min, seejärel loputa. Ära kasuta soolhapet betoonkivil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas tänavakivi tuleb impregneerida kohe pärast paigaldust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ei. Betoonkivi peab enne impregneerimist hingama 4–8 nädalat pärast paigaldust, et kaltsiumhüdroksiid saaks välja tulla. Optimaalne aeg on 2–3 kuud pärast paigaldust, kuivas ilmastikus, temperatuuril +10 kuni +25 °C."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mida teha, kui vuukidesse kasvab pidev umbrohi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Umbrohu põhjus on madal vuugiliiva tase. Taastage vuugid täiskõrguseni polümeerliivaga (mitte kvartsliivaga) — polümeer takistab seemnete idanemist ja peab vastu 5–10 aastat."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Avaleht",
+      "item": "https://tänavakivipaigaldus24.ee/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://tänavakivipaigaldus24.ee/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tänavakivi puhastus ja hooldus: survepesu, sammal ja plekid 2026",
+      "item": "https://tänavakivipaigaldus24.ee/blog/tanavakivi-puhastus-survepesu-samblaeemaldus-hooldus/"
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tänavakivipaigaldus 24</h4>
+        <p style="color:#a3a3a3">Tänavakivi, äärekivi ja sillutise paigaldus üle Eesti.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com<br>Tegevjuht: Keio Soo</p>
+      </div>
+      <div>
+        <h4>Teenused</h4>
+        <a href="/tanavakivi-paigaldus/">Tänavakivi paigaldus</a>
+        <a href="/aarekivi/">Äärekivi paigaldus</a>
+        <a href="/kivilahendus-aripindadele/">Äripinna sillutus</a>
+        <a href="/hinnad/">Hinnakiri 2026</a>
+      </div>
+      <div>
+        <h4>Tooted &amp; piirkond</h4>
+        <a href="/tanavakivi/">Tänavakivi tüübid</a>
+        <a href="/tanavakivi-paigaldus-tallinn/">Paigaldus Tallinnas</a>
+        <a href="/tanavakivi-paigaldus/">Üle Eesti</a>
+        <a href="/blog/">Kõik artiklid</a>
+      </div>
+      <div>
+        <h4>Juhendid</h4>
+        <a href="/blog/kuidas-paigaldada-tanavakivi/">Paigaldusjuhend</a>
+        <a href="/blog/aarekivi-paigaldamise-juhend/">Äärekivi juhend</a>
+        <a href="/blog/sademevee-aravool-sillutiselt/">Sademevee äravool</a>
+        <a href="/blog/talvine-tanavakivi-paigaldus/">Talvine paigaldus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tänavakivipaigaldus 24 · Operator: Balcon Grupp OÜ · Reg nr 16294742 · Asutatud 18.08.2021 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary" style="background:var(--ink)">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">Hinnapakkumine</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin p%C3%A4rida t%C3%A4navakivi paigalduse kohta." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>
